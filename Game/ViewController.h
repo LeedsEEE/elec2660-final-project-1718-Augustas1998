@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)ExitButton:(UIButton *)sender;
 
 @end
 

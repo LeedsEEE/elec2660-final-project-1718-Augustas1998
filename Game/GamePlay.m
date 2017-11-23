@@ -84,7 +84,8 @@
 
 
 -(void)gameOver{
-    //GamePlay *viewController = [[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:NULL] instantiateViewControllerWithIdentifier:@"GameOver"];
+    GamePlay *NVC = [self.storyboard instantiateViewControllerWithIdentifier:@"GameOver"];
+    [self presentViewController:NVC animated:YES completion:nil];
     
     
 }
@@ -92,12 +93,6 @@
 -(void)character_objectImgaes;{
     
 }
-
-
-
-
-
-
 
 
 
