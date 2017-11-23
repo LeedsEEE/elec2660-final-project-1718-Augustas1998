@@ -43,6 +43,7 @@
 		7B81AC2C1FBA45CA00B297E6 /* Red&Green.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B81AC141FBA45C900B297E6 /* Red&Green.png */; };
 		7B81AC2D1FBA45CA00B297E6 /* Stick-man logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B81AC151FBA45C900B297E6 /* Stick-man logo.png */; };
 		7B81AC2E1FBA45CA00B297E6 /* Tunnel.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B81AC161FBA45C900B297E6 /* Tunnel.png */; };
+		7B909DF61FC6F1C400AEA780 /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B909DF51FC6F1C400AEA780 /* GameOver.m */; };
 		FE632AB51FBDC6C400D89391 /* ObjectCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = FE632AB41FBDC6C400D89391 /* ObjectCustom.m */; };
 		FE632AB81FBDC6DC00D89391 /* CharacterCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = FE632AB71FBDC6DC00D89391 /* CharacterCustom.m */; };
 		FE632ABB1FBDC6F200D89391 /* Statistics.m in Sources */ = {isa = PBXBuildFile; fileRef = FE632ABA1FBDC6F200D89391 /* Statistics.m */; };
@@ -112,6 +113,8 @@
 		7B81AC141FBA45C900B297E6 /* Red&Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red&Green.png"; sourceTree = "<group>"; };
 		7B81AC151FBA45C900B297E6 /* Stick-man logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stick-man logo.png"; sourceTree = "<group>"; };
 		7B81AC161FBA45C900B297E6 /* Tunnel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tunnel.png; sourceTree = "<group>"; };
+		7B909DF41FC6F1C400AEA780 /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOver.h; sourceTree = "<group>"; };
+		7B909DF51FC6F1C400AEA780 /* GameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOver.m; sourceTree = "<group>"; };
 		FE632AB31FBDC6C400D89391 /* ObjectCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectCustom.h; sourceTree = "<group>"; };
 		FE632AB41FBDC6C400D89391 /* ObjectCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectCustom.m; sourceTree = "<group>"; };
 		FE632AB61FBDC6DC00D89391 /* CharacterCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterCustom.h; sourceTree = "<group>"; };
@@ -177,6 +180,8 @@
 				7B6C827F1FB9AF2500F5AA56 /* ViewController.h */,
 				7B6C82801FB9AF2500F5AA56 /* ViewController.m */,
 				FE632AB31FBDC6C400D89391 /* ObjectCustom.h */,
+				7B909DF41FC6F1C400AEA780 /* GameOver.h */,
+				7B909DF51FC6F1C400AEA780 /* GameOver.m */,
 				FE632AB41FBDC6C400D89391 /* ObjectCustom.m */,
 				FE632AB61FBDC6DC00D89391 /* CharacterCustom.h */,
 				FE632AB71FBDC6DC00D89391 /* CharacterCustom.m */,
@@ -420,6 +425,7 @@
 				7B6C82811FB9AF2500F5AA56 /* ViewController.m in Sources */,
 				7B6C827E1FB9AF2500F5AA56 /* AppDelegate.m in Sources */,
 				7B6C827B1FB9AF2500F5AA56 /* main.m in Sources */,
+				7B909DF61FC6F1C400AEA780 /* GameOver.m in Sources */,
 				FE632AB81FBDC6DC00D89391 /* CharacterCustom.m in Sources */,
 				FE632ABB1FBDC6F200D89391 /* Statistics.m in Sources */,
 				FE632AB51FBDC6C400D89391 /* ObjectCustom.m in Sources */,

@@ -16,16 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+    _ObjectImage.hidden = true;
+    _CharacterImage.hidden = true;
+    
 }
 
 - (IBAction)DownButton:(UIButton *)sender {
-    if (CharValue < 1){
+    if (CharacterValue < 1){
         _CharacterImage.center = CGPointMake(_CharacterImage.center.x, _CharacterImage.center.y + 100);
-        CharValue = CharValue +1;
+        CharacterValue = CharacterValue +1;
     }else{
         nil;
     }
@@ -34,24 +33,21 @@
 
 
 - (IBAction)UpButton:(UIButton *)sender {
-    if (CharValue > -1){
+    if (CharacterValue > -1){
         _CharacterImage.center = CGPointMake(_CharacterImage.center.x, _CharacterImage.center.y - 100);
-        CharValue = CharValue - 1;
+        CharacterValue = CharacterValue - 1;
     }
     else{
         nil;
     }
 }
 
-- (IBAction)StartGame:(UIButton *)sender {
+- (IBAction)TouchToBegin:(UIButton *)sender{
+    _TouchToBegin.hidden = true;
+    _ObjectImage.hidden = false;
+    _CharacterImage.hidden = false;
     _Object = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(objectMoving) userInfo:nil repeats:YES];
     [self repositionObject];
-    
-}
-
-
-
--(void)characterMoving{
     
 }
 
@@ -60,21 +56,36 @@
     _ObjectImage.center = CGPointMake(_ObjectImage.center.x -1, _ObjectImage.center.y);
     if(_ObjectImage.center.x == -20){
         [self repositionObject];
-        Svalue = Svalue + 1;
     }
-    
+    if(CGRectIntersectsRect(_ObjectImage.frame, _CharacterImage.frame)){
+        _ObjectImage.hidden = true;
+        _CharacterImage.hidden = true;
+        [self gameOver];
+    }
 }
 
 -(void)repositionObject{
-    _ObjectImage.center = CGPointMake(300, 330);
-    _ScoreValue.text = [NSString stringWithFormat:@"Score: %i",Svalue];
+    _CurrentScore.text = [NSString stringWithFormat:@"Score: %i",Svalue];
     
-    
+    NSUInteger RandomValue = arc4random_uniform(3);
+    if (RandomValue == 1) {
+        RandObject = 430;
+    }
+    else if( RandomValue == 2){
+        RandObject = 330;
+    }
+    else{
+        RandObject = 230;
+    }
+    _ObjectImage.center = CGPointMake(310, RandObject);
+    Svalue = Svalue + 1;
 }
 
 
 
 -(void)gameOver{
+    //GamePlay *viewController = [[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:NULL] instantiateViewControllerWithIdentifier:@"GameOver"];
+    
     
 }
 
