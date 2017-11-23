@@ -654,6 +654,9 @@
                                     <constraint firstAttribute="height" constant="80" id="Wpe-dC-hon"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Pac-man logo.png"/>
+                                <connections>
+                                    <action selector="Character_PanMan:" destination="VHW-Ae-vpr" eventType="touchUpInside" id="klJ-sU-0jY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssc-WG-wFH">
                                 <rect key="frame" x="290" y="361.5" width="85" height="88"/>
@@ -662,6 +665,9 @@
                                     <constraint firstAttribute="width" constant="85" id="nxQ-Fi-opD"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Contra logo.png"/>
+                                <connections>
+                                    <action selector="Character_Contra:" destination="VHW-Ae-vpr" eventType="touchUpInside" id="vc1-9x-0ug"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hw8-om-ubL">
                                 <rect key="frame" x="290" y="474.5" width="85" height="80"/>
@@ -670,6 +676,9 @@
                                     <constraint firstAttribute="width" constant="85" id="quC-UP-e7Y"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Donkey-Kong logo.png"/>
+                                <connections>
+                                    <action selector="Character_Donkey:" destination="VHW-Ae-vpr" eventType="touchUpInside" id="Fr4-NN-8Aj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bu7-Fh-oh1">
                                 <rect key="frame" x="290" y="578.5" width="85" height="80"/>
@@ -678,6 +687,9 @@
                                     <constraint firstAttribute="height" constant="80" id="xh4-rx-zaN"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Mario logo.png"/>
+                                <connections>
+                                    <action selector="Character_Mario:" destination="VHW-Ae-vpr" eventType="touchUpInside" id="SeW-dJ-w2P"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMq-Rp-vBX">
                                 <rect key="frame" x="165" y="627" width="45" height="40"/>
@@ -941,7 +953,7 @@
         <image name="mashroom mario.png" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fWV-dO-kxG"/>
+        <segue reference="Zu6-cY-PX9"/>
         <segue reference="vlK-k7-wIE"/>
     </inferredMetricsTieBreakers>
 </document>

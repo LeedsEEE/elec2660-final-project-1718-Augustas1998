@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface CharacterCustom : UIViewController
+@property (strong, nonatomic) NSString *CharSelect;
+@property int SpecialPoints;
+
+- (IBAction)Character_PanMan:(UIButton *)sender;
+- (IBAction)Character_Contra:(UIButton *)sender;
+- (IBAction)Character_Donkey:(UIButton *)sender;
+- (IBAction)Character_Mario:(UIButton *)sender;
+
 
 @end

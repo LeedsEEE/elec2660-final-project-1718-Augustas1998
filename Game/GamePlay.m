@@ -1,3 +1,5 @@
+
+
 //
 //  GamePlay.m
 //  Game
@@ -16,15 +18,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self character_objectImgaes];
     _ObjectImage.hidden = true;
     _CharacterImage.hidden = true;
+    
     
 }
 
 - (IBAction)DownButton:(UIButton *)sender {
-    if (CharacterValue < 1){
+    if (_CharacterValue < 1){
         _CharacterImage.center = CGPointMake(_CharacterImage.center.x, _CharacterImage.center.y + 100);
-        CharacterValue = CharacterValue +1;
+        _CharacterValue = _CharacterValue +1;
     }else{
         nil;
     }
@@ -33,9 +37,9 @@
 
 
 - (IBAction)UpButton:(UIButton *)sender {
-    if (CharacterValue > -1){
+    if (_CharacterValue > -1){
         _CharacterImage.center = CGPointMake(_CharacterImage.center.x, _CharacterImage.center.y - 100);
-        CharacterValue = CharacterValue - 1;
+        _CharacterValue = _CharacterValue - 1;
     }
     else{
         nil;
@@ -65,20 +69,20 @@
 }
 
 -(void)repositionObject{
-    _CurrentScore.text = [NSString stringWithFormat:@"Score: %i",Svalue];
+    _CurrentScore.text = [NSString stringWithFormat:@"Score: %i",_Svalue];
     
     NSUInteger RandomValue = arc4random_uniform(3);
     if (RandomValue == 1) {
-        RandObject = 430;
+        _RandObject = 430;
     }
     else if( RandomValue == 2){
-        RandObject = 330;
+        _RandObject = 330;
     }
     else{
-        RandObject = 230;
+        _RandObject = 230;
     }
-    _ObjectImage.center = CGPointMake(310, RandObject);
-    Svalue = Svalue + 1;
+    _ObjectImage.center = CGPointMake(310, _RandObject);
+    _Svalue = _Svalue + 1;
 }
 
 
@@ -91,6 +95,21 @@
 }
 
 -(void)character_objectImgaes;{
+    if ([_CharSelect  isEqual: @"PacMan"]) {
+        [_CharacterImage setImage: [UIImage imageNamed:@"Pac-man logo.png"]];
+    }
+    else if ([_CharSelect isEqualToString:@"Contra"]){
+       [_CharacterImage setImage: [UIImage imageNamed:@"Contra logo.png"]];
+    }
+    else if ([_CharSelect isEqualToString:@"Donkey-Kong"]){
+        [_CharacterImage setImage: [UIImage imageNamed:@"Donkey-Kong logo.png"]];
+    }
+    else if ([_CharSelect isEqualToString:@"Mario"]){
+        [_CharacterImage setImage: [UIImage imageNamed:@"Mario logo.png"]];
+    }
+    else{
+        [_CharacterImage setImage: [UIImage imageNamed:@"Stick-man logo.png"]];
+    }
     
 }
 

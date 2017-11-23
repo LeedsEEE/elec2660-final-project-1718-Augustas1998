@@ -7,6 +7,7 @@
 //
 
 #import "CharacterCustom.h"
+#import "ViewController.h"
 
 @interface CharacterCustom ()
 
@@ -16,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    _SpecialPoints = 150;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +25,34 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)Character_PanMan:(UIButton *)sender {
+    if( _SpecialPoints >= 50){
+        _CharSelect = @"PacMan";
+    }
 }
-*/
+
+- (IBAction)Character_Contra:(UIButton *)sender {
+    if( _SpecialPoints >= 100){
+        _CharSelect = @"Contra";
+    }
+}
+
+- (IBAction)Character_Donkey:(UIButton *)sender {
+    if( _SpecialPoints >= 200){
+        _CharSelect = @"Donkey-Kong";
+    }
+}
+
+- (IBAction)Character_Mario:(UIButton *)sender {
+    if( _SpecialPoints >= 500){
+        _CharSelect = @"Mario";
+    }
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    ViewController*secondcontroller = [segue destinationViewController];
+    secondcontroller.CharSelect = _CharSelect;
+}
+
 
 @end

@@ -7,14 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
-int ObjectPostion;
-int CharacterValue;
-int RandObject;
-int Svalue;
-int Bvalue;
-int SpecialPoints;
-
 @interface GamePlay : UIViewController
 
 @property(weak, nonatomic) IBOutlet UIImageView *CharacterImage;
@@ -23,6 +15,15 @@ int SpecialPoints;
 //@property(weak, nonatomic) IBOutlet UILabel *BestScore;
 @property (strong, nonatomic) IBOutlet UIButton *TouchToBegin;
 @property(strong, nonatomic) NSTimer *Object;
+@property(strong, nonatomic) NSString *CharSelect;
+
+@property int ObjectPostion;
+@property int CharacterValue;
+@property int RandObject;
+@property int Svalue;
+@property int Bvalue;
+@property int SpecialPoints;
+
 
 
 - (IBAction)DownButton:(UIButton *)sender;
