@@ -95,22 +95,23 @@
 }
 
 -(void)character_objectImgaes;{
-    if ([_CharSelect  isEqual: @"PacMan"]) {
-        [_CharacterImage setImage: [UIImage imageNamed:@"Pac-man logo.png"]];
-    }
-    else if ([_CharSelect isEqualToString:@"Contra"]){
-       [_CharacterImage setImage: [UIImage imageNamed:@"Contra logo.png"]];
-    }
-    else if ([_CharSelect isEqualToString:@"Donkey-Kong"]){
-        [_CharacterImage setImage: [UIImage imageNamed:@"Donkey-Kong logo.png"]];
-    }
-    else if ([_CharSelect isEqualToString:@"Mario"]){
-        [_CharacterImage setImage: [UIImage imageNamed:@"Mario logo.png"]];
-    }
-    else{
+    
+    NSString *CharSelect = [[NSUserDefaults standardUserDefaults] stringForKey:@"CharacterSelected"];
+    if ([CharSelect  isEqual: @"StickMan"]) {
         [_CharacterImage setImage: [UIImage imageNamed:@"Stick-man logo.png"]];
     }
-    
+    else if ([CharSelect  isEqual: @"PacMan"]) {
+        [_CharacterImage setImage: [UIImage imageNamed:@"Pac-man logo.png"]];
+    }
+    else if ([CharSelect isEqualToString:@"Contra"]){
+       [_CharacterImage setImage: [UIImage imageNamed:@"Contra logo.png"]];
+    }
+    else if ([CharSelect isEqualToString:@"Donkey-Kong"]){
+        [_CharacterImage setImage: [UIImage imageNamed:@"Donkey-Kong logo.png"]];
+    }
+    else if ([CharSelect isEqualToString:@"Mario"]){
+        [_CharacterImage setImage: [UIImage imageNamed:@"Mario logo.png"]];
+    }
 }
 
 

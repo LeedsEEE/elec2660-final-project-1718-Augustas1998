@@ -15,7 +15,7 @@
 //@property(weak, nonatomic) IBOutlet UILabel *BestScore;
 @property (strong, nonatomic) IBOutlet UIButton *TouchToBegin;
 @property(strong, nonatomic) NSTimer *Object;
-@property(strong, nonatomic) NSString *CharSelect;
+
 
 @property int ObjectPostion;
 @property int CharacterValue;

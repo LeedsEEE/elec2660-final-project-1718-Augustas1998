@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "GamePlay.h"
+//#import "Statistics.h"
 
 @interface ViewController ()
 
@@ -28,11 +29,6 @@
 
 - (IBAction)ExitButton:(UIButton *)sender {
     exit(0);
-}
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    GamePlay*secondcontroller = [segue destinationViewController];
-    secondcontroller.CharSelect = _CharSelect;
 }
 
 @end

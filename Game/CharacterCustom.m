@@ -7,6 +7,7 @@
 //
 
 #import "CharacterCustom.h"
+#import "GamePlay.h"
 #import "ViewController.h"
 
 @interface CharacterCustom ()
@@ -25,34 +26,47 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)Character_StickMan:(UIButton *)sender {
+    if( _SpecialPoints >= 0){
+        _CharSelect = @"StickMan";
+        [self CharacterSelected];
+    }
+}
+
 - (IBAction)Character_PanMan:(UIButton *)sender {
     if( _SpecialPoints >= 50){
         _CharSelect = @"PacMan";
+        [self CharacterSelected];
     }
 }
 
 - (IBAction)Character_Contra:(UIButton *)sender {
     if( _SpecialPoints >= 100){
         _CharSelect = @"Contra";
+        [self CharacterSelected];
     }
 }
 
 - (IBAction)Character_Donkey:(UIButton *)sender {
     if( _SpecialPoints >= 200){
         _CharSelect = @"Donkey-Kong";
+        [self CharacterSelected];
     }
 }
 
 - (IBAction)Character_Mario:(UIButton *)sender {
     if( _SpecialPoints >= 500){
         _CharSelect = @"Mario";
+        [self CharacterSelected];
     }
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    ViewController*secondcontroller = [segue destinationViewController];
-    secondcontroller.CharSelect = _CharSelect;
+-(void)CharacterSelected{
+    NSString *Character = _CharSelect;
+    [[NSUserDefaults standardUserDefaults]setObject:Character forKey:@"CharacterSelected"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
+
 
 
 @end

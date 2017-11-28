@@ -11,10 +11,11 @@
 @property (strong, nonatomic) NSString *CharSelect;
 @property int SpecialPoints;
 
+- (IBAction)Character_StickMan:(UIButton *)sender;
 - (IBAction)Character_PanMan:(UIButton *)sender;
 - (IBAction)Character_Contra:(UIButton *)sender;
 - (IBAction)Character_Donkey:(UIButton *)sender;
 - (IBAction)Character_Mario:(UIButton *)sender;
 
-
+-(void)CharacterSelected;
 @end
