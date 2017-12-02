@@ -16,7 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSInteger CScore = [[NSUserDefaults standardUserDefaults] integerForKey:@"10"];
+    _CurrentScore.text = [NSString stringWithFormat:@"Score: %li",(long)CScore];
+    
 }
 
 - (void)didReceiveMemoryWarning {

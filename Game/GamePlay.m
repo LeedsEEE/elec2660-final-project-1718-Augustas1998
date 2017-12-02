@@ -18,12 +18,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self character_objectImgaes];
     _ObjectImage.hidden = true;
     _CharacterImage.hidden = true;
-    
-    
+    [self characterSelectedImages];
+    [self objectSelectedImages];
+    _A = true;
 }
+
+
+
+
+
+
 
 - (IBAction)DownButton:(UIButton *)sender {
     if (_CharacterValue < 1){
@@ -34,8 +40,6 @@
     }
     
 }
-
-
 - (IBAction)UpButton:(UIButton *)sender {
     if (_CharacterValue > -1){
         _CharacterImage.center = CGPointMake(_CharacterImage.center.x, _CharacterImage.center.y - 100);
@@ -46,45 +50,67 @@
     }
 }
 
+
+
+
+
+
+
+
 - (IBAction)TouchToBegin:(UIButton *)sender{
     _TouchToBegin.hidden = true;
     _ObjectImage.hidden = false;
     _CharacterImage.hidden = false;
-    _Object = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(objectMoving) userInfo:nil repeats:YES];
-    [self repositionObject];
+    _Object = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(ObjectLocation) userInfo:nil repeats:YES];
+    [self ObjectLocation];
     
 }
-
-
--(void)objectMoving{
-    _ObjectImage.center = CGPointMake(_ObjectImage.center.x -1, _ObjectImage.center.y);
-    if(_ObjectImage.center.x == -20){
-        [self repositionObject];
-    }
-    if(CGRectIntersectsRect(_ObjectImage.frame, _CharacterImage.frame)){
-        _ObjectImage.hidden = true;
-        _CharacterImage.hidden = true;
-        [self gameOver];
+-(void)ObjectLocation{
+    if (_A == true){
+        _ObjectImage.center = CGPointMake(_ObjectImage.center.x -1, _ObjectImage.center.y);
+        if(_ObjectImage.center.x == -20){
+            [self objectSelectedImages];
+            NSUInteger RandomValue = arc4random_uniform(3);
+            if (RandomValue == 1) {
+                _RandObject = 430;
+            }
+            else if( RandomValue == 2){
+                _RandObject = 330;
+            }
+            else{
+                _RandObject = 230;
+            }
+            _Svalue = _Svalue + 1;
+           _CurrentScore.text = [NSString stringWithFormat:@"Score: %i",_Svalue];
+           [[NSUserDefaults standardUserDefaults]setInteger:_Svalue forKey:@"10"];
+            _ObjectImage.center = CGPointMake(310,_RandObject);
+        }
+        if(CGRectIntersectsRect(_ObjectImage.frame, _CharacterImage.frame)){
+            if(_T ==true){
+                [[NSUserDefaults standardUserDefaults]setInteger:_Svalue forKey:@"10"];
+                _A = false;
+                [self gameOver];
+            }
+            else if (_T==false){
+                [self objectSelectedImages];
+                NSUInteger RandomValue = arc4random_uniform(3);
+                int RandObjects;
+                if (RandomValue == 1) {
+                    RandObjects = 430;
+                }
+                else if( RandomValue == 2){
+                    RandObjects = 330;
+                }
+                else{
+                    RandObjects = 230;
+                }
+                _ObjectImage.center = CGPointMake(310,RandObjects);
+                _Svalue = _Svalue + 1;
+                _CurrentScore.text = [NSString stringWithFormat:@"Score: %i",_Svalue];
+            }
+        }
     }
 }
-
--(void)repositionObject{
-    _CurrentScore.text = [NSString stringWithFormat:@"Score: %i",_Svalue];
-    
-    NSUInteger RandomValue = arc4random_uniform(3);
-    if (RandomValue == 1) {
-        _RandObject = 430;
-    }
-    else if( RandomValue == 2){
-        _RandObject = 330;
-    }
-    else{
-        _RandObject = 230;
-    }
-    _ObjectImage.center = CGPointMake(310, _RandObject);
-    _Svalue = _Svalue + 1;
-}
-
 
 
 -(void)gameOver{
@@ -94,7 +120,7 @@
     
 }
 
--(void)character_objectImgaes;{
+-(void)characterSelectedImages;{
     
     NSString *CharSelect = [[NSUserDefaults standardUserDefaults] stringForKey:@"CharacterSelected"];
     if ([CharSelect  isEqual: @"StickMan"]) {
@@ -104,7 +130,7 @@
         [_CharacterImage setImage: [UIImage imageNamed:@"Pac-man logo.png"]];
     }
     else if ([CharSelect isEqualToString:@"Contra"]){
-       [_CharacterImage setImage: [UIImage imageNamed:@"Contra logo.png"]];
+        [_CharacterImage setImage: [UIImage imageNamed:@"Contra logo.png"]];
     }
     else if ([CharSelect isEqualToString:@"Donkey-Kong"]){
         [_CharacterImage setImage: [UIImage imageNamed:@"Donkey-Kong logo.png"]];
@@ -113,6 +139,31 @@
         [_CharacterImage setImage: [UIImage imageNamed:@"Mario logo.png"]];
     }
 }
+
+-(void)objectSelectedImages{
+    NSUInteger R = arc4random_uniform(10);
+    if (R > 1){
+        _T = true;
+        [_ObjectImage setImage:[UIImage imageNamed:@"Red ball.png"]];
+    }
+    else{
+        _T = false;
+        [_ObjectImage setImage:[UIImage imageNamed:@"Green ball.png"]];
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

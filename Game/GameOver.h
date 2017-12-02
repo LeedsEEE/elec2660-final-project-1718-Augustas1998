@@ -10,4 +10,8 @@
 
 @interface GameOver : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *CurrentScore;
+@property (strong, nonatomic) IBOutlet UILabel *BestScore;
+
+
 @end

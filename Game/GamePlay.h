@@ -12,7 +12,7 @@
 @property(weak, nonatomic) IBOutlet UIImageView *CharacterImage;
 @property(weak, nonatomic) IBOutlet UIImageView *ObjectImage;
 @property(weak, nonatomic) IBOutlet UILabel *CurrentScore;
-//@property(weak, nonatomic) IBOutlet UILabel *BestScore;
+@property(weak, nonatomic) IBOutlet UILabel *BestScore;
 @property (strong, nonatomic) IBOutlet UIButton *TouchToBegin;
 @property(strong, nonatomic) NSTimer *Object;
 
@@ -23,18 +23,16 @@
 @property int Svalue;
 @property int Bvalue;
 @property int SpecialPoints;
-
+@property bool A;
+@property bool T;
 
 
 - (IBAction)DownButton:(UIButton *)sender;
 - (IBAction)UpButton:(UIButton *)sender;
 - (IBAction)TouchToBegin:(UIButton *)sender;
 
-
-
--(void)objectMoving;
--(void)repositionObject;
 -(void)gameOver;
--(void)character_objectImgaes;
-
+-(void)characterSelectedImages;
+-(void)objectSelectedImages;
+-(void)ObjectLocation;
 @end
