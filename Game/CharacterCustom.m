@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _SpecialPoints = 500;
+      _SpecialPoints = [[NSUserDefaults standardUserDefaults] integerForKey:@"Special"];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface Statistics : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *BestScoreLabel;
+@property (strong, nonatomic) IBOutlet UILabel *SpecialPointsLabel;
+@property (strong, nonatomic) IBOutlet UILabel *RoundsPlayedLabel;
+@property (strong, nonatomic) IBOutlet UILabel *AvrageScoreLabel;
 
 @end

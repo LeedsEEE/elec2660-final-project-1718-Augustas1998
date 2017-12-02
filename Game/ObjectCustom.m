@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _SepecialPoints = 500;
+    _SepecialPoints = [[NSUserDefaults standardUserDefaults] integerForKey:@"Special"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,7 +25,7 @@
 }
 
 - (IBAction)Object_StickMan:(UIButton *)sender {
-    if(_SepecialPoints >= 0){
+    if(_SepecialPoints >= 1){
         _ObjectSelect = @"StickMan_Theme";
         [self ObjectSelected];
     }

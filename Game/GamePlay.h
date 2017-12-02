@@ -23,8 +23,10 @@
 @property int Svalue;
 @property int Bvalue;
 @property int SpecialPoints;
+@property int RoundsPlayed;
 @property bool A;
 @property bool T;
+
 
 
 - (IBAction)DownButton:(UIButton *)sender;

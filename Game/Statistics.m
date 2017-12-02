@@ -16,7 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSInteger CP_points = [[NSUserDefaults standardUserDefaults] integerForKey:@"Special"];
+    NSInteger Bvalue = [[NSUserDefaults standardUserDefaults] integerForKey:@"Bestvalue"];
+    NSUInteger RoundsPlayed = [[NSUserDefaults standardUserDefaults] integerForKey:@"AmountPlayed"];
+    NSUInteger AverageScore = [[NSUserDefaults standardUserDefaults] floatForKey:@"AverageValue"];
+    
+    _SpecialPointsLabel.text = [NSString stringWithFormat:@"Character Points: %li", CP_points];
+    _BestScoreLabel.text = [NSString stringWithFormat:@"Best: %li",Bvalue];
+    _RoundsPlayedLabel.text = [NSString stringWithFormat:@"Rounds Played: %li", RoundsPlayed];
+    _AvrageScoreLabel.text = [NSString stringWithFormat:@"Average Score: %li", AverageScore];
+
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +35,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

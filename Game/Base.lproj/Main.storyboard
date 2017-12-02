@@ -81,6 +81,12 @@
                             <constraint firstItem="iiH-CE-Pub" firstAttribute="leading" secondItem="9Bc-4A-FK5" secondAttribute="leadingMargin" constant="75" id="wJD-G2-h8c"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="AvrageScoreLabel" destination="icC-7H-k7v" id="mmR-2v-Q4i"/>
+                        <outlet property="BestScoreLabel" destination="N16-wv-ZZa" id="PKc-jg-An4"/>
+                        <outlet property="RoundsPlayedLabel" destination="Syl-sh-L5E" id="3Gv-cM-UJQ"/>
+                        <outlet property="SpecialPointsLabel" destination="iiH-CE-Pub" id="d7U-rg-2Zh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FCu-ah-dOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -974,8 +980,8 @@
         <image name="mashroom mario.png" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fWV-dO-kxG"/>
         <segue reference="N3d-gN-12q"/>
+        <segue reference="0Na-yq-3LZ"/>
         <segue reference="hCg-gX-eHT"/>
     </inferredMetricsTieBreakers>
 </document>
