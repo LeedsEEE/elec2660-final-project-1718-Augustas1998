@@ -9,5 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface ObjectCustom : UIViewController
+@property int SepecialPoints;
+@property (strong, nonatomic) NSString *ObjectSelect;
+
+- (IBAction)Object_StickMan:(UIButton *)sender;
+- (IBAction)Object_PacMan:(UIButton *)sender;
+- (IBAction)Object_Contra:(UIButton *)sender;
+- (IBAction)Object_Donkey:(UIButton *)sender;
+- (IBAction)Object_Mario:(UIButton *)sender;
+
+-(void)ObjectSelected;
 
 @end

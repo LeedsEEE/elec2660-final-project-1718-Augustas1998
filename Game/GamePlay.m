@@ -141,15 +141,59 @@
 }
 
 -(void)objectSelectedImages{
+    NSString *objectSelect = [[NSUserDefaults standardUserDefaults] stringForKey:@"ObjectSelected"];
     NSUInteger R = arc4random_uniform(10);
-    if (R > 1){
-        _T = true;
-        [_ObjectImage setImage:[UIImage imageNamed:@"Red ball.png"]];
+    if ([objectSelect isEqualToString:@"StickMan_Theme"]){
+        if (R > 1){
+            _T = true;
+            [_ObjectImage setImage:[UIImage imageNamed:@"Red ball.png"]];
+        }
+        else{
+            _T = false;
+            [_ObjectImage setImage:[UIImage imageNamed:@"Green ball.png"]];
+        }
     }
-    else{
-        _T = false;
-        [_ObjectImage setImage:[UIImage imageNamed:@"Green ball.png"]];
+    else if ([objectSelect isEqualToString:@"PacMan_Theme"]){
+        if (R > 1){
+            _T = true;
+            [_ObjectImage setImage:[UIImage imageNamed:@"goast-pac.png"]];
+        }
+        else{
+            _T = false;
+            [_ObjectImage setImage:[UIImage imageNamed:@"fruit-pac.png"]];
+        }
     }
+    else if ([objectSelect isEqualToString:@"Contra_Theme"]){
+        if (R > 1){
+            _T = true;
+            [_ObjectImage setImage:[UIImage imageNamed:@"contra-boss.png"]];
+        }
+        else{
+            _T = false;
+            [_ObjectImage setImage:[UIImage imageNamed:@"Conta-s.png"]];
+        }
+    }
+    else if ([objectSelect isEqualToString:@"Donkey-Kong_Theme"]){
+        if (R > 1){
+            _T = true;
+            [_ObjectImage setImage:[UIImage imageNamed:@"Barrel.jpg"]];
+        }
+        else{
+            _T = false;
+            [_ObjectImage setImage:[UIImage imageNamed:@"banana.jpg.png"]];
+        }
+    }
+    else if ([objectSelect isEqualToString:@"Mario_Theme"]){
+        if (R > 1){
+            _T = true;
+            [_ObjectImage setImage:[UIImage imageNamed:@"goomba.png"]];
+        }
+        else{
+            _T = false;
+            [_ObjectImage setImage:[UIImage imageNamed:@"mashroom mario.png"]];
+        }
+    }
+
 }
 
 

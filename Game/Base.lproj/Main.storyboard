@@ -460,6 +460,9 @@
                                     <constraint firstAttribute="height" constant="80" id="rDu-ZI-586"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Ppac-man theme.png"/>
+                                <connections>
+                                    <action selector="Object_PacMan:" destination="ngN-e8-4nM" eventType="touchUpInside" id="EU4-Fw-cez"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Q4-ON-h6N">
                                 <rect key="frame" x="189" y="357" width="186" height="88"/>
@@ -468,6 +471,9 @@
                                     <constraint firstAttribute="height" constant="88" id="I7R-M4-i86"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Ccontra theme.png"/>
+                                <connections>
+                                    <action selector="Object_Contra:" destination="ngN-e8-4nM" eventType="touchUpInside" id="V9L-CN-nWc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGa-gD-kBA">
                                 <rect key="frame" x="219" y="574" width="156" height="75"/>
@@ -476,6 +482,9 @@
                                     <constraint firstAttribute="height" constant="75" id="bWz-LB-3vc"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Mmario theme.png"/>
+                                <connections>
+                                    <action selector="Object_Mario:" destination="ngN-e8-4nM" eventType="touchUpInside" id="cQm-RJ-EbY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyo-k3-Zvj">
                                 <rect key="frame" x="165" y="627" width="45" height="40"/>
@@ -495,6 +504,9 @@
                                     <constraint firstAttribute="width" constant="174" id="Q84-vw-bxr"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="1Donkey-kong theme.png"/>
+                                <connections>
+                                    <action selector="Object_Donkey:" destination="ngN-e8-4nM" eventType="touchUpInside" id="khH-gb-x4i"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

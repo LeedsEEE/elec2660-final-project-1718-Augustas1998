@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    _SepecialPoints = 500;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +24,43 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)Object_StickMan:(UIButton *)sender {
+    if(_SepecialPoints >= 0){
+        _ObjectSelect = @"StickMan_Theme";
+        [self ObjectSelected];
+    }
 }
-*/
 
+- (IBAction)Object_PacMan:(UIButton *)sender {
+    if(_SepecialPoints >= 50){
+        _ObjectSelect = @"PacMan_Theme";
+        [self ObjectSelected];
+    }
+}
+
+- (IBAction)Object_Contra:(UIButton *)sender {
+    if(_SepecialPoints >= 100){
+        _ObjectSelect = @"Contra_Theme";
+        [self ObjectSelected];
+    }
+}
+
+- (IBAction)Object_Donkey:(UIButton *)sender {
+    if(_SepecialPoints >= 200){
+        _ObjectSelect = @"Donkey-Kong_Theme";
+        [self ObjectSelected];
+    }
+}
+
+- (IBAction)Object_Mario:(UIButton *)sender {
+    if(_SepecialPoints >= 500){
+        _ObjectSelect = @"Mario_Theme";
+        [self ObjectSelected];
+    }
+}
+
+-(void)ObjectSelected{
+    [[NSUserDefaults standardUserDefaults]setObject:_ObjectSelect forKey:@"ObjectSelected"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
 @end

@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _SpecialPoints = 150;
+    _SpecialPoints = 500;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,8 +62,7 @@
 }
 
 -(void)CharacterSelected{
-    NSString *Character = _CharSelect;
-    [[NSUserDefaults standardUserDefaults]setObject:Character forKey:@"CharacterSelected"];
+    [[NSUserDefaults standardUserDefaults]setObject:_CharSelect forKey:@"CharacterSelected"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
