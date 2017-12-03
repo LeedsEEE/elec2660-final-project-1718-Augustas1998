@@ -430,8 +430,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A/L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ov3-wK-XTs">
-                                <rect key="frame" x="21" y="496" width="26" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="A/L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ov3-wK-XTs">
+                                <rect key="frame" x="21" y="496" width="143" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -458,6 +458,9 @@
                                     <constraint firstAttribute="height" constant="80" id="Uw6-Rf-qLY"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Red&amp;Green.png"/>
+                                <connections>
+                                    <action selector="Object_StickMan:" destination="ngN-e8-4nM" eventType="touchUpInside" id="Dgh-aw-1Kp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lB2-Dt-9hK">
                                 <rect key="frame" x="219" y="252" width="156" height="80"/>
@@ -553,10 +556,16 @@
                             <constraint firstItem="tbx-0w-sup" firstAttribute="leading" secondItem="Xtm-T8-4KR" secondAttribute="leadingMargin" constant="5" id="zja-QQ-LHE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="A_L_Donkey_theme" destination="ov3-wK-XTs" id="9Ka-xC-aWi"/>
+                        <outlet property="A_L_Mario_theme" destination="tbx-0w-sup" id="zlQ-9N-t6U"/>
+                        <outlet property="A_L_PacMan_theme" destination="L4Y-RQ-kHM" id="oGB-9j-xWk"/>
+                        <outlet property="A_L_contra_theme" destination="X5N-5N-NdL" id="y92-eY-I0J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOS-xI-Wqs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2113" y="1142"/>
+            <point key="canvasLocation" x="2112.8000000000002" y="1141.9790104947526"/>
         </scene>
         <!--Character Custom-->
         <scene sceneID="lqk-7X-A8H">
@@ -763,6 +772,13 @@
                             <constraint firstItem="Hw8-om-ubL" firstAttribute="top" secondItem="ssc-WG-wFH" secondAttribute="bottom" constant="25" id="zuy-Dz-5Yo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="A_L_Donkey" destination="szG-Uj-pi5" id="sAb-gh-AiC"/>
+                        <outlet property="A_L_contra" destination="ri8-bs-Nca" id="sks-HL-hJC"/>
+                        <outlet property="A_L_mario" destination="hro-V7-laZ" id="neV-1q-MvW"/>
+                        <outlet property="A_L_pacman" destination="wS6-y0-lXs" id="HRD-dW-0VP"/>
+                        <outlet property="A_L_stickman" destination="bl7-id-ehe" id="pY1-Iy-2bO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IS6-gs-Nht" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -981,7 +997,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="N3d-gN-12q"/>
-        <segue reference="0Na-yq-3LZ"/>
+        <segue reference="Zu6-cY-PX9"/>
         <segue reference="hCg-gX-eHT"/>
     </inferredMetricsTieBreakers>
 </document>

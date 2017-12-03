@@ -32,7 +32,6 @@
     _BestScore.text = [NSString stringWithFormat:@"Best: %i",_Bvalue];
     _RoundsPlayed = _RoundsPlayed + 1;
     [[NSUserDefaults standardUserDefaults]setInteger:_RoundsPlayed forKey:@"AmountPlayed"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
     
 }
 
@@ -94,28 +93,28 @@
             _Svalue = _Svalue + 1;
             _BestScore.text = [NSString stringWithFormat:@"Best: %i", _Bvalue];
             if(_Svalue >= _Bvalue){
-                _Bvalue = _Svalue + 1;
                 [[NSUserDefaults standardUserDefaults]setInteger: _Bvalue forKey:@"Bestvalue"];
-                [[NSUserDefaults standardUserDefaults] synchronize];
+                _Bvalue = _Svalue + 1;
+
             }
            _CurrentScore.text = [NSString stringWithFormat:@"Score: %i",_Svalue];
            [[NSUserDefaults standardUserDefaults]setInteger:_Svalue forKey:@"10"];
-            [[NSUserDefaults standardUserDefaults] synchronize];
             _ObjectImage.center = CGPointMake(310,_RandObject);
         }
         if(CGRectIntersectsRect(_ObjectImage.frame, _CharacterImage.frame)){
             
             if(_T ==true){
                 [[NSUserDefaults standardUserDefaults]setInteger:_Svalue forKey:@"10"];
-                [[NSUserDefaults standardUserDefaults] synchronize];
                 _A = false;
+                float FinalScore = _Svalue;
+                [[NSUserDefaults standardUserDefaults] setFloat:FinalScore forKey:@"FinalScore"];
                 [self gameOver];
+                
             }
             
             else if (_T==false){
                 _SpecialPoints = _SpecialPoints + 1;
                 [[NSUserDefaults standardUserDefaults]setInteger:_SpecialPoints forKey:@"Special"];
-                [[NSUserDefaults standardUserDefaults] synchronize];
                 
                 [self objectSelectedImages];
                 NSUInteger RandomValue = arc4random_uniform(3);
@@ -138,10 +137,8 @@
                 _CurrentScore.text = [NSString stringWithFormat:@"Score: %i",_Svalue];
                 _BestScore.text = [NSString stringWithFormat:@"Best: %i", _Bvalue];
                 if(_Svalue >= _Bvalue){
-                _Bvalue = _Svalue + 1;
-                [[NSUserDefaults standardUserDefaults]setInteger:_Bvalue forKey:@"Bestvalue"];
-                [[NSUserDefaults standardUserDefaults] synchronize];
-
+                    [[NSUserDefaults standardUserDefaults]setInteger:_Bvalue forKey:@"Bestvalue"];
+                    _Bvalue = _Svalue + 1;
                 }
             }
         }
@@ -182,6 +179,16 @@
 
     
     if ([objectSelect isEqualToString:@"StickMan_Theme"]){
+        if (R > 1){
+            _T = true;
+            [_ObjectImage setImage:[UIImage imageNamed:@"Red ball.png"]];
+        }
+        else{
+            _T = false;
+            [_ObjectImage setImage:[UIImage imageNamed:@"Green ball.png"]];
+        }
+    }
+    else if ([objectSelect isEqualToString:@"StickMan_Theme"]){
         if (R > 1){
             _T = true;
             [_ObjectImage setImage:[UIImage imageNamed:@"Red ball.png"]];

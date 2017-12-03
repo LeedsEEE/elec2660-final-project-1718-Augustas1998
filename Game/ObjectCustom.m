@@ -16,7 +16,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _SepecialPoints = [[NSUserDefaults standardUserDefaults] integerForKey:@"Special"];
+    _SpecialPoints = [[NSUserDefaults standardUserDefaults] integerForKey:@"Special"];
+    if (_SpecialPoints >=50) {
+        _A_L_PacMan_theme.text = @"Available";
+    }
+    else{
+        _A_L_PacMan_theme.text = @"Locked";
+    }
+    if (_SpecialPoints >=100) {
+        _A_L_contra_theme.text = @"Available";
+    }
+    else{
+        _A_L_contra_theme.text = @"Locked";
+    }
+    if (_SpecialPoints >=200) {
+        _A_L_Donkey_theme.text = @"Available";
+    }
+    else{
+        _A_L_Donkey_theme.text = @"Locked";
+    }
+    if (_SpecialPoints >=500) {
+        _A_L_Mario_theme.text = @"Available";
+    }
+    else{
+        _A_L_Mario_theme.text = @"Locked";
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,35 +50,35 @@
 }
 
 - (IBAction)Object_StickMan:(UIButton *)sender {
-    if(_SepecialPoints >= 1){
+    if(_SpecialPoints >= 0){
         _ObjectSelect = @"StickMan_Theme";
         [self ObjectSelected];
     }
 }
 
 - (IBAction)Object_PacMan:(UIButton *)sender {
-    if(_SepecialPoints >= 50){
+    if(_SpecialPoints >= 50){
         _ObjectSelect = @"PacMan_Theme";
         [self ObjectSelected];
     }
 }
 
 - (IBAction)Object_Contra:(UIButton *)sender {
-    if(_SepecialPoints >= 100){
+    if(_SpecialPoints >= 100){
         _ObjectSelect = @"Contra_Theme";
         [self ObjectSelected];
     }
 }
 
 - (IBAction)Object_Donkey:(UIButton *)sender {
-    if(_SepecialPoints >= 200){
+    if(_SpecialPoints >= 200){
         _ObjectSelect = @"Donkey-Kong_Theme";
         [self ObjectSelected];
     }
 }
 
 - (IBAction)Object_Mario:(UIButton *)sender {
-    if(_SepecialPoints >= 500){
+    if(_SpecialPoints >= 500){
         _ObjectSelect = @"Mario_Theme";
         [self ObjectSelected];
     }

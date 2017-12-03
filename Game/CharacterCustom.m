@@ -19,6 +19,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
       _SpecialPoints = [[NSUserDefaults standardUserDefaults] integerForKey:@"Special"];
+    if (_SpecialPoints >=50) {
+        _A_L_pacman.text = @"Available";
+    }
+    else{
+         _A_L_pacman.text = @"Locked";
+    }
+    if (_SpecialPoints >=100) {
+        _A_L_contra.text = @"Available";
+    }
+    else{
+        _A_L_contra.text = @"Locked";
+    }
+    if (_SpecialPoints >=200) {
+        _A_L_Donkey.text = @"Available";
+    }
+    else{
+        _A_L_Donkey.text = @"Locked";
+    }
+    if (_SpecialPoints >=500) {
+        _A_L_mario.text = @"Available";
+    }
+    else{
+        _A_L_mario.text = @"Locked";
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,7 +73,7 @@
 
 - (IBAction)Character_Donkey:(UIButton *)sender {
     if( _SpecialPoints >= 200){
-        _CharSelect = @"Donkey-Kong";
+        _A_L_Donkey.text = @"Available";
         [self CharacterSelected];
     }
 }

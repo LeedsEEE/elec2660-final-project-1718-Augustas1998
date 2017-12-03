@@ -13,6 +13,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *CurrentScore;
 @property (strong, nonatomic) IBOutlet UILabel *BestScore;
 @property float AverageScore;
-@property int AllScores;
+@property float AllScores;
 
 @end

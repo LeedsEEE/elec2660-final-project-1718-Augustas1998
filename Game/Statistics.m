@@ -19,12 +19,12 @@
     NSInteger CP_points = [[NSUserDefaults standardUserDefaults] integerForKey:@"Special"];
     NSInteger Bvalue = [[NSUserDefaults standardUserDefaults] integerForKey:@"Bestvalue"];
     NSUInteger RoundsPlayed = [[NSUserDefaults standardUserDefaults] integerForKey:@"AmountPlayed"];
-    NSUInteger AverageScore = [[NSUserDefaults standardUserDefaults] floatForKey:@"AverageValue"];
+    float AverageScore = [[NSUserDefaults standardUserDefaults] floatForKey:@"AverageValue"];
     
     _SpecialPointsLabel.text = [NSString stringWithFormat:@"Character Points: %li", CP_points];
     _BestScoreLabel.text = [NSString stringWithFormat:@"Best: %li",Bvalue];
     _RoundsPlayedLabel.text = [NSString stringWithFormat:@"Rounds Played: %li", RoundsPlayed];
-    _AvrageScoreLabel.text = [NSString stringWithFormat:@"Average Score: %li", AverageScore];
+    _AvrageScoreLabel.text = [NSString stringWithFormat:@"Average Score: %.2f ",AverageScore];
 
     
     

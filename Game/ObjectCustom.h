@@ -9,8 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface ObjectCustom : UIViewController
-@property int SepecialPoints;
+@property int SpecialPoints;
 @property (strong, nonatomic) NSString *ObjectSelect;
+
+@property (strong, nonatomic) IBOutlet UILabel *A_L_PacMan_theme;
+@property (strong, nonatomic) IBOutlet UILabel *A_L_contra_theme;
+@property (strong, nonatomic) IBOutlet UILabel *A_L_Donkey_theme;
+@property (strong, nonatomic) IBOutlet UILabel *A_L_Mario_theme;
+
+
 
 - (IBAction)Object_StickMan:(UIButton *)sender;
 - (IBAction)Object_PacMan:(UIButton *)sender;
