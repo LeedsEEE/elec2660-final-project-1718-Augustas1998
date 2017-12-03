@@ -27,7 +27,6 @@
     _SpecialPoints = [[NSUserDefaults standardUserDefaults] integerForKey:@"Special"];
     _Bvalue = [[NSUserDefaults standardUserDefaults] integerForKey:@"Bestvalue"];
     _RoundsPlayed = [[NSUserDefaults standardUserDefaults] integerForKey:@"AmountPlayed"];
-    
     _CurrentScore.text = @"Score: 0";
     _BestScore.text = [NSString stringWithFormat:@"Best: %i",_Bvalue];
     _RoundsPlayed = _RoundsPlayed + 1;
@@ -43,16 +42,16 @@
 
 - (IBAction)DownButton:(UIButton *)sender {
     if (_CharacterValue < 1){
-        _CharacterImage.center = CGPointMake(_CharacterImage.center.x, _CharacterImage.center.y + 100);
+        _CharacterImage.center = CGPointMake(_CharacterImage.center.x, _CharacterImage.center.y + 90);
         _CharacterValue = _CharacterValue +1;
     }else{
         nil;
     }
-    
+
 }
 - (IBAction)UpButton:(UIButton *)sender {
     if (_CharacterValue > -1){
-        _CharacterImage.center = CGPointMake(_CharacterImage.center.x, _CharacterImage.center.y - 100);
+        _CharacterImage.center = CGPointMake(_CharacterImage.center.x, _CharacterImage.center.y - 90);
         _CharacterValue = _CharacterValue - 1;
     }
     else{
@@ -71,24 +70,25 @@
     _TouchToBegin.hidden = true;
     _ObjectImage.hidden = false;
     _CharacterImage.hidden = false;
-    _Object = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(ObjectLocation) userInfo:nil repeats:YES];
+    _Object = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(ObjectLocation) userInfo:nil repeats:YES];
     [self ObjectLocation];
     
 }
 -(void)ObjectLocation{
     if (_A == true){
-        _ObjectImage.center = CGPointMake(_ObjectImage.center.x -1, _ObjectImage.center.y);
-        if(_ObjectImage.center.x == -20){
+        int Speed = 1+(_Svalue * 0.1);
+        _ObjectImage.center = CGPointMake(_ObjectImage.center.x -Speed, _ObjectImage.center.y);
+        if(_ObjectImage.center.x == -30){
             [self objectSelectedImages];
             NSUInteger RandomValue = arc4random_uniform(3);
             if (RandomValue == 1) {
-                _RandObject = 430;
+                _RandObject = 305;
             }
             else if( RandomValue == 2){
-                _RandObject = 330;
+                _RandObject = 215;
             }
             else{
-                _RandObject = 230;
+                _RandObject = 125;
             }
             _Svalue = _Svalue + 1;
             _BestScore.text = [NSString stringWithFormat:@"Best: %i", _Bvalue];
@@ -99,7 +99,7 @@
             }
            _CurrentScore.text = [NSString stringWithFormat:@"Score: %i",_Svalue];
            [[NSUserDefaults standardUserDefaults]setInteger:_Svalue forKey:@"10"];
-            _ObjectImage.center = CGPointMake(310,_RandObject);
+            _ObjectImage.center = CGPointMake(600,_RandObject);
         }
         if(CGRectIntersectsRect(_ObjectImage.frame, _CharacterImage.frame)){
             
@@ -121,18 +121,18 @@
                 int RandObjects;
                 
                 if (RandomValue == 1) {
-                    RandObjects = 430;
+                    RandObjects = 305;
                 }
                 
                 else if( RandomValue == 2){
-                    RandObjects = 330;
+                    RandObjects = 215;
                 }
                 
                 else{
-                    RandObjects = 230;
+                    RandObjects = 125;
                 }
                 
-                _ObjectImage.center = CGPointMake(310,RandObjects);
+                _ObjectImage.center = CGPointMake(600,RandObjects);
                 _Svalue = _Svalue + 1;
                 _CurrentScore.text = [NSString stringWithFormat:@"Score: %i",_Svalue];
                 _BestScore.text = [NSString stringWithFormat:@"Best: %i", _Bvalue];
