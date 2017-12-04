@@ -23,28 +23,33 @@
 		7B7ABEED1FD5893100B73432 /* LunchScreenLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABEEA1FD5893100B73432 /* LunchScreenLogo.png */; };
 		7B7ABEEF1FD58B4700B73432 /* Tunnel_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABEEE1FD58B4700B73432 /* Tunnel_Icon.png */; };
 		7B7ABEF11FD58B6800B73432 /* Start_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABEF01FD58B6800B73432 /* Start_Icon.png */; };
-		7B7ABF061FD58BBB00B73432 /* GreenBall_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABEF21FD58BBB00B73432 /* GreenBall_Icon.png */; };
 		7B7ABF071FD58BBB00B73432 /* PacMan_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABEF31FD58BBB00B73432 /* PacMan_Icon.png */; };
 		7B7ABF081FD58BBB00B73432 /* Banana_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABEF41FD58BBB00B73432 /* Banana_Icon.png */; };
 		7B7ABF0A1FD58BBB00B73432 /* Goast_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABEF61FD58BBB00B73432 /* Goast_Icon.png */; };
 		7B7ABF0B1FD58BBB00B73432 /* PacMan_Theme.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABEF71FD58BBB00B73432 /* PacMan_Theme.png */; };
-		7B7ABF0D1FD58BBB00B73432 /* stickMan_Theme.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABEF91FD58BBB00B73432 /* stickMan_Theme.png */; };
 		7B7ABF0E1FD58BBB00B73432 /* Contra_Theme.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABEFA1FD58BBB00B73432 /* Contra_Theme.png */; };
 		7B7ABF111FD58BBB00B73432 /* Contra_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABEFD1FD58BBB00B73432 /* Contra_Icon.png */; };
 		7B7ABF121FD58BBB00B73432 /* ContraBoss_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABEFE1FD58BBB00B73432 /* ContraBoss_Icon.png */; };
 		7B7ABF131FD58BBB00B73432 /* Donkey_Theme.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABEFF1FD58BBB00B73432 /* Donkey_Theme.png */; };
 		7B7ABF141FD58BBB00B73432 /* Donkey_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF001FD58BBB00B73432 /* Donkey_Icon.png */; };
 		7B7ABF151FD58BBB00B73432 /* Strawberry.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF011FD58BBB00B73432 /* Strawberry.png */; };
-		7B7ABF161FD58BBB00B73432 /* Goomba_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF021FD58BBB00B73432 /* Goomba_Icon.png */; };
 		7B7ABF171FD58BBB00B73432 /* Mario_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF031FD58BBB00B73432 /* Mario_Icon.png */; };
-		7B7ABF1F1FD598D200B73432 /* Red_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF1E1FD598D200B73432 /* Red_Icon.png */; };
 		7B7ABF211FD59AC300B73432 /* Barrel_Icon..png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF201FD59AC300B73432 /* Barrel_Icon..png */; };
 		7B7ABF231FD59C1A00B73432 /* Contra_S_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF221FD59C1A00B73432 /* Contra_S_icon.png */; };
 		7B7ABF251FD59D4F00B73432 /* Mushroom.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF241FD59D4F00B73432 /* Mushroom.gif */; };
 		7B7ABF271FD59E5300B73432 /* Mario_Theme..gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF261FD59E5300B73432 /* Mario_Theme..gif */; };
 		7B7ABF2A1FD59F6F00B73432 /* UpBotton..gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF281FD59F6F00B73432 /* UpBotton..gif */; };
 		7B7ABF2B1FD59F6F00B73432 /* DownButton..gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF291FD59F6F00B73432 /* DownButton..gif */; };
-		7B7ABF2D1FD5A0DE00B73432 /* StickMAN.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF2C1FD5A0DE00B73432 /* StickMAN.png */; };
+		7B7ABF511FD5EA7000B73432 /* BlackBall.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF481FD5EA7000B73432 /* BlackBall.png */; };
+		7B7ABF521FD5EA7000B73432 /* ContraBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF491FD5EA7000B73432 /* ContraBackground.png */; };
+		7B7ABF531FD5EA7000B73432 /* DonkeyBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF4A1FD5EA7000B73432 /* DonkeyBackground.jpg */; };
+		7B7ABF541FD5EA7000B73432 /* Goomba1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF4B1FD5EA7000B73432 /* Goomba1.png */; };
+		7B7ABF551FD5EA7000B73432 /* MarioBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF4C1FD5EA7000B73432 /* MarioBackground.png */; };
+		7B7ABF561FD5EA7000B73432 /* PacManBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF4D1FD5EA7000B73432 /* PacManBackground.png */; };
+		7B7ABF571FD5EA7000B73432 /* StickManBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF4E1FD5EA7000B73432 /* StickManBackground.jpg */; };
+		7B7ABF581FD5EA7000B73432 /* Whie_StickMan.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF4F1FD5EA7000B73432 /* Whie_StickMan.png */; };
+		7B7ABF591FD5EA7000B73432 /* WhiteBall.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF501FD5EA7000B73432 /* WhiteBall.gif */; };
+		7B7ABF5B1FD5EC4400B73432 /* EmptyImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF5A1FD5EC4400B73432 /* EmptyImage.png */; };
 		7B909DF61FC6F1C400AEA780 /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B909DF51FC6F1C400AEA780 /* GameOver.m */; };
 		FE632AB51FBDC6C400D89391 /* ObjectCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = FE632AB41FBDC6C400D89391 /* ObjectCustom.m */; };
 		FE632AB81FBDC6DC00D89391 /* CharacterCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = FE632AB71FBDC6DC00D89391 /* CharacterCustom.m */; };
@@ -94,28 +99,33 @@
 		7B7ABEEA1FD5893100B73432 /* LunchScreenLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LunchScreenLogo.png; sourceTree = "<group>"; };
 		7B7ABEEE1FD58B4700B73432 /* Tunnel_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tunnel_Icon.png; sourceTree = "<group>"; };
 		7B7ABEF01FD58B6800B73432 /* Start_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Start_Icon.png; sourceTree = "<group>"; };
-		7B7ABEF21FD58BBB00B73432 /* GreenBall_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenBall_Icon.png; sourceTree = "<group>"; };
 		7B7ABEF31FD58BBB00B73432 /* PacMan_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PacMan_Icon.png; sourceTree = "<group>"; };
 		7B7ABEF41FD58BBB00B73432 /* Banana_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Banana_Icon.png; sourceTree = "<group>"; };
 		7B7ABEF61FD58BBB00B73432 /* Goast_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Goast_Icon.png; sourceTree = "<group>"; };
 		7B7ABEF71FD58BBB00B73432 /* PacMan_Theme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PacMan_Theme.png; sourceTree = "<group>"; };
-		7B7ABEF91FD58BBB00B73432 /* stickMan_Theme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stickMan_Theme.png; sourceTree = "<group>"; };
 		7B7ABEFA1FD58BBB00B73432 /* Contra_Theme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Contra_Theme.png; sourceTree = "<group>"; };
 		7B7ABEFD1FD58BBB00B73432 /* Contra_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Contra_Icon.png; sourceTree = "<group>"; };
 		7B7ABEFE1FD58BBB00B73432 /* ContraBoss_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ContraBoss_Icon.png; sourceTree = "<group>"; };
 		7B7ABEFF1FD58BBB00B73432 /* Donkey_Theme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Donkey_Theme.png; sourceTree = "<group>"; };
 		7B7ABF001FD58BBB00B73432 /* Donkey_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Donkey_Icon.png; sourceTree = "<group>"; };
 		7B7ABF011FD58BBB00B73432 /* Strawberry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Strawberry.png; sourceTree = "<group>"; };
-		7B7ABF021FD58BBB00B73432 /* Goomba_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Goomba_Icon.png; sourceTree = "<group>"; };
 		7B7ABF031FD58BBB00B73432 /* Mario_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mario_Icon.png; sourceTree = "<group>"; };
-		7B7ABF1E1FD598D200B73432 /* Red_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red_Icon.png; sourceTree = "<group>"; };
 		7B7ABF201FD59AC300B73432 /* Barrel_Icon..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Barrel_Icon..png; sourceTree = "<group>"; };
 		7B7ABF221FD59C1A00B73432 /* Contra_S_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Contra_S_icon.png; sourceTree = "<group>"; };
 		7B7ABF241FD59D4F00B73432 /* Mushroom.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Mushroom.gif; sourceTree = "<group>"; };
 		7B7ABF261FD59E5300B73432 /* Mario_Theme..gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Mario_Theme..gif; sourceTree = "<group>"; };
 		7B7ABF281FD59F6F00B73432 /* UpBotton..gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = UpBotton..gif; sourceTree = "<group>"; };
 		7B7ABF291FD59F6F00B73432 /* DownButton..gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = DownButton..gif; sourceTree = "<group>"; };
-		7B7ABF2C1FD5A0DE00B73432 /* StickMAN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StickMAN.png; sourceTree = "<group>"; };
+		7B7ABF481FD5EA7000B73432 /* BlackBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlackBall.png; sourceTree = "<group>"; };
+		7B7ABF491FD5EA7000B73432 /* ContraBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ContraBackground.png; sourceTree = "<group>"; };
+		7B7ABF4A1FD5EA7000B73432 /* DonkeyBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DonkeyBackground.jpg; sourceTree = "<group>"; };
+		7B7ABF4B1FD5EA7000B73432 /* Goomba1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Goomba1.png; sourceTree = "<group>"; };
+		7B7ABF4C1FD5EA7000B73432 /* MarioBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MarioBackground.png; sourceTree = "<group>"; };
+		7B7ABF4D1FD5EA7000B73432 /* PacManBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PacManBackground.png; sourceTree = "<group>"; };
+		7B7ABF4E1FD5EA7000B73432 /* StickManBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = StickManBackground.jpg; sourceTree = "<group>"; };
+		7B7ABF4F1FD5EA7000B73432 /* Whie_StickMan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Whie_StickMan.png; sourceTree = "<group>"; };
+		7B7ABF501FD5EA7000B73432 /* WhiteBall.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = WhiteBall.gif; sourceTree = "<group>"; };
+		7B7ABF5A1FD5EC4400B73432 /* EmptyImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EmptyImage.png; sourceTree = "<group>"; };
 		7B909DF41FC6F1C400AEA780 /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOver.h; sourceTree = "<group>"; };
 		7B909DF51FC6F1C400AEA780 /* GameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOver.m; sourceTree = "<group>"; };
 		FE632AB31FBDC6C400D89391 /* ObjectCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectCustom.h; sourceTree = "<group>"; };
@@ -229,17 +239,22 @@
 		7B81ABFE1FBA45BA00B297E6 /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
-				7B7ABEF21FD58BBB00B73432 /* GreenBall_Icon.png */,
-				7B7ABF2C1FD5A0DE00B73432 /* StickMAN.png */,
 				7B7ABF281FD59F6F00B73432 /* UpBotton..gif */,
 				7B7ABF291FD59F6F00B73432 /* DownButton..gif */,
 				7B7ABEF31FD58BBB00B73432 /* PacMan_Icon.png */,
+				7B7ABF481FD5EA7000B73432 /* BlackBall.png */,
+				7B7ABF491FD5EA7000B73432 /* ContraBackground.png */,
+				7B7ABF4A1FD5EA7000B73432 /* DonkeyBackground.jpg */,
+				7B7ABF4B1FD5EA7000B73432 /* Goomba1.png */,
+				7B7ABF4C1FD5EA7000B73432 /* MarioBackground.png */,
+				7B7ABF4D1FD5EA7000B73432 /* PacManBackground.png */,
+				7B7ABF4E1FD5EA7000B73432 /* StickManBackground.jpg */,
+				7B7ABF4F1FD5EA7000B73432 /* Whie_StickMan.png */,
+				7B7ABF501FD5EA7000B73432 /* WhiteBall.gif */,
 				7B7ABEF41FD58BBB00B73432 /* Banana_Icon.png */,
 				7B7ABEF61FD58BBB00B73432 /* Goast_Icon.png */,
 				7B7ABF261FD59E5300B73432 /* Mario_Theme..gif */,
 				7B7ABEF71FD58BBB00B73432 /* PacMan_Theme.png */,
-				7B7ABF1E1FD598D200B73432 /* Red_Icon.png */,
-				7B7ABEF91FD58BBB00B73432 /* stickMan_Theme.png */,
 				7B7ABF201FD59AC300B73432 /* Barrel_Icon..png */,
 				7B7ABEFA1FD58BBB00B73432 /* Contra_Theme.png */,
 				7B7ABF221FD59C1A00B73432 /* Contra_S_icon.png */,
@@ -249,10 +264,10 @@
 				7B7ABF001FD58BBB00B73432 /* Donkey_Icon.png */,
 				7B7ABF241FD59D4F00B73432 /* Mushroom.gif */,
 				7B7ABF011FD58BBB00B73432 /* Strawberry.png */,
-				7B7ABF021FD58BBB00B73432 /* Goomba_Icon.png */,
 				7B7ABF031FD58BBB00B73432 /* Mario_Icon.png */,
 				7B7ABEE21FD5885700B73432 /* BackButton.png */,
 				7B7ABEE81FD5893100B73432 /* PowerOff.png */,
+				7B7ABF5A1FD5EC4400B73432 /* EmptyImage.png */,
 				7B7ABEE91FD5893100B73432 /* HomePage.png */,
 				7B7ABEEA1FD5893100B73432 /* LunchScreenLogo.png */,
 				7B7ABEE61FD5889200B73432 /* Next.png */,
@@ -373,35 +388,40 @@
 				7B6C82891FB9AF2500F5AA56 /* LaunchScreen.storyboard in Resources */,
 				7B6C82861FB9AF2500F5AA56 /* Assets.xcassets in Resources */,
 				7B7ABF141FD58BBB00B73432 /* Donkey_Icon.png in Resources */,
+				7B7ABF541FD5EA7000B73432 /* Goomba1.png in Resources */,
 				7B7ABEEF1FD58B4700B73432 /* Tunnel_Icon.png in Resources */,
 				7B7ABEF11FD58B6800B73432 /* Start_Icon.png in Resources */,
 				7B7ABEE71FD5889200B73432 /* Next.png in Resources */,
 				7B7ABEE31FD5885700B73432 /* BackButton.png in Resources */,
+				7B7ABF5B1FD5EC4400B73432 /* EmptyImage.png in Resources */,
 				7B7ABF271FD59E5300B73432 /* Mario_Theme..gif in Resources */,
 				7B7ABF111FD58BBB00B73432 /* Contra_Icon.png in Resources */,
+				7B7ABF511FD5EA7000B73432 /* BlackBall.png in Resources */,
 				7B7ABF0E1FD58BBB00B73432 /* Contra_Theme.png in Resources */,
 				7B7ABF0A1FD58BBB00B73432 /* Goast_Icon.png in Resources */,
-				7B7ABF0D1FD58BBB00B73432 /* stickMan_Theme.png in Resources */,
 				7B7ABEEB1FD5893100B73432 /* PowerOff.png in Resources */,
 				7B7ABF0B1FD58BBB00B73432 /* PacMan_Theme.png in Resources */,
 				7B7ABF071FD58BBB00B73432 /* PacMan_Icon.png in Resources */,
+				7B7ABF531FD5EA7000B73432 /* DonkeyBackground.jpg in Resources */,
 				7B7ABEE51FD5888A00B73432 /* Back.png in Resources */,
 				7B7ABF081FD58BBB00B73432 /* Banana_Icon.png in Resources */,
+				7B7ABF551FD5EA7000B73432 /* MarioBackground.png in Resources */,
 				7B7ABF211FD59AC300B73432 /* Barrel_Icon..png in Resources */,
+				7B7ABF581FD5EA7000B73432 /* Whie_StickMan.png in Resources */,
 				7B7ABF2B1FD59F6F00B73432 /* DownButton..gif in Resources */,
 				7B7ABF2A1FD59F6F00B73432 /* UpBotton..gif in Resources */,
 				7B7ABEEC1FD5893100B73432 /* HomePage.png in Resources */,
+				7B7ABF571FD5EA7000B73432 /* StickManBackground.jpg in Resources */,
 				7B7ABF131FD58BBB00B73432 /* Donkey_Theme.png in Resources */,
 				7B7ABF251FD59D4F00B73432 /* Mushroom.gif in Resources */,
 				7B7ABF121FD58BBB00B73432 /* ContraBoss_Icon.png in Resources */,
-				7B7ABF161FD58BBB00B73432 /* Goomba_Icon.png in Resources */,
-				7B7ABF061FD58BBB00B73432 /* GreenBall_Icon.png in Resources */,
 				7B7ABF171FD58BBB00B73432 /* Mario_Icon.png in Resources */,
+				7B7ABF561FD5EA7000B73432 /* PacManBackground.png in Resources */,
+				7B7ABF591FD5EA7000B73432 /* WhiteBall.gif in Resources */,
 				7B7ABF151FD58BBB00B73432 /* Strawberry.png in Resources */,
-				7B7ABF1F1FD598D200B73432 /* Red_Icon.png in Resources */,
 				7B6C82841FB9AF2500F5AA56 /* Main.storyboard in Resources */,
+				7B7ABF521FD5EA7000B73432 /* ContraBackground.png in Resources */,
 				7B7ABEED1FD5893100B73432 /* LunchScreenLogo.png in Resources */,
-				7B7ABF2D1FD5A0DE00B73432 /* StickMAN.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

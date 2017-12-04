@@ -15,6 +15,7 @@
 @property(weak, nonatomic) IBOutlet UILabel *BestScore;
 @property (strong, nonatomic) IBOutlet UIButton *TouchToBegin;
 @property(strong, nonatomic) NSTimer *Object;
+@property (strong, nonatomic) IBOutlet UIImageView *Background;
 
 
 @property int ObjectPostion;

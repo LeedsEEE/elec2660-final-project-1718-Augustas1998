@@ -167,7 +167,7 @@
     
     NSString *CharSelect = [[NSUserDefaults standardUserDefaults] stringForKey:@"CharacterSelected"];
     if ([CharSelect  isEqual: @"StickMan"]) {
-        [_CharacterImage setImage: [UIImage imageNamed:@"stickMAN.png"]];
+        [_CharacterImage setImage: [UIImage imageNamed:@"Whie_StickMan.png"]];
     }
     else if ([CharSelect  isEqual: @"PacMan"]) {
         [_CharacterImage setImage: [UIImage imageNamed:@"PacMan_Icon.png"]];
@@ -189,16 +189,18 @@
 
     
     if ([objectSelect isEqualToString:@"StickMan_Theme"]){
+        [_Background setImage:[UIImage imageNamed:@"StickManBackground.jpg"]];
         if (R > 1){
             _T = true;
-            [_ObjectImage setImage:[UIImage imageNamed:@"Red_Icon.png"]];
+            [_ObjectImage setImage:[UIImage imageNamed:@"BlackBall.png"]];
         }
         else{
             _T = false;
-            [_ObjectImage setImage:[UIImage imageNamed:@"GreenBall_Icon.png"]];
+            [_ObjectImage setImage:[UIImage imageNamed:@"WhiteBall.gif"]];
         }
     }
     else if ([objectSelect isEqualToString:@"PacMan_Theme"]){
+        [_Background setImage:[UIImage imageNamed:@"PacManBackground.png"]];
         if (R > 1){
             _T = true;
             [_ObjectImage setImage:[UIImage imageNamed:@"Goast_Icon.png"]];
@@ -210,6 +212,7 @@
     }
 
     else if ([objectSelect isEqualToString:@"Contra_Theme"]){
+        [_Background setImage:[UIImage imageNamed:@"ContraBackground.png"]];
         if (R > 1){
             _T = true;
             [_ObjectImage setImage:[UIImage imageNamed:@"ContraBoss_Icon.png"]];
@@ -220,6 +223,7 @@
         }
     }
     else if ([objectSelect isEqualToString:@"Donkey-Kong_Theme"]){
+        [_Background setImage:[UIImage imageNamed:@"DonkeyBackground.jpg"]];
         if (R > 1){
             _T = true;
             [_ObjectImage setImage:[UIImage imageNamed:@"Barrel_Icon..png"]];
@@ -230,9 +234,10 @@
         }
     }
     else if ([objectSelect isEqualToString:@"Mario_Theme"]){
+        [_Background setImage:[UIImage imageNamed:@"MarioBackground.png"]];
         if (R > 1){
             _T = true;
-            [_ObjectImage setImage:[UIImage imageNamed:@"Goomba_Icon.png"]];
+            [_ObjectImage setImage:[UIImage imageNamed:@"Goomba1.png"]];
         }
         else{
             _T = false;
