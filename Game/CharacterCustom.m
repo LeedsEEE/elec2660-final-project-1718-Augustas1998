@@ -73,7 +73,7 @@
 
 - (IBAction)Character_Donkey:(UIButton *)sender {
     if( _SpecialPoints >= 200){
-        _A_L_Donkey.text = @"Available";
+        _CharSelect = @"Donkey-Kong";
         [self CharacterSelected];
     }
 }

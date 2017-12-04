@@ -70,14 +70,25 @@
     _TouchToBegin.hidden = true;
     _ObjectImage.hidden = false;
     _CharacterImage.hidden = false;
-    _Object = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(ObjectLocation) userInfo:nil repeats:YES];
+    _Object = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(ObjectLocation) userInfo:nil repeats:YES];
     [self ObjectLocation];
     
 }
 -(void)ObjectLocation{
     if (_A == true){
-        int Speed = 1+(_Svalue * 0.1);
-        _ObjectImage.center = CGPointMake(_ObjectImage.center.x -Speed, _ObjectImage.center.y);
+        if( _Svalue >= 0 && _Svalue < 10){
+            _Speed = 1;
+        }
+        else if( _Svalue >= 10 && _Svalue < 30){
+            _Speed = 2;
+        }
+        else if (_Svalue >= 30 && _Svalue < 50){
+            _Speed = 3;
+        }
+        else{
+            _Speed = 5;
+        }
+        _ObjectImage.center = CGPointMake(_ObjectImage.center.x -_Speed, _ObjectImage.center.y);
         if(_ObjectImage.center.x == -30){
             [self objectSelectedImages];
             NSUInteger RandomValue = arc4random_uniform(3);
@@ -115,7 +126,6 @@
             else if (_T==false){
                 _SpecialPoints = _SpecialPoints + 1;
                 [[NSUserDefaults standardUserDefaults]setInteger:_SpecialPoints forKey:@"Special"];
-                
                 [self objectSelectedImages];
                 NSUInteger RandomValue = arc4random_uniform(3);
                 int RandObjects;

@@ -22,6 +22,7 @@
 @property int RandObject;
 @property int Svalue;
 @property int Bvalue;
+@property int Speed;
 @property int SpecialPoints;
 @property int RoundsPlayed;
 @property bool A;
