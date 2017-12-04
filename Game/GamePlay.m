@@ -167,19 +167,19 @@
     
     NSString *CharSelect = [[NSUserDefaults standardUserDefaults] stringForKey:@"CharacterSelected"];
     if ([CharSelect  isEqual: @"StickMan"]) {
-        [_CharacterImage setImage: [UIImage imageNamed:@"Stick-man logo.png"]];
+        [_CharacterImage setImage: [UIImage imageNamed:@"stickMAN.png"]];
     }
     else if ([CharSelect  isEqual: @"PacMan"]) {
-        [_CharacterImage setImage: [UIImage imageNamed:@"Pac-man logo.png"]];
+        [_CharacterImage setImage: [UIImage imageNamed:@"PacMan_Icon.png"]];
     }
     else if ([CharSelect isEqualToString:@"Contra"]){
-        [_CharacterImage setImage: [UIImage imageNamed:@"Contra logo.png"]];
+        [_CharacterImage setImage: [UIImage imageNamed:@"Contra_Icon.png"]];
     }
     else if ([CharSelect isEqualToString:@"Donkey-Kong"]){
-        [_CharacterImage setImage: [UIImage imageNamed:@"Donkey-Kong logo.png"]];
+        [_CharacterImage setImage: [UIImage imageNamed:@"Donkey_Icon.png"]];
     }
     else if ([CharSelect isEqualToString:@"Mario"]){
-        [_CharacterImage setImage: [UIImage imageNamed:@"Mario logo.png"]];
+        [_CharacterImage setImage: [UIImage imageNamed:@"Mario_Icon.png"]];
     }
 }
 
@@ -191,62 +191,52 @@
     if ([objectSelect isEqualToString:@"StickMan_Theme"]){
         if (R > 1){
             _T = true;
-            [_ObjectImage setImage:[UIImage imageNamed:@"Red ball.png"]];
+            [_ObjectImage setImage:[UIImage imageNamed:@"Red_Icon.png"]];
         }
         else{
             _T = false;
-            [_ObjectImage setImage:[UIImage imageNamed:@"Green ball.png"]];
-        }
-    }
-    else if ([objectSelect isEqualToString:@"StickMan_Theme"]){
-        if (R > 1){
-            _T = true;
-            [_ObjectImage setImage:[UIImage imageNamed:@"Red ball.png"]];
-        }
-        else{
-            _T = false;
-            [_ObjectImage setImage:[UIImage imageNamed:@"Green ball.png"]];
+            [_ObjectImage setImage:[UIImage imageNamed:@"GreenBall_Icon.png"]];
         }
     }
     else if ([objectSelect isEqualToString:@"PacMan_Theme"]){
         if (R > 1){
             _T = true;
-            [_ObjectImage setImage:[UIImage imageNamed:@"goast-pac.png"]];
+            [_ObjectImage setImage:[UIImage imageNamed:@"Goast_Icon.png"]];
         }
         else{
             _T = false;
-            [_ObjectImage setImage:[UIImage imageNamed:@"fruit-pac.png"]];
+            [_ObjectImage setImage:[UIImage imageNamed:@"Strawberry.png"]];
         }
     }
 
     else if ([objectSelect isEqualToString:@"Contra_Theme"]){
         if (R > 1){
             _T = true;
-            [_ObjectImage setImage:[UIImage imageNamed:@"contra-boss.png"]];
+            [_ObjectImage setImage:[UIImage imageNamed:@"ContraBoss_Icon.png"]];
         }
         else{
             _T = false;
-            [_ObjectImage setImage:[UIImage imageNamed:@"Conta-s.png"]];
+            [_ObjectImage setImage:[UIImage imageNamed:@"Contra_s_Icon.png"]];
         }
     }
     else if ([objectSelect isEqualToString:@"Donkey-Kong_Theme"]){
         if (R > 1){
             _T = true;
-            [_ObjectImage setImage:[UIImage imageNamed:@"Barrel.jpg"]];
+            [_ObjectImage setImage:[UIImage imageNamed:@"Barrel_Icon..png"]];
         }
         else{
             _T = false;
-            [_ObjectImage setImage:[UIImage imageNamed:@"banana.jpg.png"]];
+            [_ObjectImage setImage:[UIImage imageNamed:@"Banana_Icon.png"]];
         }
     }
     else if ([objectSelect isEqualToString:@"Mario_Theme"]){
         if (R > 1){
             _T = true;
-            [_ObjectImage setImage:[UIImage imageNamed:@"goomba.png"]];
+            [_ObjectImage setImage:[UIImage imageNamed:@"Goomba_Icon.png"]];
         }
         else{
             _T = false;
-            [_ObjectImage setImage:[UIImage imageNamed:@"mashroom mario.png"]];
+            [_ObjectImage setImage:[UIImage imageNamed:@"Mushroom.gif"]];
         }
     }
 

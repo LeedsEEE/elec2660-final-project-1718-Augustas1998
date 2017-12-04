@@ -18,7 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-      _SpecialPoints = [[NSUserDefaults standardUserDefaults] integerForKey:@"Special"];
+      //_SpecialPoints = [[NSUserDefaults standardUserDefaults] integerForKey:@"Special"];
+    _SpecialPoints = 1000;
     if (_SpecialPoints >=50) {
         _A_L_pacman.text = @"Available";
     }

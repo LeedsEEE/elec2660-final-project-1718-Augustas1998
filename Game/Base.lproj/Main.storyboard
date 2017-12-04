@@ -22,22 +22,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWl-uS-r9e">
-                                <rect key="frame" x="115" y="50" width="516" height="45"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="37"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWl-uS-r9e">
+                                <rect key="frame" x="264" y="40" width="208" height="65"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Statistics">
+                                        <attributes>
+                                            <font key="NSFont" size="50" name="MarkerFelt-Wide"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N16-wv-ZZa">
-                                <rect key="frame" x="110" y="155" width="132" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N16-wv-ZZa">
+                                <rect key="frame" x="110" y="165" width="119" height="29"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Best Score:">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chatacter points:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiH-CE-Pub">
-                                <rect key="frame" x="80" y="237" width="199" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiH-CE-Pub">
+                                <rect key="frame" x="80" y="244" width="189" height="29"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Chatacter points:">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmb-se-8SE">
@@ -46,41 +64,52 @@
                                     <constraint firstAttribute="height" constant="81" id="6Vf-2G-COv"/>
                                     <constraint firstAttribute="width" constant="106" id="Ht3-iO-doH"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Back logo.png"/>
+                                <state key="normal" title="Button" image="BackButton.png"/>
                                 <connections>
                                     <segue destination="LzW-FX-b30" kind="show" id="0Na-yq-3LZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rounds played:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syl-sh-L5E">
-                                <rect key="frame" x="417" y="155" width="249" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syl-sh-L5E">
+                                <rect key="frame" x="417" y="165" width="249" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="249" id="KLq-bP-3OL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Rounds played:">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avrage score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icC-7H-k7v">
-                                <rect key="frame" x="417" y="237" width="249" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icC-7H-k7v">
+                                <rect key="frame" x="417" y="244" width="249" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="249" id="kZe-wg-QWN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Avrage score:">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="gWl-uS-r9e" secondAttribute="trailing" constant="85" id="7rd-di-4LO"/>
                             <constraint firstItem="Syl-sh-L5E" firstAttribute="top" secondItem="gWl-uS-r9e" secondAttribute="bottom" constant="60" id="8Pk-yN-9aR"/>
+                            <constraint firstItem="gWl-uS-r9e" firstAttribute="centerX" secondItem="9Bc-4A-FK5" secondAttribute="centerX" id="Lau-Mm-SQv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="icC-7H-k7v" secondAttribute="trailing" constant="50" id="Mdw-1D-2cc"/>
                             <constraint firstItem="dmb-se-8SE" firstAttribute="top" secondItem="h2h-O1-4UI" secondAttribute="bottom" id="S9i-RS-Vvs"/>
                             <constraint firstItem="iiH-CE-Pub" firstAttribute="leading" secondItem="9Bc-4A-FK5" secondAttribute="leadingMargin" constant="60" id="TFR-J2-UJI"/>
                             <constraint firstItem="dmb-se-8SE" firstAttribute="leading" secondItem="9Bc-4A-FK5" secondAttribute="leadingMargin" id="XeH-ia-kbb"/>
-                            <constraint firstItem="gWl-uS-r9e" firstAttribute="leading" secondItem="9Bc-4A-FK5" secondAttribute="leadingMargin" constant="95" id="XkI-bJ-1VI"/>
                             <constraint firstItem="N16-wv-ZZa" firstAttribute="top" secondItem="gWl-uS-r9e" secondAttribute="bottom" constant="60" id="b3G-Xn-qfZ"/>
-                            <constraint firstItem="gWl-uS-r9e" firstAttribute="top" secondItem="h2h-O1-4UI" secondAttribute="bottom" constant="30" id="coy-QN-tLH"/>
+                            <constraint firstItem="gWl-uS-r9e" firstAttribute="top" secondItem="h2h-O1-4UI" secondAttribute="bottom" constant="20" id="coy-QN-tLH"/>
                             <constraint firstItem="icC-7H-k7v" firstAttribute="top" secondItem="Syl-sh-L5E" secondAttribute="bottom" constant="50" id="fa0-7S-Nyw"/>
                             <constraint firstItem="N16-wv-ZZa" firstAttribute="leading" secondItem="9Bc-4A-FK5" secondAttribute="leadingMargin" constant="90" id="gp8-BR-rEQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Syl-sh-L5E" secondAttribute="trailing" constant="50" id="oXC-d1-Rvy"/>
@@ -110,22 +139,127 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The aim of the game is to dodge the following icons:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQ4-TN-RHZ">
-                                <rect key="frame" x="169" y="85" width="399" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQ4-TN-RHZ">
+                                <rect key="frame" x="190" y="95" width="357" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="The aim of the game is to dodge the following icons:">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and to accept the following icons (character points):" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wns-bi-8ci">
-                                <rect key="frame" x="170" y="206" width="397" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wns-bi-8ci">
+                                <rect key="frame" x="185" y="214" width="366" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="and to accept the following icons (character points):">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tutorial " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YP-KI-axX">
-                                <rect key="frame" x="303" y="20" width="130" height="45"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="37"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YP-KI-axX">
+                                <rect key="frame" x="276" y="20" width="184" height="65"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Tutorial ">
+                                        <attributes>
+                                            <font key="NSFont" size="50" name="MarkerFelt-Wide"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Red_Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="zvB-IE-r0l">
+                                <rect key="frame" x="81" y="124" width="67" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="HOq-YN-Y9a"/>
+                                    <constraint firstAttribute="width" constant="67" id="hcV-RP-Ge7"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Goast_Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="otY-px-Cy6">
+                                <rect key="frame" x="208" y="124" width="67" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="tgt-ab-98f"/>
+                                    <constraint firstAttribute="height" constant="80" id="z6B-ng-vhU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ContraBoss_Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z4x-1Q-ydB">
+                                <rect key="frame" x="335" y="124" width="67" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="FuJ-jK-lIN"/>
+                                    <constraint firstAttribute="height" constant="80" id="OKG-r9-2Rn"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Barrel_Icon..png" translatesAutoresizingMaskIntoConstraints="NO" id="uYg-v9-l7X">
+                                <rect key="frame" x="462" y="124" width="67" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="Pov-7h-Dkl"/>
+                                    <constraint firstAttribute="height" constant="80" id="vhX-Ok-OUx"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Goomba_Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="JCY-gB-Kue">
+                                <rect key="frame" x="589" y="124" width="67" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="BrM-vA-H4w"/>
+                                    <constraint firstAttribute="height" constant="80" id="oBz-Io-SNr"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenBall_Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="uYf-DF-4eb">
+                                <rect key="frame" x="81" y="243" width="67" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="FRg-nj-bcf"/>
+                                    <constraint firstAttribute="height" constant="80" id="L3l-Zd-Q7a"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Strawberry.png" translatesAutoresizingMaskIntoConstraints="NO" id="9O2-53-ZhA">
+                                <rect key="frame" x="208" y="243" width="67" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="FDV-FX-IEC"/>
+                                    <constraint firstAttribute="height" constant="80" id="wwp-ya-k7Z"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Contra_S_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="uLG-Nd-Z0y">
+                                <rect key="frame" x="335" y="243" width="67" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="bQs-bb-Lhj"/>
+                                    <constraint firstAttribute="width" constant="67" id="oZv-b8-kei"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banana_Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hfx-IO-feg">
+                                <rect key="frame" x="462" y="243" width="67" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="A9t-LT-QK8"/>
+                                    <constraint firstAttribute="height" constant="80" id="wY2-om-RaI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mushroom.gif" translatesAutoresizingMaskIntoConstraints="NO" id="nih-Qg-iDe">
+                                <rect key="frame" x="589" y="243" width="67" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="d1I-1U-ShT"/>
+                                    <constraint firstAttribute="height" constant="80" id="zPB-LQ-mVE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRp-HG-voA">
+                                <rect key="frame" x="64" y="333" width="608" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="CsY-BU-GrZ"/>
+                                    <constraint firstAttribute="width" constant="608" id="cwb-Sx-t0h"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">so that you could buy special customization outfits. The numerical value next to the character/object is the number of character points needed to unlock the outfit.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIf-1d-wgZ">
@@ -134,106 +268,25 @@
                                     <constraint firstAttribute="width" constant="106" id="0m6-LI-Hyi"/>
                                     <constraint firstAttribute="height" constant="81" id="FDH-pv-7vD"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Back logo.png"/>
+                                <state key="normal" title="Button" image="BackButton.png"/>
                                 <connections>
                                     <segue destination="LzW-FX-b30" kind="show" id="zlI-qV-a2R"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Red ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="zvB-IE-r0l">
-                                <rect key="frame" x="81" y="116" width="67" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="HOq-YN-Y9a"/>
-                                    <constraint firstAttribute="width" constant="67" id="hcV-RP-Ge7"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goast-pac.png" translatesAutoresizingMaskIntoConstraints="NO" id="otY-px-Cy6">
-                                <rect key="frame" x="208" y="116" width="67" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="tgt-ab-98f"/>
-                                    <constraint firstAttribute="height" constant="80" id="z6B-ng-vhU"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contra-boss.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z4x-1Q-ydB">
-                                <rect key="frame" x="335" y="116" width="67" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="FuJ-jK-lIN"/>
-                                    <constraint firstAttribute="height" constant="80" id="OKG-r9-2Rn"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Barrel.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uYg-v9-l7X">
-                                <rect key="frame" x="462" y="116" width="67" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="Pov-7h-Dkl"/>
-                                    <constraint firstAttribute="height" constant="80" id="vhX-Ok-OUx"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goomba.png" translatesAutoresizingMaskIntoConstraints="NO" id="JCY-gB-Kue">
-                                <rect key="frame" x="589" y="116" width="67" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="BrM-vA-H4w"/>
-                                    <constraint firstAttribute="height" constant="80" id="oBz-Io-SNr"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Green ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="uYf-DF-4eb">
-                                <rect key="frame" x="81" y="237" width="67" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="FRg-nj-bcf"/>
-                                    <constraint firstAttribute="height" constant="80" id="L3l-Zd-Q7a"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fruit-pac.png" translatesAutoresizingMaskIntoConstraints="NO" id="9O2-53-ZhA">
-                                <rect key="frame" x="208" y="237" width="67" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="FDV-FX-IEC"/>
-                                    <constraint firstAttribute="height" constant="80" id="wwp-ya-k7Z"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Conta-s.png" translatesAutoresizingMaskIntoConstraints="NO" id="uLG-Nd-Z0y">
-                                <rect key="frame" x="335" y="237" width="67" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="bQs-bb-Lhj"/>
-                                    <constraint firstAttribute="width" constant="67" id="oZv-b8-kei"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana.jpg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hfx-IO-feg">
-                                <rect key="frame" x="462" y="237" width="67" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="A9t-LT-QK8"/>
-                                    <constraint firstAttribute="height" constant="80" id="wY2-om-RaI"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mashroom mario.png" translatesAutoresizingMaskIntoConstraints="NO" id="nih-Qg-iDe">
-                                <rect key="frame" x="589" y="237" width="67" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="d1I-1U-ShT"/>
-                                    <constraint firstAttribute="height" constant="80" id="zPB-LQ-mVE"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRp-HG-voA">
-                                <rect key="frame" x="64" y="327" width="608" height="69"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="69" id="CsY-BU-GrZ"/>
-                                    <constraint firstAttribute="width" constant="608" id="cwb-Sx-t0h"/>
-                                </constraints>
-                                <string key="text">so that you could buy special customization outfits. The numerical value next to the character/object is the number of character points needed to unlock the outfit.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="9O2-53-ZhA" firstAttribute="top" secondItem="wns-bi-8ci" secondAttribute="bottom" constant="10" id="0Xa-vB-maW"/>
                             <constraint firstItem="8YP-KI-axX" firstAttribute="centerX" secondItem="dxA-jE-0aY" secondAttribute="centerX" id="8mP-2T-fRg"/>
                             <constraint firstItem="uLG-Nd-Z0y" firstAttribute="leading" secondItem="9O2-53-ZhA" secondAttribute="trailing" constant="60" id="Bw5-e9-VXk"/>
                             <constraint firstItem="otY-px-Cy6" firstAttribute="leading" secondItem="zvB-IE-r0l" secondAttribute="trailing" constant="60" id="CmX-9u-7tA"/>
                             <constraint firstItem="uYg-v9-l7X" firstAttribute="top" secondItem="iQ4-TN-RHZ" secondAttribute="bottom" constant="10" id="D7o-qW-nyU"/>
-                            <constraint firstItem="8YP-KI-axX" firstAttribute="top" secondItem="NxO-Kg-RL4" secondAttribute="bottom" id="FxU-2Q-iDv"/>
                             <constraint firstItem="uLG-Nd-Z0y" firstAttribute="centerX" secondItem="dxA-jE-0aY" secondAttribute="centerX" id="Gvv-bd-SuT"/>
                             <constraint firstItem="uYf-DF-4eb" firstAttribute="top" secondItem="wns-bi-8ci" secondAttribute="bottom" constant="10" id="Jve-TC-LKQ"/>
                             <constraint firstItem="zvB-IE-r0l" firstAttribute="top" secondItem="iQ4-TN-RHZ" secondAttribute="bottom" constant="10" id="Lnr-Kg-GyZ"/>
                             <constraint firstItem="wns-bi-8ci" firstAttribute="top" secondItem="Z4x-1Q-ydB" secondAttribute="bottom" constant="10" id="OWw-Ju-hHZ"/>
-                            <constraint firstItem="iQ4-TN-RHZ" firstAttribute="top" secondItem="8YP-KI-axX" secondAttribute="bottom" constant="20" id="QJt-nN-NOi"/>
+                            <constraint firstItem="iQ4-TN-RHZ" firstAttribute="top" secondItem="8YP-KI-axX" secondAttribute="bottom" constant="10" id="QJt-nN-NOi"/>
+                            <constraint firstItem="IIf-1d-wgZ" firstAttribute="top" secondItem="NxO-Kg-RL4" secondAttribute="bottom" id="Qgx-Yr-TsY"/>
                             <constraint firstItem="9O2-53-ZhA" firstAttribute="leading" secondItem="uYf-DF-4eb" secondAttribute="trailing" constant="60" id="StD-cr-hEd"/>
                             <constraint firstItem="IIf-1d-wgZ" firstAttribute="leading" secondItem="dxA-jE-0aY" secondAttribute="leadingMargin" constant="-16" id="VV9-5Q-F07"/>
                             <constraint firstItem="Z4x-1Q-ydB" firstAttribute="leading" secondItem="otY-px-Cy6" secondAttribute="trailing" constant="60" id="XD3-fB-wJF"/>
@@ -241,12 +294,11 @@
                             <constraint firstItem="JCY-gB-Kue" firstAttribute="leading" secondItem="uYg-v9-l7X" secondAttribute="trailing" constant="60" id="Ylv-AG-PkL"/>
                             <constraint firstItem="Z4x-1Q-ydB" firstAttribute="top" secondItem="iQ4-TN-RHZ" secondAttribute="bottom" constant="10" id="Zet-hx-KPk"/>
                             <constraint firstItem="iQ4-TN-RHZ" firstAttribute="centerX" secondItem="dxA-jE-0aY" secondAttribute="centerX" id="cn6-4s-rZ2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IIf-1d-wgZ" secondAttribute="trailing" constant="606" id="fcb-gP-TVG"/>
+                            <constraint firstItem="8YP-KI-axX" firstAttribute="top" secondItem="NxO-Kg-RL4" secondAttribute="bottom" id="euZ-Ov-n60"/>
                             <constraint firstItem="uYg-v9-l7X" firstAttribute="leading" secondItem="Z4x-1Q-ydB" secondAttribute="trailing" constant="60" id="ffA-8H-bdg"/>
                             <constraint firstItem="wns-bi-8ci" firstAttribute="centerX" secondItem="dxA-jE-0aY" secondAttribute="centerX" id="iEk-5E-whb"/>
                             <constraint firstItem="uLG-Nd-Z0y" firstAttribute="top" secondItem="wns-bi-8ci" secondAttribute="bottom" constant="10" id="jco-mX-iMM"/>
                             <constraint firstItem="Hfx-IO-feg" firstAttribute="top" secondItem="wns-bi-8ci" secondAttribute="bottom" constant="10" id="m5Q-9a-Y4U"/>
-                            <constraint firstItem="IIf-1d-wgZ" firstAttribute="top" secondItem="NxO-Kg-RL4" secondAttribute="bottom" id="rNq-L7-3v4"/>
                             <constraint firstItem="Z4x-1Q-ydB" firstAttribute="centerX" secondItem="dxA-jE-0aY" secondAttribute="centerX" id="thC-Ga-o67"/>
                             <constraint firstItem="JCY-gB-Kue" firstAttribute="top" secondItem="iQ4-TN-RHZ" secondAttribute="bottom" constant="10" id="u19-ms-mrT"/>
                             <constraint firstItem="otY-px-Cy6" firstAttribute="top" secondItem="iQ4-TN-RHZ" secondAttribute="bottom" constant="10" id="uIh-bi-dl0"/>
@@ -273,35 +325,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick-man logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="QdJ-QO-ztK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StickMAN.png" translatesAutoresizingMaskIntoConstraints="NO" id="QdJ-QO-ztK">
                                 <rect key="frame" x="0.0" y="200" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tunnel.png" translatesAutoresizingMaskIntoConstraints="NO" id="4r6-uS-tKs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tunnel_Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="4r6-uS-tKs">
                                 <rect key="frame" x="635" y="210" width="105" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="G3Y-mi-iLo"/>
                                     <constraint firstAttribute="width" constant="105" id="aZw-7Z-CVv"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tunnel.png" translatesAutoresizingMaskIntoConstraints="NO" id="fBU-gS-VaU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tunnel_Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="fBU-gS-VaU">
                                 <rect key="frame" x="635" y="300" width="105" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="KWc-us-SkE"/>
                                     <constraint firstAttribute="width" constant="105" id="VDw-zH-Wgi"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tunnel.png" translatesAutoresizingMaskIntoConstraints="NO" id="ufD-Xl-wyR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tunnel_Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="ufD-Xl-wyR">
                                 <rect key="frame" x="635" y="120" width="105" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="105" id="3Hc-yG-Kn6"/>
                                     <constraint firstAttribute="height" constant="50" id="bgL-JL-B1V"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5h-K0-vne">
-                                <rect key="frame" x="490" y="28" width="71" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5h-K0-vne">
+                                <rect key="frame" x="498" y="30" width="63" height="28"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Score:">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdy-y9-25A">
@@ -310,37 +368,50 @@
                                     <constraint firstAttribute="width" constant="70" id="8oc-Vq-tbk"/>
                                     <constraint firstAttribute="height" constant="70" id="hUU-le-crO"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Green-up-button.png"/>
+                                <state key="normal" title="Button" image="UpBotton..gif"/>
                                 <connections>
                                     <action selector="UpButton:" destination="od4-tN-nmQ" eventType="touchUpInside" id="n17-rx-4QV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoE-LI-oYW">
-                                <rect key="frame" x="120" y="344" width="70" height="70"/>
+                                <rect key="frame" x="100" y="344" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="5Ip-mS-X0e"/>
                                     <constraint firstAttribute="height" constant="70" id="6K4-1w-Stq"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Green-down-button.png"/>
+                                <state key="normal" title="Button" image="DownButton..gif"/>
                                 <connections>
                                     <action selector="DownButton:" destination="od4-tN-nmQ" eventType="touchUpInside" id="G4I-UX-HGi"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7E-Tb-6ef">
-                                <rect key="frame" x="99" y="28" width="57" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7E-Tb-6ef">
+                                <rect key="frame" x="100" y="30" width="52" height="28"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Best:">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Red ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="yhT-nt-PM8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Red_Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="yhT-nt-PM8">
                                 <rect key="frame" x="600" y="200" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhU-Xw-aSa">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bhU-Xw-aSa">
                                 <rect key="frame" x="147" y="133" width="329" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="61"/>
-                                <state key="normal" title="Start Game"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Start Game">
+                                            <attributes>
+                                                <font key="NSFont" size="61" name="MarkerFelt-Thin"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <action selector="TouchToBegin:" destination="od4-tN-nmQ" eventType="touchUpInside" id="U0b-eM-6hf"/>
                                 </connections>
@@ -350,16 +421,16 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="wdy-y9-25A" secondAttribute="trailing" constant="100" id="DRa-Cj-9eg"/>
                             <constraint firstItem="0fn-AU-Dkg" firstAttribute="top" secondItem="GoE-LI-oYW" secondAttribute="bottom" id="QbC-px-kBJ"/>
-                            <constraint firstItem="GoE-LI-oYW" firstAttribute="leading" secondItem="IGx-56-YFb" secondAttribute="leadingMargin" constant="100" id="RAP-6U-FJz"/>
+                            <constraint firstItem="GoE-LI-oYW" firstAttribute="leading" secondItem="IGx-56-YFb" secondAttribute="leadingMargin" constant="80" id="RAP-6U-FJz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ufD-Xl-wyR" secondAttribute="trailing" constant="-24" id="SAw-fd-KIX"/>
                             <constraint firstItem="4r6-uS-tKs" firstAttribute="top" secondItem="ufD-Xl-wyR" secondAttribute="bottom" constant="40" id="VcU-wX-Hg1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fBU-gS-VaU" secondAttribute="trailing" constant="-24" id="W6Y-mE-QfO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4r6-uS-tKs" secondAttribute="trailing" constant="-24" id="cxg-mq-ZTv"/>
-                            <constraint firstItem="d5h-K0-vne" firstAttribute="top" secondItem="x0k-RT-OL7" secondAttribute="bottom" constant="8" id="nv3-lU-Wam"/>
+                            <constraint firstItem="d5h-K0-vne" firstAttribute="top" secondItem="x0k-RT-OL7" secondAttribute="bottom" constant="10" id="nv3-lU-Wam"/>
                             <constraint firstItem="0fn-AU-Dkg" firstAttribute="top" secondItem="wdy-y9-25A" secondAttribute="bottom" id="rXz-HI-5nn"/>
                             <constraint firstItem="ufD-Xl-wyR" firstAttribute="top" secondItem="x0k-RT-OL7" secondAttribute="bottom" constant="100" id="rgk-95-QXP"/>
-                            <constraint firstItem="b7E-Tb-6ef" firstAttribute="top" secondItem="x0k-RT-OL7" secondAttribute="bottom" constant="8" id="tKZ-FL-cqi"/>
-                            <constraint firstItem="b7E-Tb-6ef" firstAttribute="leading" secondItem="IGx-56-YFb" secondAttribute="leadingMargin" constant="79" id="tuy-8t-tGF"/>
+                            <constraint firstItem="b7E-Tb-6ef" firstAttribute="top" secondItem="x0k-RT-OL7" secondAttribute="bottom" constant="10" id="tKZ-FL-cqi"/>
+                            <constraint firstItem="b7E-Tb-6ef" firstAttribute="leading" secondItem="IGx-56-YFb" secondAttribute="leadingMargin" constant="80" id="tuy-8t-tGF"/>
                             <constraint firstItem="fBU-gS-VaU" firstAttribute="top" secondItem="4r6-uS-tKs" secondAttribute="bottom" constant="40" id="uMU-4D-peP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="d5h-K0-vne" secondAttribute="trailing" constant="155" id="zBs-9X-Byd"/>
                         </constraints>
@@ -388,138 +459,189 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green&amp;Red theme: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ris-XL-REh">
-                                <rect key="frame" x="288" y="244" width="161" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ris-XL-REh">
+                                <rect key="frame" x="298" y="275" width="141" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Green&amp;Red theme: 0">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ole-k6-9su">
-                                <rect key="frame" x="334" y="275" width="68" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ole-k6-9su">
+                                <rect key="frame" x="335" y="304" width="66" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Available">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pac-man theme: 50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghE-ys-2NK">
-                                <rect key="frame" x="75" y="165" width="152" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghE-ys-2NK">
+                                <rect key="frame" x="35" y="165" width="135" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Pac-man theme: 50">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A/L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4Y-RQ-kHM">
-                                <rect key="frame" x="75" y="196" width="152" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4Y-RQ-kHM">
+                                <rect key="frame" x="35" y="194" width="152" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="152" id="QwO-Gw-qMT"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="A/L">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contra theme: 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaB-H2-x2s">
-                                <rect key="frame" x="533" y="173" width="143" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaB-H2-x2s">
+                                <rect key="frame" x="551" y="165" width="135" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Contra theme: 100">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A/L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5N-5N-NdL">
-                                <rect key="frame" x="533" y="204" width="143" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5N-5N-NdL">
+                                <rect key="frame" x="543" y="194" width="143" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="143" id="wTf-3C-MdL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="A/L">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donkey-Kong theme: 200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTl-UK-LKq">
-                                <rect key="frame" x="70" y="342" width="197" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTl-UK-LKq">
+                                <rect key="frame" x="40" y="338" width="176" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Donkey-Kong theme: 200">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mario theme: 500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXC-uA-jje">
-                                <rect key="frame" x="530" y="345" width="136" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXC-uA-jje">
+                                <rect key="frame" x="536" y="338" width="130" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Mario theme: 500">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A/L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ov3-wK-XTs">
-                                <rect key="frame" x="70" y="373" width="197" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ov3-wK-XTs">
+                                <rect key="frame" x="40" y="367" width="197" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="197" id="xt6-je-Dvx"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="A/L">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A/L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbx-0w-sup">
-                                <rect key="frame" x="530" y="376" width="136" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbx-0w-sup">
+                                <rect key="frame" x="530" y="367" width="136" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="136" id="Jfd-YD-5oJ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Object Customization" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxl-VK-xsV">
-                                <rect key="frame" x="251" y="20" width="235" height="89"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="235.00000000000006" id="CKW-cu-4lr"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="37"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="A/L">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIn-Le-1TW">
-                                <rect key="frame" x="290" y="149" width="180" height="80"/>
+                                <rect key="frame" x="304" y="180" width="129" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="ovY-J7-0KU"/>
+                                    <constraint firstAttribute="width" constant="129" id="IJ1-D6-4b3"/>
                                     <constraint firstAttribute="height" constant="80" id="rzU-WO-38X"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Red&amp;Green.png"/>
+                                <state key="normal" title="Button" image="stickMan_Theme.png"/>
                                 <connections>
                                     <action selector="Object_StickMan:" destination="ngN-e8-4nM" eventType="touchUpInside" id="Dgh-aw-1Kp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lB2-Dt-9hK">
-                                <rect key="frame" x="60" y="70" width="180" height="80"/>
+                                <rect key="frame" x="30" y="70" width="160" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="Tvd-75-wGk"/>
                                     <constraint firstAttribute="height" constant="80" id="eih-ve-svF"/>
+                                    <constraint firstAttribute="width" constant="160" id="mdM-8Z-XBR"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Ppac-man theme.png"/>
+                                <state key="normal" title="Button" image="PacMan_Theme.png"/>
                                 <connections>
                                     <action selector="Object_PacMan:" destination="ngN-e8-4nM" eventType="touchUpInside" id="EU4-Fw-cez"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Q4-ON-h6N">
-                                <rect key="frame" x="506" y="70" width="180" height="88"/>
+                                <rect key="frame" x="536" y="70" width="160" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="den-cL-1ay"/>
-                                    <constraint firstAttribute="height" constant="88" id="h6G-YX-Q2b"/>
+                                    <constraint firstAttribute="height" constant="80" id="ITC-Q9-lIC"/>
+                                    <constraint firstAttribute="width" constant="160" id="Zng-Gy-o7O"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Ccontra theme.png"/>
+                                <state key="normal" title="Button" image="Contra_Theme.png"/>
                                 <connections>
                                     <action selector="Object_Contra:" destination="ngN-e8-4nM" eventType="touchUpInside" id="V9L-CN-nWc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGa-gD-kBA">
-                                <rect key="frame" x="506" y="255" width="180" height="75"/>
+                                <rect key="frame" x="526" y="243" width="160" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="YaI-aZ-Cbk"/>
-                                    <constraint firstAttribute="width" constant="180" id="w9H-eY-LaT"/>
+                                    <constraint firstAttribute="height" constant="80" id="hZi-mp-Xcg"/>
+                                    <constraint firstAttribute="width" constant="160" id="oEc-BK-G6g"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Mmario theme.png"/>
+                                <state key="normal" title="Button" image="Mario_Theme..gif"/>
                                 <connections>
                                     <action selector="Object_Mario:" destination="ngN-e8-4nM" eventType="touchUpInside" id="cQm-RJ-EbY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cX-le-AMq">
-                                <rect key="frame" x="70" y="247" width="180" height="80"/>
+                                <rect key="frame" x="50" y="243" width="160" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="79.999999999999886" id="0DD-ob-YWY"/>
-                                    <constraint firstAttribute="width" constant="180" id="xnP-Bo-QvQ"/>
+                                    <constraint firstAttribute="width" constant="160" id="2Gr-1r-I0n"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="1Donkey-kong theme.png"/>
+                                <state key="normal" title="Button" image="Donkey_Theme.png"/>
                                 <connections>
                                     <action selector="Object_Donkey:" destination="ngN-e8-4nM" eventType="touchUpInside" id="khH-gb-x4i"/>
                                 </connections>
@@ -530,48 +652,63 @@
                                     <constraint firstAttribute="width" constant="45" id="63l-J8-h1M"/>
                                     <constraint firstAttribute="height" constant="40" id="RDg-fT-ZRJ"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="TheBbackPage.png"/>
+                                <state key="normal" title="Button" image="Back.png"/>
                                 <connections>
                                     <segue destination="VHW-Ae-vpr" kind="show" id="hCg-gX-eHT"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxl-VK-xsV">
+                                <rect key="frame" x="200" y="10" width="330" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="330" id="CKW-cu-4lr"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Object Customization">
+                                        <attributes>
+                                            <font key="NSFont" size="50" name="MarkerFelt-Wide"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="3cX-le-AMq" firstAttribute="top" secondItem="L4Y-RQ-kHM" secondAttribute="bottom" constant="30" id="10T-Li-NgX"/>
                             <constraint firstItem="YIn-Le-1TW" firstAttribute="top" secondItem="Vxl-VK-xsV" secondAttribute="bottom" constant="40" id="3Ix-4r-ttF"/>
-                            <constraint firstItem="Vxl-VK-xsV" firstAttribute="centerX" secondItem="Xtm-T8-4KR" secondAttribute="centerX" id="IXe-pJ-6Qh"/>
+                            <constraint firstItem="Vxl-VK-xsV" firstAttribute="top" secondItem="AGS-eD-ETI" secondAttribute="bottom" constant="-10" id="IdX-fX-Fib"/>
                             <constraint firstItem="ghE-ys-2NK" firstAttribute="top" secondItem="lB2-Dt-9hK" secondAttribute="bottom" constant="15" id="Ksr-P4-qbj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CaB-H2-x2s" secondAttribute="trailing" constant="40" id="MEg-bv-NzF"/>
+                            <constraint firstItem="Vxl-VK-xsV" firstAttribute="leading" secondItem="lB2-Dt-9hK" secondAttribute="trailing" constant="10" id="LcA-jN-dkd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CaB-H2-x2s" secondAttribute="trailing" constant="30" id="MEg-bv-NzF"/>
                             <constraint firstItem="lB2-Dt-9hK" firstAttribute="top" secondItem="AGS-eD-ETI" secondAttribute="bottom" constant="50" id="RZa-bX-Gj4"/>
                             <constraint firstItem="3Q4-ON-h6N" firstAttribute="top" secondItem="AGS-eD-ETI" secondAttribute="bottom" constant="50" id="SJt-ep-xTs"/>
                             <constraint firstItem="tbx-0w-sup" firstAttribute="top" secondItem="cXC-uA-jje" secondAttribute="bottom" constant="10" id="SNk-fO-zg8"/>
-                            <constraint firstItem="WTl-UK-LKq" firstAttribute="leading" secondItem="Xtm-T8-4KR" secondAttribute="leadingMargin" constant="50" id="TVX-c9-Fb8"/>
+                            <constraint firstItem="WTl-UK-LKq" firstAttribute="leading" secondItem="Xtm-T8-4KR" secondAttribute="leadingMargin" constant="20" id="TVX-c9-Fb8"/>
                             <constraint firstItem="Ris-XL-REh" firstAttribute="centerX" secondItem="Xtm-T8-4KR" secondAttribute="centerX" id="UzM-72-A1k"/>
                             <constraint firstItem="Ole-k6-9su" firstAttribute="top" secondItem="Ris-XL-REh" secondAttribute="bottom" constant="10" id="Vrd-sX-dxi"/>
                             <constraint firstItem="cXC-uA-jje" firstAttribute="top" secondItem="oGa-gD-kBA" secondAttribute="bottom" constant="15" id="Ww7-UJ-dBD"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3Q4-ON-h6N" secondAttribute="trailing" constant="30" id="XG3-A2-y9D"/>
-                            <constraint firstItem="3cX-le-AMq" firstAttribute="leading" secondItem="Xtm-T8-4KR" secondAttribute="leadingMargin" constant="50" id="XJW-IC-XQJ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="X5N-5N-NdL" secondAttribute="trailing" constant="40" id="YNg-GN-I27"/>
+                            <constraint firstItem="3cX-le-AMq" firstAttribute="leading" secondItem="Xtm-T8-4KR" secondAttribute="leadingMargin" constant="30" id="XJW-IC-XQJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="X5N-5N-NdL" secondAttribute="trailing" constant="30" id="YNg-GN-I27"/>
                             <constraint firstItem="WTl-UK-LKq" firstAttribute="top" secondItem="3cX-le-AMq" secondAttribute="bottom" constant="15" id="Z6n-k3-uIZ"/>
                             <constraint firstItem="CaB-H2-x2s" firstAttribute="top" secondItem="3Q4-ON-h6N" secondAttribute="bottom" constant="15" id="aRg-fm-Mcl"/>
                             <constraint firstItem="Ole-k6-9su" firstAttribute="centerX" secondItem="Xtm-T8-4KR" secondAttribute="centerX" id="bIl-qf-aBp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oGa-gD-kBA" secondAttribute="trailing" constant="30" id="dci-5M-caf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cXC-uA-jje" secondAttribute="trailing" constant="50" id="def-2J-SY4"/>
                             <constraint firstItem="oGa-gD-kBA" firstAttribute="top" secondItem="X5N-5N-NdL" secondAttribute="bottom" constant="30" id="ebc-aG-Vg4"/>
-                            <constraint firstItem="Vxl-VK-xsV" firstAttribute="top" secondItem="AGS-eD-ETI" secondAttribute="bottom" id="itF-jj-RW4"/>
-                            <constraint firstItem="L4Y-RQ-kHM" firstAttribute="leading" secondItem="Xtm-T8-4KR" secondAttribute="leadingMargin" constant="55" id="jQw-pG-1Kr"/>
-                            <constraint firstItem="lB2-Dt-9hK" firstAttribute="leading" secondItem="Xtm-T8-4KR" secondAttribute="leadingMargin" constant="40" id="kek-ZK-EAj"/>
-                            <constraint firstItem="ghE-ys-2NK" firstAttribute="leading" secondItem="Xtm-T8-4KR" secondAttribute="leadingMargin" constant="55" id="lVj-Sy-xCr"/>
+                            <constraint firstItem="L4Y-RQ-kHM" firstAttribute="leading" secondItem="Xtm-T8-4KR" secondAttribute="leadingMargin" constant="15" id="jQw-pG-1Kr"/>
+                            <constraint firstItem="lB2-Dt-9hK" firstAttribute="leading" secondItem="Xtm-T8-4KR" secondAttribute="leadingMargin" constant="10" id="kek-ZK-EAj"/>
+                            <constraint firstItem="ghE-ys-2NK" firstAttribute="leading" secondItem="Xtm-T8-4KR" secondAttribute="leadingMargin" constant="15" id="lVj-Sy-xCr"/>
                             <constraint firstItem="L4Y-RQ-kHM" firstAttribute="top" secondItem="ghE-ys-2NK" secondAttribute="bottom" constant="10" id="lpx-QI-fIn"/>
+                            <constraint firstItem="YIn-Le-1TW" firstAttribute="centerX" secondItem="Xtm-T8-4KR" secondAttribute="centerX" id="luo-zI-ATU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tbx-0w-sup" secondAttribute="trailing" constant="50" id="mDm-pg-0qd"/>
                             <constraint firstItem="ov3-wK-XTs" firstAttribute="top" secondItem="WTl-UK-LKq" secondAttribute="bottom" constant="10" id="mRP-FU-N9R"/>
                             <constraint firstItem="Ris-XL-REh" firstAttribute="top" secondItem="YIn-Le-1TW" secondAttribute="bottom" constant="15" id="mpp-O8-4Y8"/>
                             <constraint firstItem="X5N-5N-NdL" firstAttribute="top" secondItem="CaB-H2-x2s" secondAttribute="bottom" constant="10" id="oOU-Jk-ygn"/>
-                            <constraint firstItem="YIn-Le-1TW" firstAttribute="centerX" secondItem="Xtm-T8-4KR" secondAttribute="centerX" constant="12" id="pB3-AP-0cf"/>
                             <constraint firstItem="Pyo-k3-Zvj" firstAttribute="centerX" secondItem="Xtm-T8-4KR" secondAttribute="centerX" id="qw7-0g-7nU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Q4-ON-h6N" secondAttribute="trailing" constant="20" id="stX-76-g4r"/>
                             <constraint firstItem="Dst-mU-fhm" firstAttribute="top" secondItem="Pyo-k3-Zvj" secondAttribute="bottom" constant="-1" id="t01-JM-s26"/>
-                            <constraint firstItem="ov3-wK-XTs" firstAttribute="leading" secondItem="Xtm-T8-4KR" secondAttribute="leadingMargin" constant="50" id="zRT-oD-U2l"/>
+                            <constraint firstItem="ov3-wK-XTs" firstAttribute="leading" secondItem="Xtm-T8-4KR" secondAttribute="leadingMargin" constant="20" id="zRT-oD-U2l"/>
                         </constraints>
                     </view>
                     <connections>
@@ -597,76 +734,136 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stick-man: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c44-jr-gI1">
-                                <rect key="frame" x="319" y="245" width="98" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c44-jr-gI1">
+                                <rect key="frame" x="324" y="283" width="88" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Stick-man: 0">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bl7-id-ehe">
-                                <rect key="frame" x="334" y="276" width="68" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bl7-id-ehe">
+                                <rect key="frame" x="335" y="312" width="66" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Available">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pac-man: 50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tO3-3L-Z03">
-                                <rect key="frame" x="120" y="155" width="99" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tO3-3L-Z03">
+                                <rect key="frame" x="110" y="155" width="88" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Pac-man: 50">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A/L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wS6-y0-lXs">
-                                <rect key="frame" x="120" y="186" width="99" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wS6-y0-lXs">
+                                <rect key="frame" x="110" y="184" width="99" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="99" id="wao-PR-w9d"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="A/L">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contra: 100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQT-Dw-dwQ">
-                                <rect key="frame" x="536" y="153" width="90" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQT-Dw-dwQ">
+                                <rect key="frame" x="539" y="153" width="87" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Contra: 100">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A/L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ri8-bs-Nca">
-                                <rect key="frame" x="536" y="184" width="90" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ri8-bs-Nca">
+                                <rect key="frame" x="536" y="182" width="90" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="sDF-Cx-vYH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="A/L">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donkey-Kong: 200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asH-6V-J2l">
-                                <rect key="frame" x="95" y="342" width="144" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asH-6V-J2l">
+                                <rect key="frame" x="95" y="338" width="128" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Donkey-Kong: 200">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mario: 500" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKm-FU-5Jz">
-                                <rect key="frame" x="543" y="340" width="83" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKm-FU-5Jz">
+                                <rect key="frame" x="544" y="336" width="82" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Mario: 500">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A/L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szG-Uj-pi5">
-                                <rect key="frame" x="120" y="373" width="100" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szG-Uj-pi5">
+                                <rect key="frame" x="95" y="367" width="128" height="19"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Tn4-1v-VSd"/>
+                                    <constraint firstAttribute="width" constant="128" id="fqn-xO-YyI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="A/L">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A/L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hro-V7-laZ">
-                                <rect key="frame" x="543" y="371" width="83" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hro-V7-laZ">
+                                <rect key="frame" x="543" y="365" width="83" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="83" id="Od6-H5-a5G"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="A/L">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fze-ci-hIa">
@@ -675,51 +872,51 @@
                                     <constraint firstAttribute="height" constant="81" id="Yfd-og-EDy"/>
                                     <constraint firstAttribute="width" constant="106" id="vQR-zK-yvW"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Back logo.png"/>
+                                <state key="normal" title="Button" image="BackButton.png"/>
                                 <connections>
                                     <segue destination="LzW-FX-b30" kind="showDetail" id="Zu6-cY-PX9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOq-6t-sZz">
-                                <rect key="frame" x="326" y="150" width="85" height="80"/>
+                                <rect key="frame" x="326" y="188" width="85" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="AkE-Ku-u7S"/>
                                     <constraint firstAttribute="width" constant="85" id="Csv-ea-jX1"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Stick-man logo.png"/>
+                                <state key="normal" title="Button" image="Strawberry.png"/>
                                 <connections>
                                     <action selector="Character_StickMan:" destination="VHW-Ae-vpr" eventType="touchUpInside" id="eo9-AA-tlH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGl-Ae-rVC">
-                                <rect key="frame" x="120" y="60" width="85" height="80"/>
+                                <rect key="frame" x="110" y="60" width="85" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="h46-w6-0AG"/>
                                     <constraint firstAttribute="width" constant="85" id="t8I-lL-Hgh"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Pac-man logo.png"/>
+                                <state key="normal" title="Button" image="PacMan_Icon.png"/>
                                 <connections>
                                     <action selector="Character_PanMan:" destination="VHW-Ae-vpr" eventType="touchUpInside" id="klJ-sU-0jY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hw8-om-ubL">
-                                <rect key="frame" x="120" y="247" width="85" height="80"/>
+                                <rect key="frame" x="120" y="243" width="85" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="8F5-99-2Ja"/>
                                     <constraint firstAttribute="width" constant="85" id="rUU-zH-sgT"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Donkey-Kong logo.png"/>
+                                <state key="normal" title="Button" image="Donkey_Icon.png"/>
                                 <connections>
                                     <action selector="Character_Donkey:" destination="VHW-Ae-vpr" eventType="touchUpInside" id="Fr4-NN-8Aj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bu7-Fh-oh1">
-                                <rect key="frame" x="541" y="245" width="85" height="80"/>
+                                <rect key="frame" x="541" y="241" width="85" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="85" id="UWf-VM-mqA"/>
                                     <constraint firstAttribute="height" constant="80" id="pob-kM-FKi"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Mario logo.png"/>
+                                <state key="normal" title="Button" image="Mario_Icon.png"/>
                                 <connections>
                                     <action selector="Character_Mario:" destination="VHW-Ae-vpr" eventType="touchUpInside" id="SeW-dJ-w2P"/>
                                 </connections>
@@ -730,17 +927,17 @@
                                     <constraint firstAttribute="height" constant="40" id="ITv-Ji-gA2"/>
                                     <constraint firstAttribute="width" constant="45" id="NLq-V4-IXp"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="ThenextPage.png"/>
+                                <state key="normal" title="Button" image="Next.png"/>
                                 <connections>
                                     <segue destination="ngN-e8-4nM" kind="show" id="Rg3-nX-EEF"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character Customization" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKZ-By-3nX">
-                                <rect key="frame" x="251" y="20" width="235" height="90"/>
+                                <rect key="frame" x="210" y="20" width="317" height="138"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="a2w-VA-E88"/>
+                                    <constraint firstAttribute="height" constant="138" id="ewL-Dp-ha2"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="37"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -750,23 +947,23 @@
                                     <constraint firstAttribute="height" constant="88" id="rCC-YO-BNY"/>
                                     <constraint firstAttribute="width" constant="85" id="uoB-Ln-4Ld"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Contra logo.png"/>
+                                <state key="normal" title="Button" image="Contra_Icon.png"/>
                                 <connections>
                                     <action selector="Character_Contra:" destination="VHW-Ae-vpr" eventType="touchUpInside" id="vc1-9x-0ug"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="szG-Uj-pi5" firstAttribute="leading" secondItem="AnB-MA-sIv" secondAttribute="leadingMargin" constant="75" id="19K-Vh-QDR"/>
                             <constraint firstItem="tKm-FU-5Jz" firstAttribute="top" secondItem="bu7-Fh-oh1" secondAttribute="bottom" constant="15" id="2eU-zl-Bst"/>
-                            <constraint firstItem="dOq-6t-sZz" firstAttribute="top" secondItem="dKZ-By-3nX" secondAttribute="bottom" constant="40" id="3ZQ-zt-gpf"/>
+                            <constraint firstItem="dOq-6t-sZz" firstAttribute="top" secondItem="dKZ-By-3nX" secondAttribute="bottom" constant="30" id="3ZQ-zt-gpf"/>
                             <constraint firstItem="asH-6V-J2l" firstAttribute="leading" secondItem="AnB-MA-sIv" secondAttribute="leadingMargin" constant="75" id="4e8-LE-JVl"/>
                             <constraint firstItem="bl7-id-ehe" firstAttribute="top" secondItem="c44-jr-gI1" secondAttribute="bottom" constant="10" id="7Pe-Kw-kgk"/>
                             <constraint firstItem="ssc-WG-wFH" firstAttribute="top" secondItem="vD3-yf-V5W" secondAttribute="bottom" constant="30" id="7iT-Jv-RvS"/>
                             <constraint firstItem="bl7-id-ehe" firstAttribute="centerX" secondItem="AnB-MA-sIv" secondAttribute="centerX" id="96g-Vn-Rhp"/>
                             <constraint firstItem="c44-jr-gI1" firstAttribute="centerX" secondItem="AnB-MA-sIv" secondAttribute="centerX" id="BDN-lR-pgT"/>
-                            <constraint firstItem="tO3-3L-Z03" firstAttribute="leading" secondItem="AnB-MA-sIv" secondAttribute="leadingMargin" constant="100" id="FeV-zC-7H9"/>
-                            <constraint firstItem="szG-Uj-pi5" firstAttribute="leading" secondItem="AnB-MA-sIv" secondAttribute="leadingMargin" constant="100" id="ICz-Ml-PAa"/>
+                            <constraint firstItem="tO3-3L-Z03" firstAttribute="leading" secondItem="AnB-MA-sIv" secondAttribute="leadingMargin" constant="90" id="FeV-zC-7H9"/>
                             <constraint firstItem="dKZ-By-3nX" firstAttribute="centerX" secondItem="AnB-MA-sIv" secondAttribute="centerX" id="JaW-g0-fEm"/>
                             <constraint firstItem="tO3-3L-Z03" firstAttribute="top" secondItem="HGl-Ae-rVC" secondAttribute="bottom" constant="15" id="K3R-ar-eQA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ri8-bs-Nca" secondAttribute="trailing" constant="90" id="OQa-oF-xGr"/>
@@ -774,7 +971,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="VQT-Dw-dwQ" secondAttribute="trailing" constant="90" id="RkY-wH-wYp"/>
                             <constraint firstItem="sMq-Rp-vBX" firstAttribute="centerX" secondItem="AnB-MA-sIv" secondAttribute="centerX" id="Sfw-vt-aBK"/>
                             <constraint firstItem="bu7-Fh-oh1" firstAttribute="top" secondItem="ri8-bs-Nca" secondAttribute="bottom" constant="40" id="Wpj-jI-QKo"/>
-                            <constraint firstItem="wS6-y0-lXs" firstAttribute="leading" secondItem="AnB-MA-sIv" secondAttribute="leadingMargin" constant="100" id="XY2-3R-JDt"/>
+                            <constraint firstItem="wS6-y0-lXs" firstAttribute="leading" secondItem="AnB-MA-sIv" secondAttribute="leadingMargin" constant="90" id="XY2-3R-JDt"/>
                             <constraint firstItem="hTE-IK-HYz" firstAttribute="top" secondItem="sMq-Rp-vBX" secondAttribute="bottom" id="Xym-yX-axQ"/>
                             <constraint firstItem="Hw8-om-ubL" firstAttribute="top" secondItem="wS6-y0-lXs" secondAttribute="bottom" constant="40" id="Y10-Df-gI8"/>
                             <constraint firstItem="c44-jr-gI1" firstAttribute="top" secondItem="dOq-6t-sZz" secondAttribute="bottom" constant="15" id="Yo3-Rh-CbB"/>
@@ -790,7 +987,7 @@
                             <constraint firstItem="wS6-y0-lXs" firstAttribute="top" secondItem="tO3-3L-Z03" secondAttribute="bottom" constant="10" id="oED-Vz-DVR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tKm-FU-5Jz" secondAttribute="trailing" constant="90" id="qk5-m4-5gK"/>
                             <constraint firstItem="HGl-Ae-rVC" firstAttribute="top" secondItem="vD3-yf-V5W" secondAttribute="bottom" constant="40" id="tN5-g1-bFL"/>
-                            <constraint firstItem="HGl-Ae-rVC" firstAttribute="leading" secondItem="AnB-MA-sIv" secondAttribute="leadingMargin" constant="100" id="x65-Vp-4uQ"/>
+                            <constraint firstItem="HGl-Ae-rVC" firstAttribute="leading" secondItem="AnB-MA-sIv" secondAttribute="leadingMargin" constant="90" id="x65-Vp-4uQ"/>
                             <constraint firstItem="dOq-6t-sZz" firstAttribute="centerX" secondItem="AnB-MA-sIv" secondAttribute="centerX" id="ytv-Sf-CPP"/>
                             <constraint firstItem="Fze-ci-hIa" firstAttribute="top" secondItem="vD3-yf-V5W" secondAttribute="bottom" id="yy6-xx-w74"/>
                             <constraint firstItem="dKZ-By-3nX" firstAttribute="top" secondItem="vD3-yf-V5W" secondAttribute="bottom" id="zv6-TE-fvm"/>
@@ -820,33 +1017,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGZ-CL-kpy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGZ-CL-kpy">
                                 <rect key="frame" x="197" y="10" width="343" height="158"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="158" id="Lic-EA-8Zq"/>
                                     <constraint firstAttribute="width" constant="343" id="scI-mB-6Mp"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Score">
+                                        <attributes>
+                                            <font key="NSFont" size="40" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqx-vQ-IEP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqx-vQ-IEP">
                                 <rect key="frame" x="197" y="130" width="343" height="157"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="Za7-QY-ml8"/>
                                     <constraint firstAttribute="height" constant="157" id="ny2-lq-FiA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Best">
+                                        <attributes>
+                                            <font key="NSFont" size="40" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eir-tv-3Ay">
-                                <rect key="frame" x="70" y="90" width="200" height="250"/>
+                                <rect key="frame" x="50" y="90" width="200" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="44m-sR-lje"/>
                                     <constraint firstAttribute="width" constant="200" id="ZAl-fX-0ag"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Play logo.png"/>
+                                <state key="normal" image="Start_Icon.png"/>
                                 <connections>
                                     <segue destination="od4-tN-nmQ" kind="show" id="N3d-gN-12q"/>
                                 </connections>
@@ -857,31 +1066,43 @@
                                     <constraint firstAttribute="width" constant="120" id="6kc-Y6-9YX"/>
                                     <constraint firstAttribute="height" constant="98" id="ufr-Sb-0bS"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Home menu.png"/>
+                                <state key="normal" image="HomePage.png"/>
                                 <connections>
                                     <segue destination="LzW-FX-b30" kind="show" id="fWV-dO-kxG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg9-8T-eSZ">
-                                <rect key="frame" x="536" y="285" width="120" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg9-8T-eSZ">
+                                <rect key="frame" x="536" y="285" width="120" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="2dn-2z-ZVq"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Home">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsA-ed-0W9">
-                                <rect key="frame" x="85" y="285" width="115" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsA-ed-0W9">
+                                <rect key="frame" x="85" y="285" width="107" height="28"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Play again">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Eir-tv-3Ay" firstAttribute="top" secondItem="yX5-a7-YX8" secondAttribute="bottom" constant="70" id="1LM-rH-M9c"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Eir-tv-3Ay" secondAttribute="leading" constant="-50" id="F1u-KK-SLS"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Eir-tv-3Ay" secondAttribute="leading" constant="-30" id="F1u-KK-SLS"/>
                             <constraint firstItem="DGZ-CL-kpy" firstAttribute="top" secondItem="yX5-a7-YX8" secondAttribute="bottom" constant="-10" id="H6n-q0-BDs"/>
                             <constraint firstItem="cg9-8T-eSZ" firstAttribute="top" secondItem="nLc-07-eLS" secondAttribute="bottom" constant="27" id="RyX-i0-Wcq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nLc-07-eLS" secondAttribute="trailing" constant="60" id="aU9-gW-4Jo"/>
@@ -915,24 +1136,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vW1-9o-nNA">
-                                <rect key="frame" x="4" y="25" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="3d2-OT-1JX"/>
-                                    <constraint firstAttribute="height" constant="100" id="qLW-f2-AMs"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="Exit logo.png"/>
-                                <connections>
-                                    <action selector="ExitButton:" destination="LzW-FX-b30" eventType="touchUpInside" id="K1g-6h-6TM"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SjN-al-pL6">
                                 <rect key="frame" x="632" y="20" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="J6a-TY-KeN"/>
                                     <constraint firstAttribute="width" constant="100" id="RL4-Nh-jJd"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Play logo.png"/>
+                                <state key="normal" title="Button" image="Start_Icon.png"/>
                                 <connections>
                                     <segue destination="od4-tN-nmQ" kind="show" id="vlK-k7-wIE"/>
                                 </connections>
@@ -995,8 +1205,19 @@
                                     <segue destination="avv-Y9-Zfc" kind="show" id="V6F-bt-HkX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vW1-9o-nNA">
+                                <rect key="frame" x="4" y="25" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3d2-OT-1JX"/>
+                                    <constraint firstAttribute="height" constant="100" id="qLW-f2-AMs"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="PowerOff.png"/>
+                                <connections>
+                                    <action selector="ExitButton:" destination="LzW-FX-b30" eventType="touchUpInside" id="K1g-6h-6TM"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="SjN-al-pL6" firstAttribute="top" secondItem="uLh-Xf-0aO" secondAttribute="bottom" id="5Ln-OS-3vT"/>
                             <constraint firstItem="LLb-FG-t2B" firstAttribute="centerX" secondItem="0uE-7t-N88" secondAttribute="centerX" id="9J2-nF-m5F"/>
@@ -1017,39 +1238,39 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1Donkey-kong theme.png" width="388" height="164"/>
-        <image name="Back logo.png" width="225" height="118"/>
-        <image name="Barrel.jpg" width="257" height="196"/>
-        <image name="Ccontra theme.png" width="228" height="110"/>
-        <image name="Conta-s.png" width="1212" height="515"/>
-        <image name="Contra logo.png" width="111" height="157"/>
-        <image name="Donkey-Kong logo.png" width="201" height="142"/>
-        <image name="Exit logo.png" width="224" height="225"/>
-        <image name="Green ball.png" width="59" height="58"/>
-        <image name="Green-down-button.png" width="202" height="203"/>
-        <image name="Green-up-button.png" width="201" height="204"/>
-        <image name="Home menu.png" width="980" height="834"/>
-        <image name="Mario logo.png" width="152" height="197"/>
-        <image name="Mmario theme.png" width="427" height="228"/>
-        <image name="Pac-man logo.png" width="226" height="229"/>
-        <image name="Play logo.png" width="103" height="88"/>
-        <image name="Ppac-man theme.png" width="416" height="232"/>
-        <image name="Red ball.png" width="59" height="57"/>
-        <image name="Red&amp;Green.png" width="124" height="57"/>
-        <image name="Stick-man logo.png" width="225" height="225"/>
-        <image name="TheBbackPage.png" width="229" height="226"/>
-        <image name="ThenextPage.png" width="225" height="225"/>
-        <image name="Tunnel.png" width="360" height="310"/>
-        <image name="banana.jpg.png" width="190" height="164"/>
-        <image name="contra-boss.png" width="349" height="467"/>
-        <image name="fruit-pac.png" width="177" height="186"/>
-        <image name="goast-pac.png" width="225" height="225"/>
-        <image name="goomba.png" width="132" height="157"/>
-        <image name="mashroom mario.png" width="225" height="225"/>
+        <image name="Back.png" width="229" height="226"/>
+        <image name="BackButton.png" width="225" height="118"/>
+        <image name="Banana_Icon.png" width="190" height="164"/>
+        <image name="Barrel_Icon..png" width="257" height="196"/>
+        <image name="ContraBoss_Icon.png" width="349" height="467"/>
+        <image name="Contra_Icon.png" width="111" height="157"/>
+        <image name="Contra_S_icon.png" width="1000" height="425"/>
+        <image name="Contra_Theme.png" width="228" height="110"/>
+        <image name="Donkey_Icon.png" width="201" height="142"/>
+        <image name="Donkey_Theme.png" width="388" height="164"/>
+        <image name="DownButton..gif" width="191" height="185"/>
+        <image name="Goast_Icon.png" width="212" height="213"/>
+        <image name="Goomba_Icon.png" width="132" height="157"/>
+        <image name="GreenBall_Icon.png" width="59" height="58"/>
+        <image name="HomePage.png" width="980" height="834"/>
+        <image name="Mario_Icon.png" width="152" height="197"/>
+        <image name="Mario_Theme..gif" width="427" height="228"/>
+        <image name="Mushroom.gif" width="216" height="226"/>
+        <image name="Next.png" width="225" height="225"/>
+        <image name="PacMan_Icon.png" width="226" height="229"/>
+        <image name="PacMan_Theme.png" width="416" height="232"/>
+        <image name="PowerOff.png" width="224" height="225"/>
+        <image name="Red_Icon.png" width="59" height="57"/>
+        <image name="Start_Icon.png" width="103" height="88"/>
+        <image name="StickMAN.png" width="225" height="225"/>
+        <image name="Strawberry.png" width="177" height="186"/>
+        <image name="Tunnel_Icon.png" width="360" height="310"/>
+        <image name="UpBotton..gif" width="179" height="189"/>
+        <image name="stickMan_Theme.png" width="124" height="57"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hCg-gX-eHT"/>
+        <segue reference="fWV-dO-kxG"/>
         <segue reference="vlK-k7-wIE"/>
-        <segue reference="0Na-yq-3LZ"/>
+        <segue reference="vtO-RZ-jUl"/>
     </inferredMetricsTieBreakers>
 </document>

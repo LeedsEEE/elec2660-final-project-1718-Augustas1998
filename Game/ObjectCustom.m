@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _SpecialPoints = [[NSUserDefaults standardUserDefaults] integerForKey:@"Special"];
+    _SpecialPoints = 1000;
+    //_SpecialPoints = [[NSUserDefaults standardUserDefaults] integerForKey:@"Special"];
     if (_SpecialPoints >=50) {
         _A_L_PacMan_theme.text = @"Available";
     }
