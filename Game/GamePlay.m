@@ -77,19 +77,43 @@
 -(void)ObjectLocation{
     if (_A == true){
         if( _Svalue >= 0 && _Svalue < 10){
-            _Speed = 1;
-        }
-        else if( _Svalue >= 10 && _Svalue < 30){
             _Speed = 2;
         }
-        else if (_Svalue >= 30 && _Svalue < 50){
+        else if( _Svalue >= 10 && _Svalue < 20){
             _Speed = 3;
         }
-        else{
+        else if (_Svalue >= 20 && _Svalue < 30){
+            _Speed = 4;
+        }
+        else if (_Svalue >= 30 && _Svalue < 40){
             _Speed = 5;
         }
-        _ObjectImage.center = CGPointMake(_ObjectImage.center.x -_Speed, _ObjectImage.center.y);
-        if(_ObjectImage.center.x == -30){
+        else if (_Svalue >= 40 && _Svalue < 50){
+            _Speed = 6;
+        }
+        else if (_Svalue >= 50 && _Svalue < 60){
+            _Speed = 7;
+        }
+        else if (_Svalue >= 60 && _Svalue < 70){
+            _Speed = 8;
+        }
+        else if (_Svalue >= 70 && _Svalue < 80){
+            _Speed = 9;
+        }
+        else if (_Svalue >= 80 && _Svalue < 90){
+            _Speed = 10;
+        }
+        else if (_Svalue >= 90 && _Svalue < 100){
+            _Speed = 11;
+        }
+        else if (_Svalue >= 100 && _Svalue < 110){
+            _Speed = 12;
+        }
+        else{
+            _Speed = 13;
+        }
+        _ObjectImage.center = CGPointMake(_ObjectImage.center.x - _Speed, _ObjectImage.center.y);
+        if(_ObjectImage.center.x <= -30){
             [self objectSelectedImages];
             NSUInteger RandomValue = arc4random_uniform(3);
             if (RandomValue == 1) {
