@@ -16,6 +16,9 @@
 @property (strong, nonatomic) IBOutlet UIButton *TouchToBegin;
 @property(strong, nonatomic) NSTimer *Object;
 @property (strong, nonatomic) IBOutlet UIImageView *Background;
+@property (weak, nonatomic) IBOutlet UIImageView *TunnelTop;
+@property (weak, nonatomic) IBOutlet UIImageView *TunnelMiddel;
+@property (weak, nonatomic) IBOutlet UIImageView *TunnelBottom;
 
 
 @property int ObjectPostion;
@@ -28,6 +31,7 @@
 @property int RoundsPlayed;
 @property bool A;
 @property bool T;
+@property int ObjectTop, ObjectMiddel, ObjectBottom, ObjectX;
 
 
 
@@ -39,4 +43,5 @@
 -(void)characterSelectedImages;
 -(void)objectSelectedImages;
 -(void)ObjectLocation;
+-(void)DeviceSelected;
 @end

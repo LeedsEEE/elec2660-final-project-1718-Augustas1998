@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B264E171FD7480C00970AF7 /* MushRoom.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B264E161FD7480C00970AF7 /* MushRoom.gif */; };
+		7B264E191FD758D900970AF7 /* StickMan_Theme.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B264E181FD758D900970AF7 /* StickMan_Theme.png */; };
+		7B264E1D1FD765F300970AF7 /* DonkeyKong_theme..png in Resources */ = {isa = PBXBuildFile; fileRef = 7B264E1C1FD765F300970AF7 /* DonkeyKong_theme..png */; };
 		7B6C827B1FB9AF2500F5AA56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C827A1FB9AF2500F5AA56 /* main.m */; };
 		7B6C827E1FB9AF2500F5AA56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C827D1FB9AF2500F5AA56 /* AppDelegate.m */; };
 		7B6C82811FB9AF2500F5AA56 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C82801FB9AF2500F5AA56 /* ViewController.m */; };
@@ -36,7 +39,6 @@
 		7B7ABF171FD58BBB00B73432 /* Mario_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF031FD58BBB00B73432 /* Mario_Icon.png */; };
 		7B7ABF211FD59AC300B73432 /* Barrel_Icon..png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF201FD59AC300B73432 /* Barrel_Icon..png */; };
 		7B7ABF231FD59C1A00B73432 /* Contra_S_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF221FD59C1A00B73432 /* Contra_S_icon.png */; };
-		7B7ABF251FD59D4F00B73432 /* Mushroom.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF241FD59D4F00B73432 /* Mushroom.gif */; };
 		7B7ABF271FD59E5300B73432 /* Mario_Theme..gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF261FD59E5300B73432 /* Mario_Theme..gif */; };
 		7B7ABF2A1FD59F6F00B73432 /* UpBotton..gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF281FD59F6F00B73432 /* UpBotton..gif */; };
 		7B7ABF2B1FD59F6F00B73432 /* DownButton..gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF291FD59F6F00B73432 /* DownButton..gif */; };
@@ -75,6 +77,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B264E161FD7480C00970AF7 /* MushRoom.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MushRoom.gif; sourceTree = "<group>"; };
+		7B264E181FD758D900970AF7 /* StickMan_Theme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StickMan_Theme.png; sourceTree = "<group>"; };
+		7B264E1C1FD765F300970AF7 /* DonkeyKong_theme..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DonkeyKong_theme..png; sourceTree = "<group>"; };
 		7B6C82761FB9AF2500F5AA56 /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6C827A1FB9AF2500F5AA56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7B6C827C1FB9AF2500F5AA56 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,7 +117,6 @@
 		7B7ABF031FD58BBB00B73432 /* Mario_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mario_Icon.png; sourceTree = "<group>"; };
 		7B7ABF201FD59AC300B73432 /* Barrel_Icon..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Barrel_Icon..png; sourceTree = "<group>"; };
 		7B7ABF221FD59C1A00B73432 /* Contra_S_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Contra_S_icon.png; sourceTree = "<group>"; };
-		7B7ABF241FD59D4F00B73432 /* Mushroom.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Mushroom.gif; sourceTree = "<group>"; };
 		7B7ABF261FD59E5300B73432 /* Mario_Theme..gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Mario_Theme..gif; sourceTree = "<group>"; };
 		7B7ABF281FD59F6F00B73432 /* UpBotton..gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = UpBotton..gif; sourceTree = "<group>"; };
 		7B7ABF291FD59F6F00B73432 /* DownButton..gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = DownButton..gif; sourceTree = "<group>"; };
@@ -242,11 +246,13 @@
 				7B7ABF281FD59F6F00B73432 /* UpBotton..gif */,
 				7B7ABF291FD59F6F00B73432 /* DownButton..gif */,
 				7B7ABEF31FD58BBB00B73432 /* PacMan_Icon.png */,
+				7B264E181FD758D900970AF7 /* StickMan_Theme.png */,
 				7B7ABF481FD5EA7000B73432 /* BlackBall.png */,
 				7B7ABF491FD5EA7000B73432 /* ContraBackground.png */,
 				7B7ABF4A1FD5EA7000B73432 /* DonkeyBackground.jpg */,
 				7B7ABF4B1FD5EA7000B73432 /* Goomba1.png */,
 				7B7ABF4C1FD5EA7000B73432 /* MarioBackground.png */,
+				7B264E1C1FD765F300970AF7 /* DonkeyKong_theme..png */,
 				7B7ABF4D1FD5EA7000B73432 /* PacManBackground.png */,
 				7B7ABF4E1FD5EA7000B73432 /* StickManBackground.jpg */,
 				7B7ABF4F1FD5EA7000B73432 /* Whie_StickMan.png */,
@@ -261,8 +267,8 @@
 				7B7ABEFD1FD58BBB00B73432 /* Contra_Icon.png */,
 				7B7ABEFE1FD58BBB00B73432 /* ContraBoss_Icon.png */,
 				7B7ABEFF1FD58BBB00B73432 /* Donkey_Theme.png */,
+				7B264E161FD7480C00970AF7 /* MushRoom.gif */,
 				7B7ABF001FD58BBB00B73432 /* Donkey_Icon.png */,
-				7B7ABF241FD59D4F00B73432 /* Mushroom.gif */,
 				7B7ABF011FD58BBB00B73432 /* Strawberry.png */,
 				7B7ABF031FD58BBB00B73432 /* Mario_Icon.png */,
 				7B7ABEE21FD5885700B73432 /* BackButton.png */,
@@ -409,12 +415,14 @@
 				7B7ABF211FD59AC300B73432 /* Barrel_Icon..png in Resources */,
 				7B7ABF581FD5EA7000B73432 /* Whie_StickMan.png in Resources */,
 				7B7ABF2B1FD59F6F00B73432 /* DownButton..gif in Resources */,
+				7B264E1D1FD765F300970AF7 /* DonkeyKong_theme..png in Resources */,
 				7B7ABF2A1FD59F6F00B73432 /* UpBotton..gif in Resources */,
 				7B7ABEEC1FD5893100B73432 /* HomePage.png in Resources */,
 				7B7ABF571FD5EA7000B73432 /* StickManBackground.jpg in Resources */,
 				7B7ABF131FD58BBB00B73432 /* Donkey_Theme.png in Resources */,
-				7B7ABF251FD59D4F00B73432 /* Mushroom.gif in Resources */,
 				7B7ABF121FD58BBB00B73432 /* ContraBoss_Icon.png in Resources */,
+				7B264E191FD758D900970AF7 /* StickMan_Theme.png in Resources */,
+				7B264E171FD7480C00970AF7 /* MushRoom.gif in Resources */,
 				7B7ABF171FD58BBB00B73432 /* Mario_Icon.png in Resources */,
 				7B7ABF561FD5EA7000B73432 /* PacManBackground.png in Resources */,
 				7B7ABF591FD5EA7000B73432 /* WhiteBall.gif in Resources */,

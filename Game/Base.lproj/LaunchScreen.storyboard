@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,6 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mch-0m-ieH">
+                                <rect key="frame" x="126.66666666666666" y="347" width="483" height="47"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Created By: Augustas Jackevic">
                                         <attributes>
@@ -30,6 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LunchScreenLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Alo-d2-j81">
+                                <rect key="frame" x="98.666666666666686" y="10" width="539" height="339"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="539" id="KrS-vH-kPX"/>
                                     <constraint firstAttribute="height" constant="339" id="ss8-SG-sf2"/>
@@ -41,7 +46,7 @@
                             <constraint firstItem="mch-0m-ieH" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="YTV-J6-Z5W"/>
                             <constraint firstItem="Alo-d2-j81" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-10" id="qfN-aS-Cgv"/>
                             <constraint firstItem="Alo-d2-j81" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wFu-hi-gBL"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="mch-0m-ieH" secondAttribute="bottom" constant="30" id="z6K-jy-85G"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="mch-0m-ieH" secondAttribute="bottom" constant="20" id="z6K-jy-85G"/>
                         </constraints>
                     </view>
                 </viewController>
