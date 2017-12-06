@@ -23,7 +23,6 @@
 		7B7ABEE71FD5889200B73432 /* Next.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABEE61FD5889200B73432 /* Next.png */; };
 		7B7ABEEB1FD5893100B73432 /* PowerOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABEE81FD5893100B73432 /* PowerOff.png */; };
 		7B7ABEEC1FD5893100B73432 /* HomePage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABEE91FD5893100B73432 /* HomePage.png */; };
-		7B7ABEED1FD5893100B73432 /* LunchScreenLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABEEA1FD5893100B73432 /* LunchScreenLogo.png */; };
 		7B7ABEEF1FD58B4700B73432 /* Tunnel_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABEEE1FD58B4700B73432 /* Tunnel_Icon.png */; };
 		7B7ABEF11FD58B6800B73432 /* Start_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABEF01FD58B6800B73432 /* Start_Icon.png */; };
 		7B7ABF071FD58BBB00B73432 /* PacMan_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABEF31FD58BBB00B73432 /* PacMan_Icon.png */; };
@@ -53,6 +52,8 @@
 		7B7ABF591FD5EA7000B73432 /* WhiteBall.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF501FD5EA7000B73432 /* WhiteBall.gif */; };
 		7B7ABF5B1FD5EC4400B73432 /* EmptyImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7ABF5A1FD5EC4400B73432 /* EmptyImage.png */; };
 		7B909DF61FC6F1C400AEA780 /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B909DF51FC6F1C400AEA780 /* GameOver.m */; };
+		7B91509E1FD858FC0095203A /* ScreenLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B91509D1FD858FC0095203A /* ScreenLogo.png */; };
+		7B9150A01FD8735E0095203A /* Image refrences.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7B91509F1FD8735E0095203A /* Image refrences.rtf */; };
 		FE632AB51FBDC6C400D89391 /* ObjectCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = FE632AB41FBDC6C400D89391 /* ObjectCustom.m */; };
 		FE632AB81FBDC6DC00D89391 /* CharacterCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = FE632AB71FBDC6DC00D89391 /* CharacterCustom.m */; };
 		FE632ABB1FBDC6F200D89391 /* Statistics.m in Sources */ = {isa = PBXBuildFile; fileRef = FE632ABA1FBDC6F200D89391 /* Statistics.m */; };
@@ -101,7 +102,6 @@
 		7B7ABEE61FD5889200B73432 /* Next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Next.png; sourceTree = "<group>"; };
 		7B7ABEE81FD5893100B73432 /* PowerOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PowerOff.png; sourceTree = "<group>"; };
 		7B7ABEE91FD5893100B73432 /* HomePage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomePage.png; sourceTree = "<group>"; };
-		7B7ABEEA1FD5893100B73432 /* LunchScreenLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LunchScreenLogo.png; sourceTree = "<group>"; };
 		7B7ABEEE1FD58B4700B73432 /* Tunnel_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tunnel_Icon.png; sourceTree = "<group>"; };
 		7B7ABEF01FD58B6800B73432 /* Start_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Start_Icon.png; sourceTree = "<group>"; };
 		7B7ABEF31FD58BBB00B73432 /* PacMan_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PacMan_Icon.png; sourceTree = "<group>"; };
@@ -132,6 +132,8 @@
 		7B7ABF5A1FD5EC4400B73432 /* EmptyImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EmptyImage.png; sourceTree = "<group>"; };
 		7B909DF41FC6F1C400AEA780 /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOver.h; sourceTree = "<group>"; };
 		7B909DF51FC6F1C400AEA780 /* GameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOver.m; sourceTree = "<group>"; };
+		7B91509D1FD858FC0095203A /* ScreenLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenLogo.png; sourceTree = "<group>"; };
+		7B91509F1FD8735E0095203A /* Image refrences.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Image refrences.rtf"; sourceTree = "<group>"; };
 		FE632AB31FBDC6C400D89391 /* ObjectCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectCustom.h; sourceTree = "<group>"; };
 		FE632AB41FBDC6C400D89391 /* ObjectCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectCustom.m; sourceTree = "<group>"; };
 		FE632AB61FBDC6DC00D89391 /* CharacterCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterCustom.h; sourceTree = "<group>"; };
@@ -243,11 +245,13 @@
 		7B81ABFE1FBA45BA00B297E6 /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				7B91509F1FD8735E0095203A /* Image refrences.rtf */,
 				7B7ABF281FD59F6F00B73432 /* UpBotton..gif */,
 				7B7ABF291FD59F6F00B73432 /* DownButton..gif */,
 				7B7ABEF31FD58BBB00B73432 /* PacMan_Icon.png */,
 				7B264E181FD758D900970AF7 /* StickMan_Theme.png */,
 				7B7ABF481FD5EA7000B73432 /* BlackBall.png */,
+				7B91509D1FD858FC0095203A /* ScreenLogo.png */,
 				7B7ABF491FD5EA7000B73432 /* ContraBackground.png */,
 				7B7ABF4A1FD5EA7000B73432 /* DonkeyBackground.jpg */,
 				7B7ABF4B1FD5EA7000B73432 /* Goomba1.png */,
@@ -275,7 +279,6 @@
 				7B7ABEE81FD5893100B73432 /* PowerOff.png */,
 				7B7ABF5A1FD5EC4400B73432 /* EmptyImage.png */,
 				7B7ABEE91FD5893100B73432 /* HomePage.png */,
-				7B7ABEEA1FD5893100B73432 /* LunchScreenLogo.png */,
 				7B7ABEE61FD5889200B73432 /* Next.png */,
 				7B7ABEE41FD5888A00B73432 /* Back.png */,
 				7B7ABEEE1FD58B4700B73432 /* Tunnel_Icon.png */,
@@ -401,7 +404,9 @@
 				7B7ABEE31FD5885700B73432 /* BackButton.png in Resources */,
 				7B7ABF5B1FD5EC4400B73432 /* EmptyImage.png in Resources */,
 				7B7ABF271FD59E5300B73432 /* Mario_Theme..gif in Resources */,
+				7B91509E1FD858FC0095203A /* ScreenLogo.png in Resources */,
 				7B7ABF111FD58BBB00B73432 /* Contra_Icon.png in Resources */,
+				7B9150A01FD8735E0095203A /* Image refrences.rtf in Resources */,
 				7B7ABF511FD5EA7000B73432 /* BlackBall.png in Resources */,
 				7B7ABF0E1FD58BBB00B73432 /* Contra_Theme.png in Resources */,
 				7B7ABF0A1FD58BBB00B73432 /* Goast_Icon.png in Resources */,
@@ -429,7 +434,6 @@
 				7B7ABF151FD58BBB00B73432 /* Strawberry.png in Resources */,
 				7B6C82841FB9AF2500F5AA56 /* Main.storyboard in Resources */,
 				7B7ABF521FD5EA7000B73432 /* ContraBackground.png in Resources */,
-				7B7ABEED1FD5893100B73432 /* LunchScreenLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

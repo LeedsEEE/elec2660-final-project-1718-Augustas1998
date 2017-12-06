@@ -16,31 +16,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _SpecialPoints = 1000;
-    //_SpecialPoints = [[NSUserDefaults standardUserDefaults] integerForKey:@"Special"];
-    if (_SpecialPoints >=50) {
-        _A_L_PacMan_theme.text = @"Available";
+    _SpecialPoints = (int)[[NSUserDefaults standardUserDefaults] integerForKey:@"Special"];
+    //Setting the int 'specialPoints' value to that of the called upon value in NSUserDefault "Special"
+    //This value is then used to lock and unlock cutomisation themes
+    
+    if (_SpecialPoints >=50) {// If 'SpecialPoints' value is equale to or greater then 50
+        _A_L_PacMan_theme.text = @"Available";// Set the text to the PacMan's theme availble/locked label
     }
-    else{
-        _A_L_PacMan_theme.text = @"Locked";
+    else{// If the if stamtment is not met
+        _A_L_PacMan_theme.text = @"Locked";// Set the text to the PacMan's theme availble/locked label
     }
-    if (_SpecialPoints >=100) {
-        _A_L_contra_theme.text = @"Available";
+    if (_SpecialPoints >=100) {// If 'SpecialPoints' value is equale to or greater then 100
+        _A_L_contra_theme.text = @"Available";// Set the text to the Contra's theme availble/locked label
     }
-    else{
-        _A_L_contra_theme.text = @"Locked";
+    else{// If the if stamtment is not met
+        _A_L_contra_theme.text = @"Locked";// Set the text to the Contra's theme availble/locked label
     }
-    if (_SpecialPoints >=200) {
-        _A_L_Donkey_theme.text = @"Available";
+    if (_SpecialPoints >=200) {// If 'SpecialPoints' value is equale to or greater then 200
+        _A_L_Donkey_theme.text = @"Available";// Set the text to the Donkey-Kong's theme availble/locked label
     }
-    else{
-        _A_L_Donkey_theme.text = @"Locked";
+    else{// If the if stamtment is not met
+        _A_L_Donkey_theme.text = @"Locked";// Set the text to the Donkey-Kong's theme availble/locked label
     }
-    if (_SpecialPoints >=500) {
-        _A_L_Mario_theme.text = @"Available";
+    if (_SpecialPoints >=500) {// If 'SpecialPoints' value is equale to or greater then 500
+        _A_L_Mario_theme.text = @"Available";// Set the text to the Mario's theme availble/locked label
     }
-    else{
-        _A_L_Mario_theme.text = @"Locked";
+    else{// If the if stamtment is not met
+        _A_L_Mario_theme.text = @"Locked";// Set the text to the Mario's theme availble/locked label
     }
     
 }
@@ -50,43 +52,42 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)Object_StickMan:(UIButton *)sender {
-    if(_SpecialPoints >= 0){
-        _ObjectSelect = @"StickMan_Theme";
-        [self ObjectSelected];
+- (IBAction)Object_StickMan:(UIButton *)sender {// When the StickMan's theme image/button is pressed
+    _ObjectSelect = @"StickMan_Theme";// Set the nsstring 'ObjectSelect' to that of the text
+    [ self ObjectSelected]; //Calling the method 'ObjectSelected'
+}
+
+- (IBAction)Object_PacMan:(UIButton *)sender {// When the PacMan's theme image/button is pressed
+    if(_SpecialPoints >= 50){// If 'SpecialPoints' value is equale to or greater then 50
+        _ObjectSelect = @"PacMan_Theme";// Set the nsstring 'ObjectSelect' to that of the text
+        [self ObjectSelected]; //Calling the method 'ObjectSelected'
     }
 }
 
-- (IBAction)Object_PacMan:(UIButton *)sender {
-    if(_SpecialPoints >= 50){
-        _ObjectSelect = @"PacMan_Theme";
-        [self ObjectSelected];
+- (IBAction)Object_Contra:(UIButton *)sender {// When the Contra's theme image/button is pressed
+    if(_SpecialPoints >= 100){// If 'SpecialPoints' value is equale to or greater then 100
+        _ObjectSelect = @"Contra_Theme";// Set the nsstring 'ObjectSelect' to that of the text
+        [self ObjectSelected]; //Calling the method 'ObjectSelected'
     }
 }
 
-- (IBAction)Object_Contra:(UIButton *)sender {
-    if(_SpecialPoints >= 100){
-        _ObjectSelect = @"Contra_Theme";
-        [self ObjectSelected];
+- (IBAction)Object_Donkey:(UIButton *)sender {// When the Donkey-Kong's theme image/button is pressed
+    if(_SpecialPoints >= 200){// If 'SpecialPoints' value is equale to or greater then 200
+        _ObjectSelect = @"Donkey-Kong_Theme";// Set the nsstring 'ObjectSelect' to that of the text
+        [self ObjectSelect]; //Calling the method 'ObjectSelected'
     }
 }
 
-- (IBAction)Object_Donkey:(UIButton *)sender {
-    if(_SpecialPoints >= 200){
-        _ObjectSelect = @"Donkey-Kong_Theme";
-        [self ObjectSelected];
+- (IBAction)Object_Mario:(UIButton *)sender {// When the Mario's theme image/button is pressed
+    if(_SpecialPoints >= 500){// If 'SpecialPoints' value is equale to or greater then 500
+        _ObjectSelect = @"Mario_Theme";// Set the nsstring 'ObjectSelect' to that of the text
+        [self ObjectSelected]; //Calling the method 'ObjectSelected'
     }
 }
 
-- (IBAction)Object_Mario:(UIButton *)sender {
-    if(_SpecialPoints >= 500){
-        _ObjectSelect = @"Mario_Theme";
-        [self ObjectSelected];
-    }
-}
-
--(void)ObjectSelected{
+-(void)ObjectSelected{//Declearing the method
     [[NSUserDefaults standardUserDefaults]setObject:_ObjectSelect forKey:@"ObjectSelected"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+    //Depending which button was pressed determins which text is set to 'ObjectSelect'. Then using NSUserDefault
+    //the value of'ObjectSelected' is being saved to  NSUserDefault 'ObjectSelected'
 }
 @end

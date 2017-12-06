@@ -113,7 +113,7 @@
         else{
             _Speed = 13;
         }
-        _ObjectImage.center = CGPointMake(_ObjectImage.center.x - 1, _ObjectImage.center.y);
+        _ObjectImage.center = CGPointMake(_ObjectImage.center.x - _Speed, _ObjectImage.center.y);
         if(_ObjectImage.center.x <= -30){
             [self objectSelectedImages];
             NSUInteger RandomValue = arc4random_uniform(3);
@@ -139,7 +139,7 @@
         }
         if(CGRectIntersectsRect(_ObjectImage.frame, _CharacterImage.frame)){
             
-            if(_T ==true){
+            if(_ObjectGenerated ==true){
                 [[NSUserDefaults standardUserDefaults]setInteger:_Svalue forKey:@"10"];
                 _A = false;
                 float FinalScore = _Svalue;
@@ -148,7 +148,7 @@
                 
             }
             
-            else if (_T==false){
+            else if (_ObjectGenerated==false){
                 _SpecialPoints = _SpecialPoints + 1;
                 [[NSUserDefaults standardUserDefaults]setInteger:_SpecialPoints forKey:@"Special"];
                 [self objectSelectedImages];
@@ -194,10 +194,12 @@
         _TunnelTop.center = CGPointMake(620, 90);
         _TunnelMiddel.center = CGPointMake(620, 180);
         _TunnelBottom.center = CGPointMake(620, 270);
+        
         CGRect frame = _Background.frame;
         frame.size.width = 667;
         frame.size.height =375;
         _Background.frame = frame;
+        
         _ObjectTop = 90;
         _ObjectMiddel = 180;
         _ObjectBottom = 270;
@@ -249,22 +251,22 @@
     if ([objectSelect isEqualToString:@"StickMan_Theme"]){
         [_Background setImage:[UIImage imageNamed:@"StickManBackground.jpg"]];
         if (R > 1){
-            _T = true;
+            _ObjectGenerated = true;
             [_ObjectImage setImage:[UIImage imageNamed:@"BlackBall.png"]];
         }
         else{
-            _T = false;
+            _ObjectGenerated = false;
             [_ObjectImage setImage:[UIImage imageNamed:@"WhiteBall.gif"]];
         }
     }
     else if ([objectSelect isEqualToString:@"PacMan_Theme"]){
         [_Background setImage:[UIImage imageNamed:@"PacManBackground.png"]];
         if (R > 1){
-            _T = true;
+            _ObjectGenerated = true;
             [_ObjectImage setImage:[UIImage imageNamed:@"Goast_Icon.png"]];
         }
         else{
-            _T = false;
+            _ObjectGenerated = false;
             [_ObjectImage setImage:[UIImage imageNamed:@"Strawberry.png"]];
         }
     }
@@ -272,43 +274,43 @@
     else if ([objectSelect isEqualToString:@"Contra_Theme"]){
         [_Background setImage:[UIImage imageNamed:@"ContraBackground.png"]];
         if (R > 1){
-            _T = true;
+            _ObjectGenerated = true;
             [_ObjectImage setImage:[UIImage imageNamed:@"ContraBoss_Icon.png"]];
         }
         else{
-            _T = false;
+            _ObjectGenerated = false;
             [_ObjectImage setImage:[UIImage imageNamed:@"Contra_s_Icon.png"]];
         }
     }
     else if ([objectSelect isEqualToString:@"Donkey-Kong_Theme"]){
         [_Background setImage:[UIImage imageNamed:@"DonkeyBackground.jpg"]];
         if (R > 1){
-            _T = true;
+            _ObjectGenerated = true;
             [_ObjectImage setImage:[UIImage imageNamed:@"Barrel_Icon..png"]];
         }
         else{
-            _T = false;
+            _ObjectGenerated = false;
             [_ObjectImage setImage:[UIImage imageNamed:@"Banana_Icon.png"]];
         }
     }
     else if ([objectSelect isEqualToString:@"Mario_Theme"]){
         [_Background setImage:[UIImage imageNamed:@"MarioBackground.png"]];
         if (R > 1){
-            _T = true;
+            _ObjectGenerated = true;
             [_ObjectImage setImage:[UIImage imageNamed:@"Goomba1.png"]];
         }
         else{
-            _T = false;
+            _ObjectGenerated = false;
             [_ObjectImage setImage:[UIImage imageNamed:@"MushRoom.gif"]];
         }
     }
     else{
         if (R > 1){
-            _T = true;
+            _ObjectGenerated = true;
             [_ObjectImage setImage:[UIImage imageNamed:@"BlackBall.png"]];
         }
         else{
-            _T = false;
+            _ObjectGenerated = false;
             [_ObjectImage setImage:[UIImage imageNamed:@"WhiteBall.gif"]];
         }
     }

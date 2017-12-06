@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface Statistics : UIViewController
-@property (strong, nonatomic) IBOutlet UILabel *BestScoreLabel;
-@property (strong, nonatomic) IBOutlet UILabel *SpecialPointsLabel;
-@property (strong, nonatomic) IBOutlet UILabel *RoundsPlayedLabel;
-@property (strong, nonatomic) IBOutlet UILabel *AvrageScoreLabel;
+@property (strong, nonatomic) IBOutlet UILabel *BestScoreLabel; //The outlet code connection of the best score label to that of the Statistics ViewController
+@property (strong, nonatomic) IBOutlet UILabel *SpecialPointsLabel; //The outlet code connection of the special points label to that of the Statistics ViewController
+@property (strong, nonatomic) IBOutlet UILabel *RoundsPlayedLabel; //The outlet code connection of the rounds played label to that of the Statistics ViewController
+@property (strong, nonatomic) IBOutlet UILabel *AvrageScoreLabel; //The outlet code connection of the average score label to that of the Statistics ViewController
 
 @end

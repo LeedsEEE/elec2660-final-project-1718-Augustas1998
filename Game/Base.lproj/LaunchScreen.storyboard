@@ -33,7 +33,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LunchScreenLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Alo-d2-j81">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScreenLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Alo-d2-j81">
                                 <rect key="frame" x="98.666666666666686" y="10" width="539" height="339"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="539" id="KrS-vH-kPX"/>
@@ -56,6 +56,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LunchScreenLogo.png" width="350" height="276"/>
+        <image name="ScreenLogo.png" width="348" height="258"/>
     </resources>
 </document>

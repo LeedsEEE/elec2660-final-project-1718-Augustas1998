@@ -10,9 +10,9 @@
 
 @interface GameOver : UIViewController
 
-@property (strong, nonatomic) IBOutlet UILabel *CurrentScore;
-@property (strong, nonatomic) IBOutlet UILabel *BestScore;
-@property float AverageScore;
-@property float AllScores;
+@property (strong, nonatomic) IBOutlet UILabel *CurrentScore; //The outlet code connection of the current score label to that of the gameOver ViewController
+@property (strong, nonatomic) IBOutlet UILabel *BestScore;//The outlet code connection of the best score label to that of the gameOver ViewController
+@property float AverageScore; //Creating a float veribal called AveragScore
+@property float AllScores; //Creating a float veribal called AllScores, which containes all the score values. This is then used in the calculation of average score.
 
 @end
