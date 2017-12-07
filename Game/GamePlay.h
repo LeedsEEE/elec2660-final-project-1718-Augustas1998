@@ -39,7 +39,7 @@
 @property int Speed;// creating an integer veribal called 'Speed'
 @property int SpecialPoints;// creating an integer veribal called 'SpecialPoints'
 @property int RoundsPlayed;// creating an integer veribal called 'RoundsPlayed'
-@property bool A;// creating an integer veribal called ''
+@property bool NotIntersected;// creating an integer veribal called 'NotIntersected'
 @property bool ObjectGenerated;// creating an integer veribal called ''
 @property int ObjectTop;// creating an integer veribal called 'ObjectTop'
 @property int ObjectMiddel;// creating an integer veribal called 'ObjectMiddel'

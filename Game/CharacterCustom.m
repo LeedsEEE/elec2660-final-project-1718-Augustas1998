@@ -83,7 +83,7 @@
     }
 }
 
--(void)CharacterSelected{//Declearing the method
+-(void)CharacterSelected{//Declearing the method 'CharacterSelected'
     [[NSUserDefaults standardUserDefaults]setObject:_CharSelect forKey:@"CharacterSelected"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     //Depending which button was pressed determins which text is set to 'CharSelect'. Then using NSUserDefault
