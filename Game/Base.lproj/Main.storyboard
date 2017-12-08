@@ -253,7 +253,7 @@
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">so that you could unlock special customisation outfits. The numerical values next to the character/object, are the number of character points needed to unlock the outfits.</string>
+                                        <string key="content">so that you could unlock special customisation outfits. The numerical values next to the character/object are the number of character points needed to unlock the outfits.</string>
                                         <attributes>
                                             <font key="NSFont" size="18" name="MarkerFelt-Thin"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -1298,7 +1298,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="vlK-k7-wIE"/>
-        <segue reference="Zu6-cY-PX9"/>
+        <segue reference="zlI-qV-a2R"/>
         <segue reference="hCg-gX-eHT"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -132,46 +132,45 @@
             }
             _CurrentScore.text = [NSString stringWithFormat:@"Score: %i",_Svalue];//Displaying the 'Svalue' value and text in the score value label
 
-           [[NSUserDefaults standardUserDefaults]setInteger:_Svalue forKey:@"10"];
-            _ObjectImage.center = CGPointMake(_ObjectX,_RandObject);
+           [[NSUserDefaults standardUserDefaults]setInteger:_Svalue forKey:@"10"];// Setting the 'Svalue' value to NSUserDefault '10'
+            _ObjectImage.center = CGPointMake(_ObjectX,_RandObject);//  Reposistioning the object image
         }
-        if(CGRectIntersectsRect(_ObjectImage.frame, _CharacterImage.frame)){
+        if(CGRectIntersectsRect(_ObjectImage.frame, _CharacterImage.frame)){// If the character and object image intersect
             
-            if(_ObjectGenerated ==true){
-                [[NSUserDefaults standardUserDefaults]setInteger:_Svalue forKey:@"10"];
-                _NotIntersected = false;
-                float FinalScore = _Svalue;
-                [[NSUserDefaults standardUserDefaults] setFloat:FinalScore forKey:@"FinalScore"];
-                [self gameOver];
+            if(_ObjectGenerated ==true){// If the veribal 'ObjectGenorated' is equale to true
+                [[NSUserDefaults standardUserDefaults]setInteger:_Svalue forKey:@"10"];// Setting 'Svalue' value to NsUserDefault '10'
+                _NotIntersected = false;// Setting veribal 'NotIntersected' to false, thus exitting the main if statment
+                [[NSUserDefaults standardUserDefaults] setFloat:_Svalue forKey:@"FinalScore"];// Setting 'Svalue' value to that of NsUserDefault 'FinalScore
+                [self gameOver];// Calling the 'gameOver' method
                 
             }
             
-            else if (_ObjectGenerated==false){
-                _SpecialPoints = _SpecialPoints + 1;
-                [[NSUserDefaults standardUserDefaults]setInteger:_SpecialPoints forKey:@"Special"];
-                [self objectSelectedImages];
-                NSUInteger RandomValue = arc4random_uniform(3);
-                int RandObjects;
+            else if (_ObjectGenerated==false){ // else if 'ObjectGenorated' is equal to false
+                _SpecialPoints ++; //Increment 'SpecialPoints' by 1
+                [[NSUserDefaults standardUserDefaults]setInteger:_SpecialPoints forKey:@"Special"];// Setting 'SpecialPoints' value to NSUserDefault  'Special'
+                [self objectSelectedImages];// Calling the 'objectSelectedImages' method
+                NSUInteger RandomValue = arc4random_uniform(3);// Setting the interger 'RandomValue' to the random genorated number created by arc4random, which would be eigther 1,2,3
+                int RandObjects;// Creating a integer verinal called 'RandObjects'
                 
-                if (RandomValue == 1) {
-                    RandObjects = _ObjectBottom;
+                if (RandomValue == 1) {// If 'RandomValue'' is equale to 1
+                    RandObjects = _ObjectBottom;// Setting 'RandObjects' to equale to that of 'ObjectBottom'.
                 }
                 
-                else if( RandomValue == 2){
-                    RandObjects = _ObjectMiddel;
+                else if( RandomValue == 2){// Else if 'randomValue' is equal to 2
+                    RandObjects = _ObjectMiddel;// Setting 'RandObjects' to equale to that of 'ObjectMiddel'.
                 }
                 
-                else{
-                    RandObjects = _ObjectTop;
+                else{// If the if statments are not met
+                    RandObjects = _ObjectTop;// Setting 'RandObjects' to equale to that of 'ObjectTopl'.
                 }
                 
-                _ObjectImage.center = CGPointMake(_ObjectX,RandObjects);
-                _Svalue = _Svalue + 1;
-                _CurrentScore.text = [NSString stringWithFormat:@"Score: %i",_Svalue];
-                _BestScore.text = [NSString stringWithFormat:@"Best: %i", _Bvalue];
-                if(_Svalue >= _Bvalue){
-                    [[NSUserDefaults standardUserDefaults]setInteger:_Bvalue forKey:@"Bestvalue"];
-                    _Bvalue = _Svalue + 1;
+                _ObjectImage.center = CGPointMake(_ObjectX,RandObjects);// Reposition the object to one of the three possible levels
+                _Svalue ++;// Incrementing the value of 'Svalue' by 1
+                _CurrentScore.text = [NSString stringWithFormat:@"Score: %i",_Svalue];//Displaying the 'Svalue' value and text in the score value label
+                _BestScore.text = [NSString stringWithFormat:@"Best: %i", _Bvalue];// Setting the value of 'BValue' to NSUserDefault "Bestvalue"
+                if(_Svalue >= _Bvalue){// if 'Svalue' is equale to or greater then 'Bvalue'
+                    [[NSUserDefaults standardUserDefaults]setInteger:_Bvalue forKey:@"Bestvalue"];// Setting 'Bvalue' value to NsUserDefault 'Bestvalue'
+                    _Bvalue = _Svalue + 1;// Setting the 'Bvalue' to equale to that of 'Svalue' + 1
                 }
             }
         }
@@ -179,153 +178,172 @@
 }
 
 
--(void)gameOver{
-    GamePlay *NVC = [self.storyboard instantiateViewControllerWithIdentifier:@"GameOver"];
-    [self presentViewController:NVC animated:YES completion:nil];
+-(void)gameOver{// Declearing the method 'gameOver'
+    GamePlay *GameOverScreen = [self.storyboard instantiateViewControllerWithIdentifier:@"GameOver"];//Calling refrence to 'GamePlay' ViewController
+    [self presentViewController:GameOverScreen animated:YES completion:nil];// Calling the refrence and thus changing views to 'GamePlay' ViewController
+    //I used the following webist:stackoverflow.com/questions/31630213/change-view-controller-programmatically to guide me in changing ViewControllers
 }
 
--(void)DeviceSelected{
-    if([[UIScreen mainScreen] bounds].size.width == 667 || [[UIScreen mainScreen] bounds].size.height == 667){
+-(void)DeviceSelected{// Declearing the methoed 'Device Selected'
+    if([[UIScreen mainScreen] bounds].size.width == 667){// If the width of the device is 667 pixels
         //IPHONE6/7
-        _CharacterImage.center = CGPointMake(20, 180);
-        _ObjectImage.center = CGPointMake(553, 180);
-        _TunnelTop.center = CGPointMake(620, 90);
-        _TunnelMiddel.center = CGPointMake(620, 180);
-        _TunnelBottom.center = CGPointMake(620, 270);
+        _CharacterImage.center = CGPointMake(20, 180);// Set the 'CharacterImage' to that of the set point
+        _ObjectImage.center = CGPointMake(553, 180);// Set the 'ObjectImage' to that of the set point
+        _TunnelTop.center = CGPointMake(620, 90);// Set the 'TunnelTop' to that of the set point
+        _TunnelMiddel.center = CGPointMake(620, 180);// Set the 'TunnelMiddel' to that of the set point
+        _TunnelBottom.center = CGPointMake(620, 270);// Set the 'TunnelBottom' to that of the set point
         
-        CGRect frame = _Background.frame;
-        frame.size.width = 667;
-        frame.size.height =375;
-        _Background.frame = frame;
+        CGRect frame = _Background.frame;// Setting the veribal 'frame', to the postition and size of 'Background'
+        frame.size.width = 667;// Setting the width of 'frame' to 667
+        frame.size.height =375;// Setting the hight of 'frame' to height'
+        _Background.frame = frame;// Setting the 'Background' to equal to the size and postion of 'frame'
         
-        _ObjectTop = 90;
-        _ObjectMiddel = 180;
-        _ObjectBottom = 270;
-        _ObjectX = 533;
+        _ObjectTop = 90;// Setting the veribal 'ObjectTop' to equal to that of the set interger
+        _ObjectMiddel = 180;// Setting the veribal 'ObjectMiddel' to equal to that of the set interger
+        _ObjectBottom = 270;// Setting the veribal 'ObjectBottom' to equal to that of the set interger
+        _ObjectX = 533;// Setting the veribal 'ObjectX' to equal to that of the set interger
     }
-    else{
+    else{// If the if statment is not met
         //IPHONE 6+/7+
-        _CharacterImage.center = CGPointMake(20, 210);
-        _ObjectImage.center = CGPointMake(620, 210);
-        _TunnelTop.center = CGPointMake(695, 120);
-        _TunnelMiddel.center = CGPointMake(695, 210);
-        _TunnelBottom.center = CGPointMake(695, 300);
-        _ObjectTop = 120;
-        _ObjectMiddel = 210;
-        _ObjectBottom = 300;
-        _ObjectX = 600;
+        _CharacterImage.center = CGPointMake(20, 210); // Set the 'CharacterImage' to that of the set point
+        _ObjectImage.center = CGPointMake(620, 210);// Set the 'ObjectImage' to that of the set point
+        _TunnelTop.center = CGPointMake(695, 120);// Set the 'Tunneltop' to that of the set point
+        _TunnelMiddel.center = CGPointMake(695, 210);// Set the 'TunnelMiddel' to that of the set point
+        _TunnelBottom.center = CGPointMake(695, 300);// Set the 'TunnelBottom' to that of the set point
+        _ObjectTop = 120;// Setting the veribal 'ObjectTop' to equal to that of the set interger
+        _ObjectMiddel = 210;// Setting the veribal 'ObjectMiddel' to equal to that of the set interger
+        _ObjectBottom = 300;// Setting the veribal 'ObjectBottom' to equal to that of the set interger
+        _ObjectX = 600;// Setting the veribal 'ObjectX' to equal to that of the set interger
     }
 }
 
 
--(void)characterSelectedImages;{
+-(void)characterSelectedImages;{// Declearing the method called 'characterSelectedImages'
     
     NSString *CharSelect = [[NSUserDefaults standardUserDefaults] stringForKey:@"CharacterSelected"];
-    if ([CharSelect  isEqual: @"StickMan"]) {
+    //Setting the 'CharSeelct' value to that of the called upon value in NSUserDefault "CharacterSeelcted".
+    if ([CharSelect  isEqual: @"StickMan"]) {// If 'CharSelect' is equal to the set text
         [_CharacterImage setImage: [UIImage imageNamed:@"Whie_StickMan.png"]];
+        //Set the 'CharaterImage' to that of a photo file of stickMan
     }
-    else if ([CharSelect  isEqual: @"PacMan"]) {
+    else if ([CharSelect  isEqual: @"PacMan"]) {// else if 'CharSelect' is equal to the set text
         [_CharacterImage setImage: [UIImage imageNamed:@"PacMan_Icon.png"]];
+        //Set the 'CharaterImage' to that of a photo file of PacMan
     }
-    else if ([CharSelect isEqualToString:@"Contra"]){
+    else if ([CharSelect isEqualToString:@"Contra"]){// else if 'CharSelect' is equal to the set text
         [_CharacterImage setImage: [UIImage imageNamed:@"Contra_Icon.png"]];
+        //Set the 'CharaterImage' to that of a photo file of Contra
     }
-    else if ([CharSelect isEqualToString:@"Donkey-Kong"]){
+    else if ([CharSelect isEqualToString:@"Donkey-Kong"]){// else if 'CharSelect' is equal to the set text
         [_CharacterImage setImage: [UIImage imageNamed:@"DonkeyKong_theme..png"]];
+        //Set the 'CharaterImage' to that of a photo file of Donkey-Kong
     }
-    else if ([CharSelect isEqualToString:@"Mario"]){
+    else if ([CharSelect isEqualToString:@"Mario"]){// else if 'CharSelect' is equal to the set text
         [_CharacterImage setImage: [UIImage imageNamed:@"Mario_Icon.png"]];
+        //Set the 'CharaterImage' to that of a photo file of Mario
     }
-    else{
+    else{// If the if statments are not met
         [_CharacterImage setImage: [UIImage imageNamed:@"Whie_StickMan.png"]];
+        //Set the 'CharaterImage' to that of a photo file of StickMan
+        
+        //I used the website:stackoverflow.com/questions/2172497/programmatically-change-the-uiimageview-displaying-image1-to-image2 to guide me on how to set an a UIImage to that of the specifiled photot file
     }
 }
 
--(void)objectSelectedImages{
+-(void)objectSelectedImages{// Declearing the method called 'objectSelectedImages'
     NSString *objectSelect = [[NSUserDefaults standardUserDefaults] stringForKey:@"ObjectSelected"];
-    NSUInteger R = arc4random_uniform(10);
+    //Setting the 'objectSelect' value to that of the called upon value in NSUserDefault "ObjectSeelcted".
+    NSUInteger R = arc4random_uniform(10);// Setting the interger 'R' to the random genorated number created by arc4random, which would be genorate numbers from 1 to 10
 
     
-    if ([objectSelect isEqualToString:@"StickMan_Theme"]){
+    if ([objectSelect isEqualToString:@"StickMan_Theme"]){// If 'objectSelect' is equal to the set text
         [_Background setImage:[UIImage imageNamed:@"StickManBackground.jpg"]];
-        if (R > 1){
-            _ObjectGenerated = true;
+        //Set the 'Background' image to that of a photo file of Stickman background
+        if (R > 1){// If the the random integer assigned to R is greater then 1
+            _ObjectGenerated = true;// Set 'objectGenerated' to equale to true
             [_ObjectImage setImage:[UIImage imageNamed:@"BlackBall.png"]];
+            //Set the 'ObjectImage' to that of the named photo file
         }
-        else{
-            _ObjectGenerated = false;
+        else{// if the if statment is not met
+            _ObjectGenerated = false;// Set 'objectGenerated' to equale to false
             [_ObjectImage setImage:[UIImage imageNamed:@"WhiteBall.gif"]];
+            //Set the 'ObjectImage' to that of the named photo file
         }
     }
-    else if ([objectSelect isEqualToString:@"PacMan_Theme"]){
+    else if ([objectSelect isEqualToString:@"PacMan_Theme"]){// If 'objectSelect' is equal to the set text
         [_Background setImage:[UIImage imageNamed:@"PacManBackground.png"]];
-        if (R > 1){
-            _ObjectGenerated = true;
+        if (R > 1){// If the the random integer assigned to R is greater then 1
+            _ObjectGenerated = true;// Set 'objectGenerated' to equale to true
             [_ObjectImage setImage:[UIImage imageNamed:@"Goast_Icon.png"]];
+            //Set the 'ObjectImage' to that of the named photo file
         }
-        else{
-            _ObjectGenerated = false;
+        else{// if the if statment is not met
+            _ObjectGenerated = false;// Set 'objectGenerated' to equale to false
             [_ObjectImage setImage:[UIImage imageNamed:@"Strawberry.png"]];
+            //Set the 'ObjectImage' to that of the named photo file
         }
     }
 
-    else if ([objectSelect isEqualToString:@"Contra_Theme"]){
+    else if ([objectSelect isEqualToString:@"Contra_Theme"]){// If 'objectSelect' is equal to the set text
         [_Background setImage:[UIImage imageNamed:@"ContraBackground.png"]];
-        if (R > 1){
-            _ObjectGenerated = true;
+        if (R > 1){// If the the random integer assigned to R is greater then 1
+            _ObjectGenerated = true;// Set 'objectGenerated' to equale to true
             [_ObjectImage setImage:[UIImage imageNamed:@"ContraBoss_Icon.png"]];
         }
-        else{
-            _ObjectGenerated = false;
+        else{// if the if statment is not met
+            _ObjectGenerated = false;// Set 'objectGenerated' to equale to false
             [_ObjectImage setImage:[UIImage imageNamed:@"Contra_s_Icon.png"]];
+            //Set the 'ObjectImage' to that of the named photo file
         }
     }
-    else if ([objectSelect isEqualToString:@"Donkey-Kong_Theme"]){
+    else if ([objectSelect isEqualToString:@"Donkey-Kong_Theme"]){// If 'objectSelect' is equal to the set text
         [_Background setImage:[UIImage imageNamed:@"DonkeyBackground.jpg"]];
-        if (R > 1){
-            _ObjectGenerated = true;
+        if (R > 1){// If the the random integer assigned to R is greater then 1
+            _ObjectGenerated = true;// Set 'objectGenerated' to equale to true
             [_ObjectImage setImage:[UIImage imageNamed:@"Barrel_Icon..png"]];
+            //Set the 'ObjectImage' to that of the named photo file
         }
-        else{
-            _ObjectGenerated = false;
+        else{// if the if statment is not met
+            _ObjectGenerated = false;// Set 'objectGenerated' to equale to false
             [_ObjectImage setImage:[UIImage imageNamed:@"Banana_Icon.png"]];
+            //Set the 'ObjectImage' to that of the named photo file
         }
     }
-    else if ([objectSelect isEqualToString:@"Mario_Theme"]){
+    else if ([objectSelect isEqualToString:@"Mario_Theme"]){// If 'objectSelect' is equal to the set text
         [_Background setImage:[UIImage imageNamed:@"MarioBackground.png"]];
-        if (R > 1){
-            _ObjectGenerated = true;
+        if (R > 1){// If the the random integer assigned to R is greater then 1
+            _ObjectGenerated = true;// Set 'objectGenerated' to equale to true
             [_ObjectImage setImage:[UIImage imageNamed:@"Goomba1.png"]];
+            //Set the 'ObjectImage' to that of the named photo file
         }
-        else{
-            _ObjectGenerated = false;
+        else{// if the if statment is not met
+            _ObjectGenerated = false;// Set 'objectGenerated' to equale to false
             [_ObjectImage setImage:[UIImage imageNamed:@"MushRoom.gif"]];
+            //Set the 'ObjectImage' to that of the named photo file
         }
     }
-    else{
-        if (R > 1){
-            _ObjectGenerated = true;
+    else{// If the is statments are not met
+        if (R > 1){// If the the random integer assigned to R is greater then 1
+            _ObjectGenerated = true;// Set 'objectGenerated' to equale to true
             [_ObjectImage setImage:[UIImage imageNamed:@"BlackBall.png"]];
+            //Set the 'ObjectImage' to that of the named photo file
         }
-        else{
-            _ObjectGenerated = false;
+        else{// if the if statment is not met
+            _ObjectGenerated = false;// Set 'objectGenerated' to equale to false
             [_ObjectImage setImage:[UIImage imageNamed:@"WhiteBall.gif"]];
+            //Set the 'ObjectImage' to that of the named photo file
         }
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
+/* the following websites listed below were used as guidence in the creation of this application:
+https://www.youtube.com/watch?v=Eo7wDCyXU6g
+https://www.youtube.com/watch?v=_cOIU3bHnhs
+https://www.youtube.com/watch?v=msx_36lc9lA
+    The three youtube links were the main guidlines on how to get my images moving and more importantly on how to detect if the objects have intersected each other
+https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/Strings/Articles/formatSpecifiers.html
+    This website was vital and used throughout the whole application. It gave advice on the type of format my veribals should be
+ */
 
 
 

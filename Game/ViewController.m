@@ -24,13 +24,14 @@
     */
     
     if([[UIScreen mainScreen] bounds].size.width == 667 || //This if statment checks the width size of the device model selected. These two are the ones of
+       // I used the following website:stackoverflow.com/questions/14372906/to-detect-ios-device-type in guiding me on the detection of the device model
        [[UIScreen mainScreen] bounds].size.width == 736){ // Iphone 6/7 and Iphone 6+/7+
         nil; //if the condtion is met, pass
     }
     else{
         UIAlertController * DeviceWarning = [UIAlertController //Defining DeviceWarning to UIAlertController
                                      alertControllerWithTitle:@"Warning" //Naming the titel of pop-up
-                                     message:@"Warning the application is only compatible with the following devices: Iphone 6, Iphone 6+, Iphone 7 and Iphone 7+" //Setting the meesage of the pop-up
+                                     message:@"Warning this application is only compatible with the following devices: Iphone 6, Iphone 6+, Iphone 7 and Iphone 7+" //Setting the meesage of the pop-up
                                      preferredStyle:UIAlertControllerStyleAlert]; //Selecting the way the message will be presented
         
         UIAlertAction* OkButton = [UIAlertAction //Adding an an action, which the user can interact with
