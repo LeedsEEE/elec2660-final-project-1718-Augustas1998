@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 @interface GamePlay : UIViewController
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 
 @property(weak, nonatomic) IBOutlet UIImageView *CharacterImage;
 //The outlet code connection of the 'CharacterImage' to that of the character image in the GamePlay ViewController
@@ -57,4 +59,5 @@
 -(void)objectSelectedImages;// Creating a method called 'objectSelectedImages'
 -(void)ObjectLocation;// Creating a method called 'objectLocation'
 -(void)DeviceSelected;//Creating a method called 'DeviceSelected'
+-(void)BackgroundMusic;// Creating a method called 'BackgroundMusic'
 @end

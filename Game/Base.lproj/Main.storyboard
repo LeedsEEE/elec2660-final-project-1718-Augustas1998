@@ -492,9 +492,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghE-ys-2NK">
-                                <rect key="frame" x="25" y="165" width="135" height="18.666666666666657"/>
+                                <rect key="frame" x="25" y="165" width="145" height="19"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Pac-man theme: 50">
+                                    <fragment content="Pac-man theme: 200">
                                         <attributes>
                                             <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -519,9 +519,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaB-H2-x2s">
-                                <rect key="frame" x="576.66666666666652" y="165" width="134.33333333333337" height="18.666666666666657"/>
+                                <rect key="frame" x="576.66666666666663" y="165" width="135" height="19"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Contra theme: 100">
+                                    <fragment content="Contra theme: 500">
                                         <attributes>
                                             <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -546,9 +546,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTl-UK-LKq">
-                                <rect key="frame" x="40" y="337" width="175.66666666666666" height="18.666666666666686"/>
+                                <rect key="frame" x="40" y="337" width="185" height="19"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Donkey-Kong theme: 200">
+                                    <fragment content="Donkey-Kong theme: 2000">
                                         <attributes>
                                             <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -558,9 +558,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXC-uA-jje">
-                                <rect key="frame" x="536" y="337" width="130" height="18.666666666666686"/>
+                                <rect key="frame" x="526" y="337" width="140" height="19"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Mario theme: 500">
+                                    <fragment content="Mario theme: 5000">
                                         <attributes>
                                             <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -770,9 +770,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tO3-3L-Z03">
-                                <rect key="frame" x="90" y="155" width="88" height="18.666666666666657"/>
+                                <rect key="frame" x="90" y="155" width="98" height="19"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Pac-man: 50">
+                                    <fragment content="Pac-man: 200">
                                         <attributes>
                                             <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -797,9 +797,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQT-Dw-dwQ">
-                                <rect key="frame" x="579" y="153" width="87" height="18.666666666666657"/>
+                                <rect key="frame" x="579" y="153" width="87" height="19"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Contra: 100">
+                                    <fragment content="Contra: 500">
                                         <attributes>
                                             <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -824,9 +824,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asH-6V-J2l">
-                                <rect key="frame" x="95" y="337" width="128" height="18.666666666666686"/>
+                                <rect key="frame" x="95" y="337" width="138" height="19"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Donkey-Kong: 200">
+                                    <fragment content="Donkey-Kong: 2000">
                                         <attributes>
                                             <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -836,9 +836,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKm-FU-5Jz">
-                                <rect key="frame" x="544" y="335" width="82" height="18.666666666666686"/>
+                                <rect key="frame" x="534" y="335" width="92" height="19"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Mario: 500">
+                                    <fragment content="Mario: 5000">
                                         <attributes>
                                             <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -1298,7 +1298,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="vlK-k7-wIE"/>
-        <segue reference="zlI-qV-a2R"/>
+        <segue reference="Zu6-cY-PX9"/>
         <segue reference="hCg-gX-eHT"/>
     </inferredMetricsTieBreakers>
 </document>

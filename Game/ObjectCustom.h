@@ -21,7 +21,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *A_L_Mario_theme;
 //The outlet code connection of the availble/locked label to that of the Mario's theme A/L label in ObjectCustom ViewController
 
-
 - (IBAction)Object_StickMan:(UIButton *)sender; //IBAction for the StickMan theme button/image
 - (IBAction)Object_PacMan:(UIButton *)sender; //IBAction for the PacMan theme button/image
 - (IBAction)Object_Contra:(UIButton *)sender; //IBAction for the Contra theme button/image

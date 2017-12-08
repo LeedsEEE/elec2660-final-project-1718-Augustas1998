@@ -18,13 +18,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+
+    
+    
+    
     _ObjectImage.hidden = true;// Set 'ObjectImage' to hidden, hence when the view loads, the image will be hidden
     _CharacterImage.hidden = true;// Set 'CharacterImage' to hidden, hence when the view loads, the image will be hidden
     [self characterSelectedImages];// Calling the method 'CharacterSelectedImage'. This method sets the image of the character
     [self objectSelectedImages];// Calling the method 'objectSelectedImages'. This method sets the image of the object
     [self DeviceSelected];// Calling the method 'DeviceSelected'. This method sets the position and size of images depending on the device model
     _NotIntersected = true;// Setting the the bool veribal 'NotIntersected' to equal to true
-    
     _SpecialPoints = (int)[[NSUserDefaults standardUserDefaults] integerForKey:@"Special"];
      //Setting the 'SpecialPoints' value to that of the called upon value in NSUserDefault "Special".
     _Bvalue = (int)[[NSUserDefaults standardUserDefaults] integerForKey:@"Bestvalue"];
@@ -54,13 +59,6 @@
     }
 }
 
-
-
-
-
-
-
-
 - (IBAction)TouchToBegin:(UIButton *)sender{// When the touch to begin button is pressed
     _TouchToBegin.hidden = true;// Hide the touch to begin button
     _ObjectImage.hidden = false;// Reveal the hidden object image
@@ -68,6 +66,7 @@
     _Object = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(ObjectLocation) userInfo:nil repeats:YES];
     //Setting up the paramiters of the NSTimer 'Object'. This code set the time internal in which the 'ObjectLocation' method is set. As can see, the time internal is set to 0.5mS, which is constantly repeated
     [self ObjectLocation];// Calling the 'ObjectLocation' Method
+    [self BackgroundMusic];// Calling the 'BackgroundMusic' method
     
 }
 -(void)ObjectLocation{// Declearing the method 'ObjectLocation'
@@ -141,6 +140,7 @@
                 [[NSUserDefaults standardUserDefaults]setInteger:_Svalue forKey:@"10"];// Setting 'Svalue' value to NsUserDefault '10'
                 _NotIntersected = false;// Setting veribal 'NotIntersected' to false, thus exitting the main if statment
                 [[NSUserDefaults standardUserDefaults] setFloat:_Svalue forKey:@"FinalScore"];// Setting 'Svalue' value to that of NsUserDefault 'FinalScore
+                [self.audioPlayer stop];// Stopes the current selected backgroung music
                 [self gameOver];// Calling the 'gameOver' method
                 
             }
@@ -336,6 +336,41 @@
     }
 
 }
+
+-(void)BackgroundMusic{// Declearing the method called 'BackgroundMusic'
+    NSString *Music = [[NSUserDefaults standardUserDefaults] stringForKey:@"ObjectSelected"];
+    //Setting the 'Music' value to that of the called upon value in NSUserDefault "ObjectSeelcted".
+    NSString *MusicTheme;// Creating an nsstring called 'MusicTheme'
+    if( [Music isEqualToString:@"StickMan_Theme"]){// If 'MusicTheme' is equale to that of the set text
+        MusicTheme = @"StickMan";// Set 'MusicTheme' to the set text
+    }
+    else if( [Music isEqualToString:@"PacMan_Theme"]){// If 'MusicTheme' is equale to that of the set text
+        MusicTheme = @"PacMan";// Set 'MusicTheme' to the set text
+    }
+    else if( [Music isEqualToString:@"Contra_Theme"]){// If 'MusicTheme' is equale to that of the set text
+        MusicTheme = @"Contra";// Set 'MusicTheme' to the set text
+    }
+    else if( [Music isEqualToString:@"Donkey-Kong_Theme"]){// If 'MusicTheme' is equale to that of the set text
+        MusicTheme = @"Donkey-Kong";// Set 'MusicTheme' to the set text
+    }
+    else if( [Music isEqualToString:@"Mario_Theme"]){// If 'MusicTheme' is equale to that of the set text
+        MusicTheme = @"Mario";// Set 'MusicTheme' to the set text
+    }
+    else{// if the if statment is not met
+        MusicTheme = @"StickMan";// Set 'MusicTheme' to the set text
+    }
+    NSString *FilePath = [[NSBundle mainBundle] pathForResource:MusicTheme ofType:@"mp3"];// Set the path of where the file is stored to 'FilePath'
+    NSURL *fileurl = [[NSURL alloc] initFileURLWithPath:FilePath];// Points the url to where the file is saved (FilePath)
+    _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileurl error:nil];// Allocating the 'auidioPlayer' with the files url
+    [self.audioPlayer play];// Playing 'audioPlayer'
+}
+
+
+
+
+
+
+
 /* the following websites listed below were used as guidence in the creation of this application:
 https://www.youtube.com/watch?v=Eo7wDCyXU6g
 https://www.youtube.com/watch?v=_cOIU3bHnhs

@@ -10,6 +10,14 @@
 		7B264E171FD7480C00970AF7 /* MushRoom.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B264E161FD7480C00970AF7 /* MushRoom.gif */; };
 		7B264E191FD758D900970AF7 /* StickMan_Theme.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B264E181FD758D900970AF7 /* StickMan_Theme.png */; };
 		7B264E1D1FD765F300970AF7 /* DonkeyKong_theme..png in Resources */ = {isa = PBXBuildFile; fileRef = 7B264E1C1FD765F300970AF7 /* DonkeyKong_theme..png */; };
+		7B4154C61FDAC747005048B8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4154C51FDAC747005048B8 /* AVFoundation.framework */; };
+		7B4154CA1FDACADC005048B8 /* Donkey-Kong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B4154C91FDACADC005048B8 /* Donkey-Kong.mp3 */; };
+		7B4154D01FDAE4D3005048B8 /* PacMan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B4154CF1FDAE4D3005048B8 /* PacMan.mp3 */; };
+		7B4154D41FDAE4FE005048B8 /* Mario.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B4154D31FDAE4FE005048B8 /* Mario.mp3 */; };
+		7B4154D61FDAE570005048B8 /* StickMan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B4154D51FDAE570005048B8 /* StickMan.mp3 */; };
+		7B4154D81FDAE654005048B8 /* Contra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B4154D71FDAE654005048B8 /* Contra.mp3 */; };
+		7B4154DA1FDAE9FB005048B8 /* Music Reference.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7B4154D91FDAE9FB005048B8 /* Music Reference.rtf */; };
+		7B4154DC1FDAEAE7005048B8 /* Compatiblity.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7B4154DB1FDAEAE7005048B8 /* Compatiblity.rtf */; };
 		7B6C827B1FB9AF2500F5AA56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C827A1FB9AF2500F5AA56 /* main.m */; };
 		7B6C827E1FB9AF2500F5AA56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C827D1FB9AF2500F5AA56 /* AppDelegate.m */; };
 		7B6C82811FB9AF2500F5AA56 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C82801FB9AF2500F5AA56 /* ViewController.m */; };
@@ -81,6 +89,14 @@
 		7B264E161FD7480C00970AF7 /* MushRoom.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MushRoom.gif; sourceTree = "<group>"; };
 		7B264E181FD758D900970AF7 /* StickMan_Theme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StickMan_Theme.png; sourceTree = "<group>"; };
 		7B264E1C1FD765F300970AF7 /* DonkeyKong_theme..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DonkeyKong_theme..png; sourceTree = "<group>"; };
+		7B4154C51FDAC747005048B8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7B4154C91FDACADC005048B8 /* Donkey-Kong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Donkey-Kong.mp3"; sourceTree = "<group>"; };
+		7B4154CF1FDAE4D3005048B8 /* PacMan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PacMan.mp3; sourceTree = "<group>"; };
+		7B4154D31FDAE4FE005048B8 /* Mario.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Mario.mp3; sourceTree = "<group>"; };
+		7B4154D51FDAE570005048B8 /* StickMan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = StickMan.mp3; sourceTree = "<group>"; };
+		7B4154D71FDAE654005048B8 /* Contra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Contra.mp3; sourceTree = "<group>"; };
+		7B4154D91FDAE9FB005048B8 /* Music Reference.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Music Reference.rtf"; sourceTree = "<group>"; };
+		7B4154DB1FDAEAE7005048B8 /* Compatiblity.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Compatiblity.rtf; sourceTree = "<group>"; };
 		7B6C82761FB9AF2500F5AA56 /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6C827A1FB9AF2500F5AA56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7B6C827C1FB9AF2500F5AA56 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -149,6 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B4154C61FDAC747005048B8 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,14 +186,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B4154C11FDAC6A8005048B8 /* Sound files */ = {
+			isa = PBXGroup;
+			children = (
+				7B4154D91FDAE9FB005048B8 /* Music Reference.rtf */,
+				7B4154D31FDAE4FE005048B8 /* Mario.mp3 */,
+				7B4154D51FDAE570005048B8 /* StickMan.mp3 */,
+				7B4154C91FDACADC005048B8 /* Donkey-Kong.mp3 */,
+				7B4154CF1FDAE4D3005048B8 /* PacMan.mp3 */,
+				7B4154D71FDAE654005048B8 /* Contra.mp3 */,
+			);
+			name = "Sound files";
+			path = Game;
+			sourceTree = "<group>";
+		};
+		7B4154C41FDAC747005048B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B4154C51FDAC747005048B8 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7B6C826D1FB9AF2500F5AA56 = {
 			isa = PBXGroup;
 			children = (
+				7B4154C11FDAC6A8005048B8 /* Sound files */,
 				7B81ABFE1FBA45BA00B297E6 /* Pictures */,
 				7B6C82781FB9AF2500F5AA56 /* Game */,
 				7B6C82921FB9AF2500F5AA56 /* GameTests */,
 				7B6C829D1FB9AF2500F5AA56 /* GameUITests */,
 				7B6C82771FB9AF2500F5AA56 /* Products */,
+				7B4154C41FDAC747005048B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -193,6 +234,7 @@
 		7B6C82781FB9AF2500F5AA56 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				7B4154DB1FDAEAE7005048B8 /* Compatiblity.rtf */,
 				7B6C827C1FB9AF2500F5AA56 /* AppDelegate.h */,
 				7B6C827D1FB9AF2500F5AA56 /* AppDelegate.m */,
 				7B6C827F1FB9AF2500F5AA56 /* ViewController.h */,
@@ -394,13 +436,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B7ABF231FD59C1A00B73432 /* Contra_S_icon.png in Resources */,
+				7B4154D41FDAE4FE005048B8 /* Mario.mp3 in Resources */,
 				7B6C82891FB9AF2500F5AA56 /* LaunchScreen.storyboard in Resources */,
 				7B6C82861FB9AF2500F5AA56 /* Assets.xcassets in Resources */,
+				7B4154CA1FDACADC005048B8 /* Donkey-Kong.mp3 in Resources */,
 				7B7ABF141FD58BBB00B73432 /* Donkey_Icon.png in Resources */,
+				7B4154D01FDAE4D3005048B8 /* PacMan.mp3 in Resources */,
 				7B7ABF541FD5EA7000B73432 /* Goomba1.png in Resources */,
 				7B7ABEEF1FD58B4700B73432 /* Tunnel_Icon.png in Resources */,
 				7B7ABEF11FD58B6800B73432 /* Start_Icon.png in Resources */,
 				7B7ABEE71FD5889200B73432 /* Next.png in Resources */,
+				7B4154DC1FDAEAE7005048B8 /* Compatiblity.rtf in Resources */,
 				7B7ABEE31FD5885700B73432 /* BackButton.png in Resources */,
 				7B7ABF5B1FD5EC4400B73432 /* EmptyImage.png in Resources */,
 				7B7ABF271FD59E5300B73432 /* Mario_Theme..gif in Resources */,
@@ -414,6 +460,7 @@
 				7B7ABF0B1FD58BBB00B73432 /* PacMan_Theme.png in Resources */,
 				7B7ABF071FD58BBB00B73432 /* PacMan_Icon.png in Resources */,
 				7B7ABF531FD5EA7000B73432 /* DonkeyBackground.jpg in Resources */,
+				7B4154D61FDAE570005048B8 /* StickMan.mp3 in Resources */,
 				7B7ABEE51FD5888A00B73432 /* Back.png in Resources */,
 				7B7ABF081FD58BBB00B73432 /* Banana_Icon.png in Resources */,
 				7B7ABF551FD5EA7000B73432 /* MarioBackground.png in Resources */,
@@ -422,7 +469,9 @@
 				7B7ABF2B1FD59F6F00B73432 /* DownButton..gif in Resources */,
 				7B264E1D1FD765F300970AF7 /* DonkeyKong_theme..png in Resources */,
 				7B7ABF2A1FD59F6F00B73432 /* UpBotton..gif in Resources */,
+				7B4154D81FDAE654005048B8 /* Contra.mp3 in Resources */,
 				7B7ABEEC1FD5893100B73432 /* HomePage.png in Resources */,
+				7B4154DA1FDAE9FB005048B8 /* Music Reference.rtf in Resources */,
 				7B7ABF571FD5EA7000B73432 /* StickManBackground.jpg in Resources */,
 				7B7ABF131FD58BBB00B73432 /* Donkey_Theme.png in Resources */,
 				7B7ABF121FD58BBB00B73432 /* ContraBoss_Icon.png in Resources */,

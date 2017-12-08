@@ -20,25 +20,25 @@
     //Setting the int 'specialPoints' value to that of the called upon value in NSUserDefault "Special"
     //This value is then used to lock and unlock cutomisation themes
     
-    if (_SpecialPoints >=50) {// If 'SpecialPoints' value is equale to or greater then 50
+    if (_SpecialPoints >=200) {// If 'SpecialPoints' value is equale to or greater then 200
         _A_L_PacMan_theme.text = @"Available";// Set the text to the PacMan's theme availble/locked label
     }
     else{// If the if stamtment is not met
         _A_L_PacMan_theme.text = @"Locked";// Set the text to the PacMan's theme availble/locked label
     }
-    if (_SpecialPoints >=100) {// If 'SpecialPoints' value is equale to or greater then 100
+    if (_SpecialPoints >=500) {// If 'SpecialPoints' value is equale to or greater then 500
         _A_L_contra_theme.text = @"Available";// Set the text to the Contra's theme availble/locked label
     }
     else{// If the if stamtment is not met
         _A_L_contra_theme.text = @"Locked";// Set the text to the Contra's theme availble/locked label
     }
-    if (_SpecialPoints >=200) {// If 'SpecialPoints' value is equale to or greater then 200
+    if (_SpecialPoints >=2000) {// If 'SpecialPoints' value is equale to or greater then 2000
         _A_L_Donkey_theme.text = @"Available";// Set the text to the Donkey-Kong's theme availble/locked label
     }
     else{// If the if stamtment is not met
         _A_L_Donkey_theme.text = @"Locked";// Set the text to the Donkey-Kong's theme availble/locked label
     }
-    if (_SpecialPoints >=500) {// If 'SpecialPoints' value is equale to or greater then 500
+    if (_SpecialPoints >=5000) {// If 'SpecialPoints' value is equale to or greater then 5000
         _A_L_Mario_theme.text = @"Available";// Set the text to the Mario's theme availble/locked label
     }
     else{// If the if stamtment is not met
@@ -52,34 +52,36 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
 - (IBAction)Object_StickMan:(UIButton *)sender {// When the StickMan's theme image/button is pressed
     _ObjectSelect = @"StickMan_Theme";// Set the nsstring 'ObjectSelect' to that of the text
     [ self ObjectSelected]; //Calling the method 'ObjectSelected'
 }
 
 - (IBAction)Object_PacMan:(UIButton *)sender {// When the PacMan's theme image/button is pressed
-    if(_SpecialPoints >= 50){// If 'SpecialPoints' value is equale to or greater then 50
+    if(_SpecialPoints >= 200){// If 'SpecialPoints' value is equale to or greater then 200
         _ObjectSelect = @"PacMan_Theme";// Set the nsstring 'ObjectSelect' to that of the text
         [self ObjectSelected]; //Calling the method 'ObjectSelected'
     }
 }
 
 - (IBAction)Object_Contra:(UIButton *)sender {// When the Contra's theme image/button is pressed
-    if(_SpecialPoints >= 100){// If 'SpecialPoints' value is equale to or greater then 100
+    if(_SpecialPoints >= 500){// If 'SpecialPoints' value is equale to or greater then 500
         _ObjectSelect = @"Contra_Theme";// Set the nsstring 'ObjectSelect' to that of the text
         [self ObjectSelected]; //Calling the method 'ObjectSelected'
     }
 }
 
 - (IBAction)Object_Donkey:(UIButton *)sender {// When the Donkey-Kong's theme image/button is pressed
-    if(_SpecialPoints >= 200){// If 'SpecialPoints' value is equale to or greater then 200
+    if(_SpecialPoints >= 2000){// If 'SpecialPoints' value is equale to or greater then 2000
         _ObjectSelect = @"Donkey-Kong_Theme";// Set the nsstring 'ObjectSelect' to that of the text
-        [self ObjectSelect]; //Calling the method 'ObjectSelected'
+        [self ObjectSelected]; //Calling the method 'ObjectSelected'
     }
 }
 
 - (IBAction)Object_Mario:(UIButton *)sender {// When the Mario's theme image/button is pressed
-    if(_SpecialPoints >= 500){// If 'SpecialPoints' value is equale to or greater then 500
+    if(_SpecialPoints >= 5000){// If 'SpecialPoints' value is equale to or greater then 5000
         _ObjectSelect = @"Mario_Theme";// Set the nsstring 'ObjectSelect' to that of the text
         [self ObjectSelected]; //Calling the method 'ObjectSelected'
     }
