@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _SpecialPoints = (int)[[NSUserDefaults standardUserDefaults] integerForKey:@"Special"];
-    //Setting the int 'specialPoints' value to that of the called upon value in NSUserDefault "Special"
+    _SpecialPoints = (int)[[NSUserDefaults standardUserDefaults] integerForKey:@"Special_Points"];
+    //Setting the int 'specialPoints' value to that of the called upon value in NSUserDefault "Special_Points"
     //This value is then used to lock and unlock cutomisation themes
     
     if (_SpecialPoints >=200) {// If 'SpecialPoints' value is equale to or greater then 200
@@ -88,8 +88,8 @@
 }
 
 -(void)ObjectSelected{//Declearing the method
-    [[NSUserDefaults standardUserDefaults]setObject:_ObjectSelect forKey:@"ObjectSelected"];
+    [[NSUserDefaults standardUserDefaults]setObject:_ObjectSelect forKey:@"Object_Selected"];
     //Depending which button was pressed determins which text is set to 'ObjectSelect'. Then using NSUserDefault
-    //the value of'ObjectSelected' is being saved to  NSUserDefault 'ObjectSelected'
+    //the value of'ObjectSelected' is being saved to  NSUserDefault 'Object_Selected'
 }
 @end

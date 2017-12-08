@@ -20,14 +20,14 @@
     /*
      
      */
-    NSInteger CP_points = [[NSUserDefaults standardUserDefaults] integerForKey:@"Special"];
-    //Creating an interger veribal called 'CP_points' and assigning it the value of that stored in the called upon NSUserDefaults "Special"
-    NSInteger Bvalue = [[NSUserDefaults standardUserDefaults] integerForKey:@"Bestvalue"];
+    NSInteger CP_points = [[NSUserDefaults standardUserDefaults] integerForKey:@"Special_Points"];
+    //Creating an interger veribal called 'CP_points' and assigning it the value of that stored in the called upon NSUserDefaults "Special_Points"
+    NSInteger Bvalue = [[NSUserDefaults standardUserDefaults] integerForKey:@"Best_value"];
     //Creating an interger veribal called 'Bvalue' and assigning it the value of that stored in the called upon NSUserDefaults "Bestvalue"
-    NSUInteger RoundsPlayed = [[NSUserDefaults standardUserDefaults] integerForKey:@"AmountPlayed"];
-    //Creating an interger veribal called 'RoundsPlayed'and assigning it the value of that stored in the called upon NSUserDefaults "AmountPlayed"
-    float AverageScore = [[NSUserDefaults standardUserDefaults] floatForKey:@"AverageValue"];
-    //Creating a float veribal called 'AverageScore' and assigning it the value of that stored in the called upon NSUserDefaults "AverageValue"
+    NSUInteger RoundsPlayed = [[NSUserDefaults standardUserDefaults] integerForKey:@"Amount_Played"];
+    //Creating an interger veribal called 'RoundsPlayed'and assigning it the value of that stored in the called upon NSUserDefaults "Amount_Played"
+    float AverageScore = [[NSUserDefaults standardUserDefaults] floatForKey:@"Average_Value"];
+    //Creating a float veribal called 'AverageScore' and assigning it the value of that stored in the called upon NSUserDefaults "Average_Value"
     
     _SpecialPointsLabel.text = [NSString stringWithFormat:@"Character Points: %li", CP_points];
     //Displaying the 'CP_points' value and text in the special ppoints label

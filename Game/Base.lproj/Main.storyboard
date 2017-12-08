@@ -325,7 +325,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ContraBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="GfW-3k-zSK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StickManBackground.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GfW-3k-zSK">
                                 <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1270,7 +1270,6 @@
         <image name="Banana_Icon.png" width="190" height="164"/>
         <image name="Barrel_Icon..png" width="257" height="196"/>
         <image name="BlackBall.png" width="83" height="79"/>
-        <image name="ContraBackground.png" width="256" height="224"/>
         <image name="ContraBoss_Icon.png" width="349" height="467"/>
         <image name="Contra_Icon.png" width="111" height="157"/>
         <image name="Contra_S_icon.png" width="1000" height="425"/>
@@ -1289,6 +1288,7 @@
         <image name="PacMan_Theme.png" width="416" height="232"/>
         <image name="PowerOff.png" width="224" height="225"/>
         <image name="Start_Icon.png" width="103" height="88"/>
+        <image name="StickManBackground.jpg" width="306" height="164"/>
         <image name="StickMan_Theme.png" width="160" height="86"/>
         <image name="Strawberry.png" width="177" height="186"/>
         <image name="Tunnel_Icon.png" width="360" height="310"/>
