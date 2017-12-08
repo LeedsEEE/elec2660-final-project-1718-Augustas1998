@@ -15,7 +15,7 @@
 @implementation CharacterCustom
 
 - (void)viewDidLoad {
-    _SpecialPoints = (int)[[NSUserDefaults standardUserDefaults] integerForKey:@"Special_Points"];
+    _SpecialPoints = (int)[[NSUserDefaults standardUserDefaults] integerForKey:@"Special_Points."];
     //Setting the int 'SpecialPoints' value to that of the called upon value in NSUserDefault "Special_Points"
     //This value is then used to lock and unlock cutomisation themes
     if (_SpecialPoints >=200) {// If 'SpecialPoints' value is equale to or greater then 200
@@ -83,7 +83,7 @@
 }
 
 -(void)CharacterSelected{//Declearing the method 'CharacterSelected'
-    [[NSUserDefaults standardUserDefaults]setObject:_CharSelect forKey:@"Character_Selected"];
+    [[NSUserDefaults standardUserDefaults]setObject:_CharSelect forKey:@"Character_Selected."];
     [[NSUserDefaults standardUserDefaults] synchronize];
     //Depending which button was pressed determins which text is set to 'CharSelect'. Then using NSUserDefault
     //the value of'CharSelect' is being saved to  NSUserDefault 'Character_Selected'

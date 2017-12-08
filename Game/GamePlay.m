@@ -30,17 +30,17 @@
     [self objectSelectedImages];// Calling the method 'objectSelectedImages'. This method sets the image of the object
     [self DeviceSelected];// Calling the method 'DeviceSelected'. This method sets the position and size of images depending on the device model
     _NotIntersected = true;// Setting the the bool veribal 'NotIntersected' to equal to true
-    _SpecialPoints = (int)[[NSUserDefaults standardUserDefaults] integerForKey:@"Special_Points"];
+    _SpecialPoints = (int)[[NSUserDefaults standardUserDefaults] integerForKey:@"Special_Points."];
      //Setting the 'SpecialPoints' value to that of the called upon value in NSUserDefault "Special_Points".
-    _Bvalue = (int)[[NSUserDefaults standardUserDefaults] integerForKey:@"Best_value"];
+    _Bvalue = (int)[[NSUserDefaults standardUserDefaults] integerForKey:@"Best_value."];
      //Setting the'Bvalue' value to that of the called upon value in NSUserDefault "Best_value"
-    _RoundsPlayed = (int)[[NSUserDefaults standardUserDefaults] integerForKey:@"Amount_Played"];
+    _RoundsPlayed = (int)[[NSUserDefaults standardUserDefaults] integerForKey:@"Amount_Played."];
      //Setting the 'RoundsPlayed' value to that of the called upon value in NSUserDefault "Amount_Played"
     _BestScore.text = [NSString stringWithFormat:@"Best: %i",_Bvalue];
     //Setting the best score label to that of some text and the 'Bvalue' value
     _RoundsPlayed ++;
     //Updating the amount of rounds played by incrementing 'RoundsPlayed' by 1
-    [[NSUserDefaults standardUserDefaults]setInteger:_RoundsPlayed forKey:@"Amount_Played"];
+    [[NSUserDefaults standardUserDefaults]setInteger:_RoundsPlayed forKey:@"Amount_Played."];
     //Setting the value of 'RoundsPlayed' to NSUserDefault "AmountPlayed"
 }
 
@@ -125,21 +125,21 @@
             _Svalue ++;// Increment the SValue (score value)
             _BestScore.text = [NSString stringWithFormat:@"Best: %i", _Bvalue];//Displaying the 'Bvalue' value and text in the best score label
             if(_Svalue >= _Bvalue){// If the SValue (score value) is equal to or greater then BValue (best value)
-                [[NSUserDefaults standardUserDefaults]setInteger: _Bvalue forKey:@"Best_value"];// Setting the value of 'BValue' to NSUserDefault "Best_value"
+                [[NSUserDefaults standardUserDefaults]setInteger: _Bvalue forKey:@"Best_value."];// Setting the value of 'BValue' to NSUserDefault "Best_value"
                 _Bvalue = _Svalue + 1;// Setting the BValue(best score) to equale to Svalue(score value) +1
 
             }
             _CurrentScore.text = [NSString stringWithFormat:@"Score: %i",_Svalue];//Displaying the 'Svalue' value and text in the score value label
 
-           [[NSUserDefaults standardUserDefaults]setInteger:_Svalue forKey:@"CurrentScore"];// Setting the 'Svalue' value to NSUserDefault 'CurrentScore'
+           [[NSUserDefaults standardUserDefaults]setInteger:_Svalue forKey:@"CurrentScore."];// Setting the 'Svalue' value to NSUserDefault 'CurrentScore'
             _ObjectImage.center = CGPointMake(_ObjectX,_RandObject);//  Reposistioning the object image
         }
         if(CGRectIntersectsRect(_ObjectImage.frame, _CharacterImage.frame)){// If the character and object image intersect
             
             if(_ObjectGenerated ==true){// If the veribal 'ObjectGenorated' is equale to true
-                [[NSUserDefaults standardUserDefaults]setInteger:_Svalue forKey:@"CurrentScore"];// Setting 'Svalue' value to NsUserDefault 'CurrentScore'
+                [[NSUserDefaults standardUserDefaults]setInteger:_Svalue forKey:@"CurrentScore."];// Setting 'Svalue' value to NsUserDefault 'CurrentScore'
                 _NotIntersected = false;// Setting veribal 'NotIntersected' to false, thus exitting the main if statment
-                [[NSUserDefaults standardUserDefaults] setFloat:_Svalue forKey:@"Final_Score"];// Setting 'Svalue' value to that of NsUserDefault 'Final_Score
+                [[NSUserDefaults standardUserDefaults] setFloat:_Svalue forKey:@"Final_Score."];// Setting 'Svalue' value to that of NsUserDefault 'Final_Score
                 [self.audioPlayer stop];// Stopes the current selected backgroung music
                 [self gameOver];// Calling the 'gameOver' method
                 
@@ -147,7 +147,7 @@
             
             else if (_ObjectGenerated==false){ // else if 'ObjectGenorated' is equal to false
                 _SpecialPoints ++; //Increment 'SpecialPoints' by 1
-                [[NSUserDefaults standardUserDefaults]setInteger:_SpecialPoints forKey:@"Special_Points"];// Setting 'SpecialPoints' value to NSUserDefault  'Special_Points'
+                [[NSUserDefaults standardUserDefaults]setInteger:_SpecialPoints forKey:@"Special_Points."];// Setting 'SpecialPoints' value to NSUserDefault  'Special_Points'
                 [self objectSelectedImages];// Calling the 'objectSelectedImages' method
                 NSUInteger RandomValue = arc4random_uniform(3);// Setting the interger 'RandomValue' to the random genorated number created by arc4random, which would be eigther 1,2,3
                 int RandObjects;// Creating a integer verinal called 'RandObjects'
@@ -169,7 +169,7 @@
                 _CurrentScore.text = [NSString stringWithFormat:@"Score: %i",_Svalue];//Displaying the 'Svalue' value and text in the score value label
                 _BestScore.text = [NSString stringWithFormat:@"Best: %i", _Bvalue];// Setting the value of 'BValue' to NSUserDefault "Bestvalue"
                 if(_Svalue >= _Bvalue){// if 'Svalue' is equale to or greater then 'Bvalue'
-                    [[NSUserDefaults standardUserDefaults]setInteger:_Bvalue forKey:@"Best_value"];// Setting 'Bvalue' value to NsUserDefault 'Best_value'
+                    [[NSUserDefaults standardUserDefaults]setInteger:_Bvalue forKey:@"Best_value."];// Setting 'Bvalue' value to NsUserDefault 'Best_value'
                     _Bvalue = _Svalue + 1;// Setting the 'Bvalue' to equale to that of 'Svalue' + 1
                 }
             }
@@ -220,7 +220,7 @@
 
 -(void)characterSelectedImages;{// Declearing the method called 'characterSelectedImages'
     
-    NSString *CharSelect = [[NSUserDefaults standardUserDefaults] stringForKey:@"Character_Selected"];
+    NSString *CharSelect = [[NSUserDefaults standardUserDefaults] stringForKey:@"Character_Selected."];
     //Setting the 'CharSeelct' value to that of the called upon value in NSUserDefault "CharacterSeelcted".
     if ([CharSelect  isEqual: @"StickMan"]) {// If 'CharSelect' is equal to the set text
         [_CharacterImage setImage: [UIImage imageNamed:@"Whie_StickMan.png"]];
@@ -251,7 +251,7 @@
 }
 
 -(void)objectSelectedImages{// Declearing the method called 'objectSelectedImages'
-    NSString *objectSelect = [[NSUserDefaults standardUserDefaults] stringForKey:@"Object_Selected"];
+    NSString *objectSelect = [[NSUserDefaults standardUserDefaults] stringForKey:@"Object_Selected."];
     //Setting the 'objectSelect' value to that of the called upon value in NSUserDefault "Object_Seelcted".
     NSUInteger R = arc4random_uniform(10);// Setting the interger 'R' to the random genorated number created by arc4random, which would be genorate numbers from 1 to 10
 
@@ -338,7 +338,7 @@
 }
 
 -(void)BackgroundMusic{// Declearing the method called 'BackgroundMusic'
-    NSString *Music = [[NSUserDefaults standardUserDefaults] stringForKey:@"Object_Selected"];
+    NSString *Music = [[NSUserDefaults standardUserDefaults] stringForKey:@"Object_Selected."];
     //Setting the 'Music' value to that of the called upon value in NSUserDefault "Object_Seelcted".
     NSString *MusicTheme;// Creating an nsstring called 'MusicTheme'
     if( [Music isEqualToString:@"StickMan_Theme"]){// If 'MusicTheme' is equale to that of the set text
